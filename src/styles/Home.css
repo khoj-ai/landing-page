@@ -1,0 +1,39 @@
+@import 'colors.css';
+
+div.fishing-block {
+    background-color: var(--calm-water);
+    background-image: url('../assets/fish-rod.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+    padding: 2rem;
+}
+
+div.product-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin: 0 2rem;
+}
+
+p.product-description {
+    color: var(--light);
+    text-align: left;
+}
+
+img.fishing-image {
+    object-fit: cover;
+    max-width: 100vw;
+}
+
+p.fishing-text {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    div.product-description {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+}

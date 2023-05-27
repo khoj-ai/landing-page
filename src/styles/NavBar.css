@@ -1,0 +1,53 @@
+@import 'colors.css';
+
+ul.navLinks {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+section.navSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a.navLinks {
+    text-decoration: none;
+    color: var(--main-background);
+}
+
+li.navLinks {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+    ul.navLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li.navLinks {
+        margin: 0.5rem 0;
+    }
+}
