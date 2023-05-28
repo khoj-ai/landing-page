@@ -39,7 +39,7 @@ export function Home() {
 					</div>
 				</div>
 				<video id="demo-video" controls>
-					<source src="./khoj-osbidian-demo.mp4" type="video/mp4" />
+					<source src="https://user-images.githubusercontent.com/6413477/240061700-3e33d8ea-25bb-46c8-a3bf-c92f78d0f56b.mp4" type="video/mp4" />
 					Your browser may not support video
 				</video>
 			</div>
