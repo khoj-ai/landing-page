@@ -1,0 +1,29 @@
+@import 'colors.css';
+
+div.content {
+    text-align: left;
+    color: var(--light);
+    margin: 0 2rem;
+}
+
+div.content-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+a.inline-content-link {
+  color: var(--main-background);
+  background-color: var(--calm-water);
+  padding: 0 0.5em;
+}
+
+ul.content {
+    list-style: decimal;
+}
+
+@media screen and (max-width: 768px) {
+    div.content-sections {
+        display: flex;
+        flex-direction: column;
+    }
+}

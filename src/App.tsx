@@ -2,6 +2,9 @@ import React from 'react';
 import NavBar from './NavBar';
 import './styles/App.css';
 import Home from './pages/Home';
+import About from './pages/About';
+
+import { ConfigProvider } from 'antd';
 
 import {
 	BrowserRouter,
@@ -12,30 +15,33 @@ import {
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
-				<NavBar />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-				</Routes>
-			</BrowserRouter>
-			<footer className="App-footer">
-				<p>
-					Made with <span className="heart">❤</span> by <a href="https://github.com/debanjum/">Debanjum</a> and <a href="https://github.com/sabaimran">Saba</a>
-				</p>
+			<ConfigProvider
+				theme={
+					{
+						token: {
+							fontFamily: ['Segoe UI', 'Roboto', 'Oxygen',
+							'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'].join(','),
+							colorPrimary: '#1890ff',
+						}
+					}
+				}>
 
-			</footer>
+				<BrowserRouter>
+					<NavBar />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<About />} />
+					</Routes>
+				</BrowserRouter>
+				<footer className="App-footer">
+					<p>
+						Made with <span className="heart">❤</span> by <a href="https://github.com/debanjum/">Debanjum</a> and <a href="https://github.com/sabaimran">Saba</a>
+					</p>
 
+				</footer>
+			</ConfigProvider>
 		</div>
   )	;
-}
-
-export function About() {
-	return (
-		<div>
-			<h2>About</h2>
-		</div>
-	);
 }
 
 export default App;

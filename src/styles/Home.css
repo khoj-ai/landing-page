@@ -2,11 +2,23 @@
 
 div.fishing-block {
     background-color: var(--calm-water);
-    background-image: url('../assets/fish-rod.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 2rem;
+    /* background-image: url('../assets/fish-rod.png'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* margin: 0 2rem; */
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
     padding: 2rem;
+}
+
+div.fishing-image-container {
+    /* background-color: var(--calm-water); */
+    background: linear-gradient(
+        to bottom,
+        var(--light) 0%,
+        var(--light) 30%,
+        var(--calm-water) 50%,
+        var(--calm-water) 100%
+      );
 }
 
 div.product-description {
@@ -14,6 +26,13 @@ div.product-description {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     margin: 0 2rem;
+}
+
+p.github-logo {
+    text-align: center;
+    color: var(--light);
+    margin: 1em;
+    line-height: 1em;
 }
 
 p.product-description {
@@ -26,7 +45,64 @@ img.fishing-image {
     max-width: 100vw;
 }
 
+a.github-logo {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+}
+
+div.product-description-link {
+    text-align: left;
+    margin: 1rem 0;
+}
+
 p.fishing-text {
+    display: block;
+    font-size: large;
+    margin-right: 25%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+#demo-video {
+    width: 100%;
+    object-fit: cover;
+    /* z-index: -100; */
+}
+
+div.founders-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2rem;
+}
+
+div.founders-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: 0 4rem;
+    padding: 2rem 2rem;
+    grid-gap: 1rem;
+}
+
+h2.founders-title {
+    color: var(--main-background);
+    text-align: left;
+}
+
+img.founders-item-image {
+    object-fit: cover;
+    max-width: 300px;
+}
+
+span.founders-item-name {
+    color: var(--main-background);
+    font-size: medium;
+    font-weight: 600;
+}
+
+span.founders-item-bio {
     display: block;
 }
 
@@ -35,5 +111,34 @@ p.fishing-text {
         display: flex;
         flex-direction: column;
         margin: 0 1rem;
+    }
+    h2.title {
+        margin: 1rem 1rem;
+    }
+    p.fishing-text {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    div.core-package {
+        margin: 0 1rem;
+    }
+
+    div.founders-text {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+    }
+
+    div.founders-item {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+
+    img.founders-item-image {
+        max-width: 100%;
     }
 }

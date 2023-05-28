@@ -13,6 +13,18 @@ body {
   pointer-events: none;
 }
 
+h2.title {
+  /* background-color: var(--calm-water); */
+  text-align: left;
+  /* background-image: url('../assets/fish-rod.png'); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  margin: 1rem 2rem;
+  /* padding: 2rem; */
+  /* width: 500px; */
+  color: var(--light);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,12 +40,16 @@ body {
   color: var(--light)
 }
 
-a {
-  text-decoration: none;
+section.core-page {
+  margin: 0 10rem;
 }
 
 a:visited, a:hover, a:active {
   color: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 h2.title {
@@ -46,5 +62,11 @@ h2.title {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.core-page {
+    margin: 0 1rem;
   }
 }
