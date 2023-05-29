@@ -2,13 +2,19 @@
 
 div.content {
     text-align: left;
-    color: var(--light);
+    color: var(--main-background);
     margin: 0 2rem;
+    font-family: 'EB Garamond', serif;
+    font-size: large;
 }
 
 div.content-sections {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+div.article {
+    margin: 0 25%;
 }
 
 a.inline-content-link {
@@ -21,9 +27,18 @@ ul.content {
     list-style: decimal;
 }
 
+h2.article-title {
+    text-align: left;
+    margin: 2rem;
+}
+
 @media screen and (max-width: 768px) {
     div.content-sections {
         display: flex;
         flex-direction: column;
+    }
+
+    div.article {
+        margin: 0 1rem;
     }
 }

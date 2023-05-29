@@ -19,9 +19,9 @@ function App() {
 				theme={
 					{
 						token: {
-							fontFamily: ['Segoe UI', 'Roboto', 'Oxygen',
+							fontFamily: ['DM Serif Display', 'Questrial', 'Segoe UI', 'Roboto', 'Oxygen',
 							'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'].join(','),
-							colorPrimary: '#1890ff',
+							colorPrimary: '#6fa7ab',
 						}
 					}
 				}>
@@ -33,11 +33,11 @@ function App() {
 						<Route path="/about" element={<About />} />
 					</Routes>
 				</BrowserRouter>
-				<footer className="App-footer">
-					<p>
-						Made with <span className="heart">❤</span> by <a href="https://github.com/debanjum/">Debanjum</a> and <a href="https://github.com/sabaimran">Saba</a>
+				<footer className="footer-container">
+					<img src='./footer_lighthouse.svg' className='footer-lighthouse' alt='footer-lighthouse' />
+					<p className='footer-text'>
+						Made with love.
 					</p>
-
 				</footer>
 			</ConfigProvider>
 		</div>

@@ -8,14 +8,16 @@ export default function NavBar() {
             <section className="navSection">
                 <div className="navLogo">
                     <Link className="navLinks" to="/">
-                        {/* <img src="" alt="React Logo" /> */}
-                        <h2>Khoj</h2>
+                        <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
                     </Link>
+                </div>
+                <div className="navLogo" id="khoj-waves">
+                    <img className='khoj-waves' src="./header_waves.svg" alt="Khoj" />
                 </div>
                 <div className="navContent">
                     <ul className="navLinks">
                         <li className="navLinks">
-                            <Button type="primary" shape="round" size="large">
+                            <Button type="primary" shape="default" size="large">
                                 <Link className="navLinks" to="https://github.com/debanjum/khoj">Install</Link>
                             </Button>
                             <Button type="link" href="/about">
