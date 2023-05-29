@@ -21,16 +21,16 @@ export default function About() {
                                 For the future of Khoj, we imagine having a rich ecosystem of integrations to your favorite tools, as well as a way to access your data from anywhere.
                             </p>
                             <p className='content'>
-                                Khoj is 100% open source, and we welcome contributions from the community. Being open source is by design. We believe that this ecosystem will grow best with active involve from the community. We also believe that the best way to build trust is to be transparent.
+                                <b>Khoj is 100% open source</b>, and we welcome contributions from the community. Being open source is by design. We believe that this ecosystem will grow best with active involve from the community. We also believe that the best way to build trust is to be transparent.
                             </p>
                         </div>
                         <h2 className='article-title'>Why we're making it</h2>
                         <div className='content'>
                             <p className='content'>
-                                Over the last 3-4 decades, zetabytes of data have moved online into the internet. While people have quickly adopted use of the internet, the tools to access and use this data have not kept up. We believe that the next wave of innovation will be in tools that help people access and use this data in a way that's useful to them.
+                                Over the last 3-4 decades, zetabytes of data have moved online into the internet. While people have quickly adopted use of the internet, the tools to access and use this data have not kept up. The next wave of innovation will be in tools that help people access and use this data in a way that's useful to them, while improving their productivity by 10x.
                             </p>
                             <p className='content'>
-                                With the recent breakthroughs in Artificial Intelligence, there's no reason why we should settle for the current state of tools. As this technology matures, it's critical that everyone have access to these tools for productivity and creativity.
+                                With the recent breakthroughs in Artificial Intelligence, there's no reason why we should settle for the current state of tools. As this technology matures, it's critical that everyone have access to these tools for productivity and creativity, without giving up their privacy.
                             </p>
                         </div>
                         <h2 className='article-title'>Get in touch</h2>
@@ -61,7 +61,7 @@ export default function About() {
                         speed={1}
                         loop
                         src='./127641-transparent-birds.json'
-                        style={{ height: 200 }}
+                        style={{ width: '100%' }}
                         />
                 </div>
             </div>

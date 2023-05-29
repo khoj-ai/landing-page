@@ -70,7 +70,9 @@ export function Home() {
 				</div>
 			</div>
 			<div className='fishing-image-container'>
-				<FishingRod />
+				<div className='fishing-image-subcontainer'>
+					<FishingRod />
+				</div>
 			</div>
 			<div className="fishing-block">
 				<div className='founders-container'>

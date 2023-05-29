@@ -16,6 +16,10 @@ div.fishing-image-container {
       );
 }
 
+div.fishing-image-subcontainer {
+    margin: 0 20%;
+}
+
 div.product-description {
     display: grid;
     grid-template-columns: 1fr;
