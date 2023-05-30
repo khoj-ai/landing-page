@@ -83,30 +83,21 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='fishing-image-container'>
-				<div className='fishing-image-subcontainer'>
-					<FishingRod />
-				</div>
-			</div>
-			<div className="fishing-block">
-				<div className='founders-container'>
-					<h2 className='founders-title'>Founders</h2>
+			<div className="founder-container">
+				<div className='production-description-subcomponent'>
+					<h2 className='founders-title'>Team</h2>
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-									<img className='founders-item-image' src='./deb_founder_bw.jpg' alt='Debanjum Singh' />
-								</div>
-							<p className='founders-item-data'>
+								<img className='founders-item-image' src='./deb_founder_bw.jpg' alt='Debanjum Singh' />
 								<p className='founders-item-name'>Debanjum Singh Solanky </p>
-							</p>
+							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-									<img className='founders-item-image' src='./saba_rainy_rome.jpg' alt='Saba Imran' />
-							</div>
-							<p className='founders-item-data'>
+								<img className='founders-item-image' src='./saba_rainy_rome.jpg' alt='Saba Imran' />
 								<p className='founders-item-name'>Saba Imran </p>
-							</p>
+							</div>
 						</div>
 					</div>
 				</div>

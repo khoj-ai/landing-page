@@ -85,14 +85,10 @@ p.fishing-text {
 div.founders-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
 }
 
 div.founders-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    grid-gap: 1rem;
+    text-align: center;
 }
 
 h2.founders-title {
@@ -106,17 +102,15 @@ img.founders-item-image {
 }
 
 div.founders-item-image-container {
-    outline: 4px solid var(--main-background);
-    outline-offset: 4px;
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
     max-width: 250px;
-    margin: auto;
-    max-height: 250px;
+    margin: 8px;
 }
 
 span.founders-item-name {
     color: var(--main-background);
     font-size: medium;
-    font-weight: 600;
 }
 
 span.founders-item-bio {
@@ -148,7 +142,6 @@ div.founders-container {
     margin: 0 20%;
 }
 
-p.founders-item-data,
 p.founders-item-name {
     margin: 0;
     padding: 0;
@@ -213,5 +206,4 @@ div.supported-icons {
     div.founders-item-image-container {
         margin: 0;
     }
-
 }
