@@ -40,14 +40,23 @@ export function Home() {
 						</Button>
 					</div>
 				</div>
-				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Our mission</h2>
-					<p className='product-description-subcomponent'>
-						Our mission is to democratize access to assistance. As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount. Khoj is designed to be that way.
-					</p>
-					<p className='product-description-subcomponent'>
-						Khoj is <b>your</b> personal assistant. A thinking tool to assist you in your daily life. To help you create, reason and build on top of your existing knowledge. So we can all contribute to creating an inclusive, brighter future for humanity.
-					</p>
+			</div>
+			<div className='fishing-image-container'>
+				<div className='fishing-image-subcontainer'>
+					<FishingRod />
+				</div>
+			</div>
+			<div className='fishing-block'>
+				<div className="product-description">
+					<div className='production-description-subcomponent fishing-description-subcomponent'>
+						<h2 className='production-description-subcomponent'>Our mission</h2>
+						<p className='product-description-subcomponent'>
+							Our mission is to democratize access to assistance. As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount. Khoj is designed to be that way.
+						</p>
+						<p className='product-description-subcomponent'>
+							Khoj is <b>your</b> personal assistant. A thinking tool to assist you in your daily life. To help you create, reason and build on top of your existing knowledge. So we can all contribute to creating an inclusive, brighter future for humanity.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div className='product-description'>

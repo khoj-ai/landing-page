@@ -2,8 +2,6 @@
 
 div.fishing-block {
     background-color: var(--calm-water);
-    padding: 1rem;
-    padding-bottom: 4rem;
 }
 
 div.fishing-image-container {
@@ -123,6 +121,9 @@ div.production-description-subcomponent {
     padding: 0 25%;
     font-size: large;
     text-align: left;
+}
+div.fishing-description-subcomponent {
+    margin: 0px
 }
 
 div.production-description-subcomponent-light {
