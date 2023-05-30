@@ -58,7 +58,7 @@ export default function About() {
                 <div className='animation'>
                     <Player
                         autoplay
-                        speed={1}
+                        speed={0.75}
                         loop
                         src='./127641-transparent-birds.json'
                         style={{ width: '100%' }}
