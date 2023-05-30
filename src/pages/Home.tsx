@@ -46,7 +46,7 @@ export function Home() {
 					<FishingRod />
 				</div>
 			</div>
-			<div className='fishing-block'>
+			<div id="mission" className='fishing-block'>
 				<div className="product-description">
 					<div className='production-description-subcomponent fishing-description-subcomponent'>
 						<h2 className='production-description-subcomponent'>Our mission</h2>
@@ -54,14 +54,14 @@ export function Home() {
 							Our mission is to democratize access to assistance. As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount. Khoj is designed to be that way.
 						</p>
 						<p className='product-description-subcomponent'>
-							Khoj is <b>your</b> personal assistant. A thinking tool to assist you in your daily life. To help you create, reason and build on top of your existing knowledge. So we can all contribute to creating an inclusive, brighter future for humanity.
+							Khoj is <b>your</b> personal AI assistant. A thinking tool to assist you in your daily life. To help you create and reason from existing knowledge. So that you can help create an inclusive and bright future for all of us.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div className='product-description'>
+			<div id="chat" className='product-description'>
 				<div className='production-description-subcomponent-light'>
-					<h2 className='production-description-subcomponent'>Converse</h2>
+					<h2 className='production-description-subcomponent'>Chat</h2>
 					<p className='product-description-subcomponent-light'>
 						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
 					</p>
@@ -71,7 +71,7 @@ export function Home() {
 					</video>
 				</div>
 			</div>
-			<div className='product-description'>
+			<div id="search" className='product-description'>
 				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Search</h2>
 					<p className='product-description-subcomponent-light'>
@@ -83,7 +83,7 @@ export function Home() {
 					</video>
 				</div>
 			</div>
-			<div className='product-description'>
+			<div id="plugins" className='product-description'>
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Plugins</h2>
 					<p className='product-description-subcomponent'>
@@ -95,7 +95,7 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="founder-container">
+			<div id="team" className="founder-container">
 				<div className='production-description-subcomponent'>
 					<h2 className='founders-title'>Team</h2>
 					<div className='founders-text'>
@@ -114,7 +114,7 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='product-description'>
+			<div id="conclude" className='product-description'>
 				<div className='production-description-subcomponent-light'>
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use. We plan to fix this problem by centralizing information from your chosen data sources and making it accessible to you in a private and secure way.
