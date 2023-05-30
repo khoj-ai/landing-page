@@ -73,11 +73,13 @@ p.fishing-text {
 }
 
 #demo-video {
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
     width: 100%;
     max-width: 600px;
     object-fit: cover;
     justify-self: center;
-    margin: 1rem;
+    margin: 8px;
 }
 
 div.founders-text {

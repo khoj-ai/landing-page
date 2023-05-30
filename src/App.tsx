@@ -36,7 +36,7 @@ function App() {
 				<footer className="footer-container">
 					<img src='./footer_lighthouse.svg' className='footer-lighthouse' alt='footer-lighthouse' />
 					<p className='footer-text'>
-						Made with love.
+						Designed with ❤️ by Debankon.<br />Developed with 🥵 by Saba and Debanjum.
 					</p>
 				</footer>
 			</ConfigProvider>
