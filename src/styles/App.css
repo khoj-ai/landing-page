@@ -52,7 +52,6 @@ a:visited, a:hover, a:active {
 
 a {
   text-decoration: none;
-  color: var(--main-background);
 }
 
 h2.title {

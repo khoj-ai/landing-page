@@ -18,23 +18,25 @@ export function Home() {
 					<source src="https://github.com/debanjum/khoj/assets/65192171/7daa38d3-cfbb-4604-954f-e489f36e48c1" type="video/mp4" />
 					Your browser may not support video
 				</video>
-				<div className="product-description-text">
+				<div className="product-description-text top-section-links">
 					<div className='product-description-link'>
 						<Button
 							type="primary"
 							size='large'
+							ghost
 							icon={<Icon component={GithubIcon} />}
 							href="https://github.com/debanjum/khoj">
-								See the code on Github
+								See code on Github
 						</Button>
 					</div>
 					<div className='product-description-link'>
 						<Button
 							type="primary"
 							size='large'
+							ghost
 							icon={<Icon component={DiscordIcon} />}
 							href="https://discord.gg/ysRzcUnj">
-								Join the Discord
+								Join us on Discord
 						</Button>
 					</div>
 				</div>

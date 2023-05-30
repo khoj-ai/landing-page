@@ -21,7 +21,7 @@ function App() {
 						token: {
 							fontFamily: ['DM Serif Display', 'Questrial', 'Segoe UI', 'Roboto', 'Oxygen',
 							'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'].join(','),
-							colorPrimary: '#6fa7ab',
+							colorPrimary: '#000',
 						}
 					}
 				}>

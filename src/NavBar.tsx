@@ -20,7 +20,7 @@ export default function NavBar() {
                             <Button type="primary" shape="default" size="large">
                                 <Link className="navLinks" to="https://github.com/debanjum/khoj">Install</Link>
                             </Button>
-                            <Button type="link" href="/about">
+                            <Button type="text" shape="default" size="large" href="/about">
                                 About
                             </Button>
                         </li>
