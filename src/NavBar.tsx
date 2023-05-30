@@ -4,7 +4,7 @@ import { Button } from 'antd';
 
 export default function NavBar() {
     return (
-        <nav>
+        <nav className="navBar">
             <section className="navSection">
                 <div className="navLogo">
                     <Link className="navLinks" to="/">
