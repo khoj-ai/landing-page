@@ -101,6 +101,9 @@ img.founders-item-image {
 div.founders-item-image-container {
     outline: 4px solid var(--main-background);
     outline-offset: 4px;
+    max-width: 250px;
+    margin: auto;
+    max-height: 250px;
 }
 
 span.founders-item-name {
