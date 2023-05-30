@@ -20,6 +20,10 @@ div.fishing-image-subcontainer {
     margin: 0 20%;
 }
 
+p.product-subtitle {
+    margin-top: -13px;
+    margin-bottom: 47px;
+}
 div.product-description {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,6 +61,9 @@ div.product-description-link {
     text-align: left;
     margin: 2rem;
     display: inline;
+}
+div.top-section-links {
+    margin-top: 37px;
 }
 
 p.fishing-text {

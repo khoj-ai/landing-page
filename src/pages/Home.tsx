@@ -10,8 +10,8 @@ export function Home() {
 			<h2 className='title'>Introducing Khoj</h2>
 			<div className='product-description'>
 				<div className="product-description-text">
-					<p className="product-description">
-						Khoj is an AI personal assistant for your digital brain.
+					<p className="product-description product-subtitle">
+						“An AI personal assistant for your digital brain”
 					</p>
 				</div>
 				<video id="demo-video" autoPlay controls>
