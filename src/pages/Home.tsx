@@ -117,7 +117,8 @@ export function Home() {
 			<div id="conclude" className='product-description'>
 				<div className='production-description-subcomponent-light'>
 					<p className='product-description-subcomponent-light'>
-						We know how hard it can be to search and engage with information across all the different platforms you use. We plan to fix this problem by centralizing information from your chosen data sources and making it accessible to you in a private and secure way.
+						We know how hard it can be to search and engage with information across all the different platforms you use.
+						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.
 					</p>
 					<p className='product-description-subcomponent-light'>
 						To learn more about the product, check out our <a className='inline-link-light' href="/about">about page</a>.
