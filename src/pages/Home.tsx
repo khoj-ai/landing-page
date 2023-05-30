@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 
-import { Button, Card } from 'antd';
+import { Button } from 'antd';
 import { GithubIcon, DiscordIcon, FishingRod, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
 
@@ -47,6 +47,18 @@ export function Home() {
 			</div>
 			<div className='product-description'>
 				<div className='production-description-subcomponent-light'>
+					<h2 className='production-description-subcomponent'>Converse</h2>
+					<p className='product-description-subcomponent-light'>
+						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
+					</p>
+					<video id="demo-video" autoPlay controls>
+						<source src="./khoj-chat-obsidian-demo-0.6.0.mp4" type="video/mp4" />
+						Your browser may not support video
+					</video>
+				</div>
+			</div>
+			<div className='product-description'>
+				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Lightning Fast Search</h2>
 					<p className='product-description-subcomponent-light'>
 						Khoj supports lightning fast search, with results from your data sources appearing as you type. It generates embeddings that allow you to perform semantic search on your data. This means that you can search for things that are similar to what you're looking for, not just exact matches. This data never leaves your server.
