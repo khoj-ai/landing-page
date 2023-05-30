@@ -43,7 +43,10 @@ export function Home() {
 				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Our mission</h2>
 					<p className='product-description-subcomponent'>
-						Khoj is designed to be a personal assistant that learns from your own data. We believe that too much useful information is locked up in siphoned data siloes with poor ways to access them. With the oncoming information revolution, it's going to be more important than ever to have a way to access your data in a way that's useful to you. Khoj is designed to be that way. Our mission is to democratize access to assistance.
+						Our mission is to democratize access to assistance. As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount. Khoj is designed to be that way.
+					</p>
+					<p className='product-description-subcomponent'>
+						Khoj is <b>your</b> personal assistant. A thinking tool to assist you in your daily life. To help you create, reason and build on top of your existing knowledge. So we can all contribute to creating an inclusive, brighter future for humanity.
 					</p>
 				</div>
 			</div>
