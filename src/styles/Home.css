@@ -19,8 +19,9 @@ div.fishing-image-subcontainer {
 }
 
 #app-subtitle {
-    font-size: 23px;
-    margin-top: -13px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+    font-size: 19px;
     margin-bottom: 47px;
 }
 div.product-description {
@@ -120,8 +121,8 @@ span.founders-item-bio {
 
 div.production-description-subcomponent {
     background-color: var(--calm-water);
-    margin: 1rem 0;
-    padding: 0 25%;
+    padding: 2% 25%;
+    padding-bottom: 4.5%;
     font-size: large;
     text-align: left;
 }
@@ -131,8 +132,8 @@ div.fishing-description-subcomponent {
 
 div.production-description-subcomponent-light {
     background-color: var(--light);
-    margin: 1rem 0;
-    padding: 0 25%;
+    padding: 2% 25%;
+    padding-bottom: 4.5%;
     font-size: large;
     text-align: left;
 }
@@ -157,11 +158,14 @@ div.supported-icons {
     margin: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+#conclude {
+    margin-bottom: -3%;
+}
+
+@media screen and (max-width: 760px) {
     div.product-description {
-        display: flex;
-        flex-direction: column;
-        margin: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     p.fishing-text {
         margin: 0 5%;
@@ -173,13 +177,13 @@ div.supported-icons {
     }
 
     div.founders-text {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     div.founders-item {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 1rem 0;
         padding: 0 1rem;
     }
@@ -189,8 +193,12 @@ div.supported-icons {
     }
 
     #demo-video {
+        outline: 1px solid var(--main-background);
+        outline-offset: 8px;
         width: 100%;
-        margin: 1rem 0;
+        max-width: 600px;
+        object-fit: cover;
+        justify-self: center;
     }
 
     div.product-description-link {
@@ -201,13 +209,13 @@ div.supported-icons {
 
     div.production-description-subcomponent, div.production-description-subcomponent-light {
         padding: 0 5%;
-    }
-
-    div.founders-container {
-        margin: 0 1rem;
+        padding-bottom: 2%;
     }
 
     div.founders-item-image-container {
         margin: 0;
+    }
+    #conclude {
+        margin-bottom: 0%;
     }
 }

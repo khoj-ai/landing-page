@@ -19,7 +19,7 @@ h2.title {
   font-size: 36px;
   font-weight: normal;
   margin-top: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: var(--main-background);
 }
 
@@ -80,8 +80,8 @@ a.inline-link-light {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   section.core-page {
-    margin: 0 1rem;
+    margin: 0;
   }
 }
