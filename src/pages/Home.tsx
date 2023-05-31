@@ -73,7 +73,7 @@ export function Home() {
 						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
 					</p>
 					<video id="demo-video" autoPlay controls>
-						<source src="./khoj-chat-obsidian-demo-0.6.0.mp4" type="video/mp4" />
+						<source src="https://raw.githubusercontent.com/khojai/landing-page/improve-website-redline-styling-content/public/khoj-chat-obsidian-demo-0.6.0.mp4" type="video/mp4" />
 						Your browser may not support video
 					</video>
 				</div>
