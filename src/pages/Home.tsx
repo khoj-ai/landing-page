@@ -10,8 +10,8 @@ export function Home() {
 			<h2 className='title'>Introducing Khoj</h2>
 			<div className='product-description'>
 				<div className="product-description-text">
-					<p className="product-description product-subtitle">
-						An AI personal assistant for your digital brain
+					<p id="app-subtitle" className="product-description">
+						An AI personal assistant for <br />your digital brain
 					</p>
 				</div>
 				<video id="demo-video" autoPlay controls>
@@ -23,6 +23,7 @@ export function Home() {
 						<Button
 							type="primary"
 							size='large'
+							style={{borderRadius: '4px'}}
 							ghost
 							icon={<Icon component={GithubIcon} />}
 							href="https://github.com/debanjum/khoj">
@@ -33,6 +34,7 @@ export function Home() {
 						<Button
 							type="primary"
 							size='large'
+							style={{borderRadius: '4px'}}
 							ghost
 							icon={<Icon component={DiscordIcon} />}
 							href="https://discord.gg/ysRzcUnj">

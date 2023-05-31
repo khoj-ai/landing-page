@@ -18,7 +18,8 @@ div.fishing-image-subcontainer {
     margin: 0 20%;
 }
 
-p.product-subtitle {
+#app-subtitle {
+    font-size: 23px;
     margin-top: -13px;
     margin-bottom: 47px;
 }

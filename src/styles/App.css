@@ -18,7 +18,8 @@ h2.title {
   text-align: center;
   font-size: 36px;
   font-weight: normal;
-  margin: 38px;
+  margin-top: 42px;
+  margin-bottom: 20px;
   color: var(--main-background);
 }
 
