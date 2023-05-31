@@ -86,6 +86,7 @@ p.fishing-text {
 div.founders-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
 }
 
 div.founders-item {
@@ -95,6 +96,7 @@ div.founders-item {
 img.founders-item-image {
     object-fit: cover;
     max-width: 250px;
+    outline: 1px solid var(--main-background);
 }
 
 div.founders-item-image-container {
