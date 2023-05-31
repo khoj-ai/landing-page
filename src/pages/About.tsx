@@ -44,11 +44,10 @@ export default function About() {
                             </p>
                             <p className='content'>
                                 We have the opportunity to guide this wave of innovation.
-                                To let everyone benefit from the productivity and creativity gains from these tools, without giving up their privacy.
+                                We want everyone to benefit from the productivity and creativity gains from these tools, without giving up their privacy.
                             </p>
                             <p className='content'>
-                                <b>We're trying to democratize access to these tools. </b>
-                                So that the productivity gains from these advances are available to the most diverse range of people possible.
+                                <b>We're trying to democratize access to these tools. </b>, so that the productivity gains from these advances are available to the most diverse range of people possible.
                                 Given what is at stake, there is no reason to settle for anything less.
                             </p>
                         </div>

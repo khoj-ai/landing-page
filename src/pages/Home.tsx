@@ -53,10 +53,15 @@ export function Home() {
 					<div className='production-description-subcomponent fishing-description-subcomponent'>
 						<h2 className='production-description-subcomponent'>Our mission</h2>
 						<p className='product-description-subcomponent'>
-							Our mission is to democratize access to assistance. As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount. Khoj is designed to be that way.
+							Our mission is to democratize access to AI assistance.
+							As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount.
 						</p>
 						<p className='product-description-subcomponent'>
-							Khoj is <b>your</b> personal AI assistant. A thinking tool to assist you in your daily life. To help you create and reason from existing knowledge. So that you can help create an inclusive and bright future for all of us.
+							Khoj is designed to be that way.
+						</p>
+						<p className='product-description-subcomponent'>
+							Khoj is <b>your</b> personal AI assistant.
+							It's a thinking tool for your daily life. It will allow you to create, reason and build faster and better.
 						</p>
 					</div>
 				</div>
