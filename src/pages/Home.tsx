@@ -97,9 +97,9 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div id="team" className="founder-container">
+			<div id="team" className="product-description">
 				<div className='production-description-subcomponent'>
-					<h2 className='founders-title'>Team</h2>
+					<h2 className='production-description-subcomponent'>Team</h2>
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>

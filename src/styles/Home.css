@@ -54,7 +54,6 @@ img.fishing-image {
 a.github-logo {
     text-decoration: none;
     text-align: center;
-    display: flex;
 }
 
 div.product-description-link {
@@ -91,11 +90,6 @@ div.founders-text {
 
 div.founders-item {
     text-align: center;
-}
-
-h2.founders-title {
-    color: var(--main-background);
-    text-align: left;
 }
 
 img.founders-item-image {
@@ -143,19 +137,17 @@ h2.production-description-subcomponent {
     font-family: 'DM Serif Display', serif;
 }
 
-div.founders-container {
-    margin: 0 20%;
-}
-
 p.founders-item-name {
     margin: 0;
     padding: 0;
 }
 
 div.supported-icons {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 7%;
+    margin-bottom: -5%;
 }
 
 #conclude {

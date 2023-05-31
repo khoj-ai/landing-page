@@ -30,8 +30,8 @@ h2.title {
 }
 
 footer.footer-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center;
   font-size: medium;
