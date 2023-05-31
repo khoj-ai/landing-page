@@ -1,8 +1,6 @@
 @import 'colors.css';
 
 ul.navLinks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -13,11 +11,10 @@ ul.navLinks {
 
 nav.navBar {
     background-color: var(--calm-water);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 section.navSection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: column;
 }
 
@@ -41,6 +38,10 @@ li.navLinks {
     transition: all 0.3s ease;
     font-size: small;
 }
+#khoj-waves {
+    display: none;
+}
+
 
 @media screen and (max-width: 1360px) {
     section.navSection {
