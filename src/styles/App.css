@@ -1,4 +1,5 @@
 @import 'colors.css';
+@import 'fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Questrial&display=swap');
 
 .App {
@@ -16,6 +17,10 @@ body {
 
 h2.title {
   text-align: center;
+  font-size: var(--title-size);
+  font-weight: normal;
+  margin-top: 42px;
+  margin-bottom: 0px;
   color: var(--main-background);
 }
 
@@ -26,13 +31,19 @@ h2.title {
 }
 
 footer.footer-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center;
   font-size: medium;
   color: var(--main-background);
   background-color: var(--calm-water);
+}
+p.footer-text {
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  padding-top: 10%;
+  font-size: small;
 }
 
 img.footer-lighthouse {
@@ -49,7 +60,6 @@ a:visited, a:hover, a:active {
 
 a {
   text-decoration: none;
-  color: var(--main-background);
 }
 
 h2.title {
@@ -77,8 +87,8 @@ a.inline-link-light {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   section.core-page {
-    margin: 0 1rem;
+    margin: 0;
   }
 }

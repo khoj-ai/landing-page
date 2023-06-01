@@ -4,7 +4,7 @@ import { Button } from 'antd';
 
 export default function NavBar() {
     return (
-        <nav>
+        <nav className="navBar">
             <section className="navSection">
                 <div className="navLogo">
                     <Link className="navLinks" to="/">
@@ -17,10 +17,10 @@ export default function NavBar() {
                 <div className="navContent">
                     <ul className="navLinks">
                         <li className="navLinks">
-                            <Button type="primary" shape="default" size="large">
+                            <Button type="primary" shape="default" style={{borderRadius: '4px'}}>
                                 <Link className="navLinks" to="https://github.com/debanjum/khoj">Install</Link>
                             </Button>
-                            <Button type="link" href="/about">
+                            <Button type="text" shape="default" href="/about" style={{borderRadius: '4px'}}>
                                 About
                             </Button>
                         </li>

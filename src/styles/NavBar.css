@@ -1,8 +1,6 @@
 @import 'colors.css';
 
 ul.navLinks {
-    display: flex;
-    justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -11,25 +9,24 @@ ul.navLinks {
     letter-spacing: 0.1rem;
 }
 
-section.navSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10rem;
+nav.navBar {
     background-color: var(--calm-water);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+section.navSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
 }
 
 div.navContent {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     padding: 0;
 }
 
 a.navLinks {
     text-decoration: none;
-    color: var(--main-background);
 }
 
 img.khoj-logo {
@@ -37,16 +34,24 @@ img.khoj-logo {
 }
 
 li.navLinks {
-    margin: 0 1rem;
     padding: 0.5rem;
     transition: all 0.3s ease;
     font-size: small;
 }
+#khoj-waves {
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1360px) {
+    section.navSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+    }
     ul.navLinks {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     li.navLinks {

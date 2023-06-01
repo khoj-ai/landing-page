@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from './NavBar';
 import './styles/App.css';
 import Home from './pages/Home';
@@ -21,7 +20,7 @@ function App() {
 						token: {
 							fontFamily: ['DM Serif Display', 'Questrial', 'Segoe UI', 'Roboto', 'Oxygen',
 							'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'].join(','),
-							colorPrimary: '#6fa7ab',
+							colorPrimary: '#000',
 						}
 					}
 				}>
@@ -36,7 +35,7 @@ function App() {
 				<footer className="footer-container">
 					<img src='./footer_lighthouse.svg' className='footer-lighthouse' alt='footer-lighthouse' />
 					<p className='footer-text'>
-						Made with love.
+						Designed with ❤️ by Debankon.<br />Developed with 🥵 by Saba and Debanjum.
 					</p>
 				</footer>
 			</ConfigProvider>

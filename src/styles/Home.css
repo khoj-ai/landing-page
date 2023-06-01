@@ -2,8 +2,6 @@
 
 div.fishing-block {
     background-color: var(--calm-water);
-    padding: 1rem;
-    padding-bottom: 4rem;
 }
 
 div.fishing-image-container {
@@ -20,6 +18,12 @@ div.fishing-image-subcontainer {
     margin: 0 20%;
 }
 
+#app-subtitle {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+    font-size: larger;
+    margin-bottom: 47px;
+}
 div.product-description {
     display: grid;
     grid-template-columns: 1fr;
@@ -50,13 +54,15 @@ img.fishing-image {
 a.github-logo {
     text-decoration: none;
     text-align: center;
-    display: flex;
 }
 
 div.product-description-link {
     text-align: left;
     margin: 2rem;
     display: inline;
+}
+div.top-section-links {
+    margin-top: 37px;
 }
 
 p.fishing-text {
@@ -68,48 +74,41 @@ p.fishing-text {
 }
 
 #demo-video {
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
     width: 100%;
     max-width: 600px;
     object-fit: cover;
     justify-self: center;
-    margin: 1rem;
+    margin: 8px;
 }
 
 div.founders-text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
+    column-gap: 10px;
 }
 
 div.founders-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    grid-gap: 1rem;
-}
-
-h2.founders-title {
-    color: var(--main-background);
-    text-align: left;
+    text-align: center;
 }
 
 img.founders-item-image {
     object-fit: cover;
     max-width: 250px;
+    outline: 1px solid var(--main-background);
 }
 
 div.founders-item-image-container {
-    outline: 4px solid var(--main-background);
-    outline-offset: 4px;
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
     max-width: 250px;
-    margin: auto;
-    max-height: 250px;
+    margin: 8px;
 }
 
 span.founders-item-name {
     color: var(--main-background);
     font-size: medium;
-    font-weight: 600;
 }
 
 span.founders-item-bio {
@@ -118,16 +117,19 @@ span.founders-item-bio {
 
 div.production-description-subcomponent {
     background-color: var(--calm-water);
-    margin: 1rem 0;
-    padding: 0 25%;
+    padding: 2% 25%;
+    padding-bottom: 4.5%;
     font-size: large;
     text-align: left;
+}
+div.fishing-description-subcomponent {
+    margin: 0px
 }
 
 div.production-description-subcomponent-light {
     background-color: var(--light);
-    margin: 1rem 0;
-    padding: 0 25%;
+    padding: 2% 25%;
+    padding-bottom: 4.5%;
     font-size: large;
     text-align: left;
 }
@@ -137,27 +139,27 @@ h2.production-description-subcomponent {
     font-family: 'DM Serif Display', serif;
 }
 
-div.founders-container {
-    margin: 0 20%;
-}
-
-p.founders-item-data,
 p.founders-item-name {
     margin: 0;
     padding: 0;
 }
 
 div.supported-icons {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 7%;
+    margin-bottom: -5%;
 }
 
-@media screen and (max-width: 768px) {
+#conclude {
+    margin-bottom: -3%;
+}
+
+@media screen and (max-width: 760px) {
     div.product-description {
-        display: flex;
-        flex-direction: column;
-        margin: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     p.fishing-text {
         margin: 0 5%;
@@ -169,13 +171,13 @@ div.supported-icons {
     }
 
     div.founders-text {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     div.founders-item {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 1rem 0;
         padding: 0 1rem;
     }
@@ -185,8 +187,12 @@ div.supported-icons {
     }
 
     #demo-video {
+        outline: 1px solid var(--main-background);
+        outline-offset: 8px;
         width: 100%;
-        margin: 1rem 0;
+        max-width: 600px;
+        object-fit: cover;
+        justify-self: center;
     }
 
     div.product-description-link {
@@ -197,14 +203,13 @@ div.supported-icons {
 
     div.production-description-subcomponent, div.production-description-subcomponent-light {
         padding: 0 5%;
-    }
-
-    div.founders-container {
-        margin: 0 1rem;
+        padding-bottom: 2%;
     }
 
     div.founders-item-image-container {
         margin: 0;
     }
-
+    #conclude {
+        margin-bottom: 0%;
+    }
 }
