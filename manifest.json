@@ -1,0 +1,21 @@
+{
+  "short_name": "Khoj",
+  "name": "Khoj Website",
+  "icons": [
+    {
+      "src": "anchor-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "anchor.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
