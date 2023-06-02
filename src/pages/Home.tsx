@@ -11,7 +11,7 @@ export function Home() {
 			<div className='product-description'>
 				<div className="product-description-text">
 					<p id="app-subtitle" className="product-description">
-						An AI personal assistant for <br />your digital brain
+						An AI personal assistant for your digital brain
 					</p>
 				</div>
 				<video id="demo-video" autoPlay controls>
@@ -73,7 +73,7 @@ export function Home() {
 						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
 					</p>
 					<video id="demo-video" autoPlay controls>
-						<source src="https://raw.githubusercontent.com/khojai/landing-page/improve-website-redline-styling-content/public/khoj-chat-obsidian-demo-0.6.0.mp4" type="video/mp4" />
+						<source src="https://github.com/khojai/landing-page/assets/65192171/434299dd-378c-4aa7-a2b6-b1af6ec9acca" type="video/mp4" />
 						Your browser may not support video
 					</video>
 				</div>
@@ -94,7 +94,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Plugins</h2>
 					<p className='product-description-subcomponent'>
-						Our code supports integration of additional plugins for data sources and search interfaces, but we also maintain some first party plugins. We currently support two major plugins which we've built in-house, <a className='inline-link-dark' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-dark' href="https://obsidian.md/">Obsidian</a>. All of our products are available to use via the browser or the API as well.
+						Our code supports integration of additional plugins for data sources and search interfaces, but we also maintain some first party plugins. We currently support two major plugins which we've built in-house, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>. All of our products are available to use via the browser or the API as well.
 					</p>
 					<div className='supported-icons'>
 						<EmacsIcon />
@@ -109,13 +109,13 @@ export function Home() {
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
 								<img className='founders-item-image' src='./deb_founder_bw.jpg' alt='Debanjum Singh' />
-								<p className='founders-item-name'>Debanjum Singh Solanky </p>
+								<p className='founders-item-name'>Debanjum Singh Solanky</p>
 							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='./saba_rainy_rome.jpg' alt='Saba Imran' />
-								<p className='founders-item-name'>Saba Imran </p>
+								<img className='founders-item-image' src='./saba_founder_bw.jpg' alt='Saba Imran' />
+								<p className='founders-item-name'>Saba Imran</p>
 							</div>
 						</div>
 					</div>

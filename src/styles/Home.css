@@ -19,11 +19,13 @@ div.fishing-image-subcontainer {
 }
 
 #app-subtitle {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 100;
+    /* font-family: 'DM Serif Display', serif; */
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
     font-size: larger;
     margin-bottom: 47px;
 }
+
 div.product-description {
     display: grid;
     grid-template-columns: 1fr;
