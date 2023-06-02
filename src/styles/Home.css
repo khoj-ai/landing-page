@@ -191,7 +191,7 @@ div.supported-icons {
     #demo-video {
         outline: 1px solid var(--main-background);
         outline-offset: 8px;
-        width: 100%;
+        width: 95%;
         max-width: 600px;
         object-fit: cover;
         justify-self: center;
@@ -205,7 +205,7 @@ div.supported-icons {
 
     div.production-description-subcomponent, div.production-description-subcomponent-light {
         padding: 0 5%;
-        padding-bottom: 2%;
+        padding-bottom: 5%;
     }
 
     div.founders-item-image-container {
