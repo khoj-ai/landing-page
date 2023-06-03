@@ -13,7 +13,7 @@ export default function About() {
                                 You can interact with Khoj on your computer from <a className='inline-content-link' href="https://github.com/debanjum/khoj/tree/master/src/interface/emacs#readme">Emacs</a>, <a className='inline-content-link' href="https://github.com/debanjum/khoj/blob/master/src/interface/obsidian/README.md">Obsidian</a> or your <a href="https://github.com/debanjum/khoj/blob/master/README.md#interfaces" className='inline-content-link'>web browser</a>.
                             </p>
                             <p className='content'>
-                                To use Khoj, refer to the <a className='inline-link-light' href="https://github.com/debanjum/khoj">installation guide</a>.
+                                To use Khoj, refer to the <a className='inline-link-light' href="https://github.com/debanjum/khoj#setup">installation guide</a>.
                                 To get started, you just have to set up the server on your computer and index your data sources.
                             </p>
                             <p className='content'>
