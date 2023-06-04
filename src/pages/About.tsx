@@ -58,7 +58,7 @@ export default function About() {
                             </p>
                             <ul className='content'>
                                 <li className='content'>
-                                    <a className="inline-link-light" href="https://discord.gg/ysRzcUnj">Discord</a>
+                                    <a className="inline-link-light" href="https://discord.gg/5UhUG5fh">Discord</a>
                                     <p className='content'>This is best if you're looking to learn more about the product and participate in discussions.</p>
                                 </li>
                                 <li className='content'>
