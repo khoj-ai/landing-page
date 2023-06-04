@@ -1,4 +1,4 @@
-import { Link, Outlet} from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import './styles/NavBar.css';
 import { Button } from 'antd';
 
@@ -17,10 +17,10 @@ export default function NavBar() {
                 <div className="navContent">
                     <ul className="navLinks">
                         <li className="navLinks">
-                            <Button type="primary" shape="default" style={{borderRadius: '4px'}}>
-                                <Link className="navLinks" to="https://github.com/debanjum/khoj">Install</Link>
+                            <Button type="primary" shape="default" style={{ borderRadius: '4px' }}>
+                                <Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Install</Link>
                             </Button>
-                            <Button type="text" shape="default" href="/about" style={{borderRadius: '4px'}}>
+                            <Button type="text" shape="default" href="/about" style={{ borderRadius: '4px' }}>
                                 About
                             </Button>
                         </li>
