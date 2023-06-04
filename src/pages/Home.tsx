@@ -1,6 +1,7 @@
 import '../styles/Home.css';
 
 import { Button } from 'antd';
+import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, FishingRod, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
 
@@ -128,7 +129,7 @@ export function Home() {
 						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.
 					</p>
 					<p className='product-description-subcomponent-light'>
-						To learn more about the product, check out our <a className='inline-link-light' href="/about">about page</a>.
+						To learn more about the product, check out our <Link className='inline-link-light' to="/about">about page</Link>.
 					</p>
 				</div>
 			</div>
