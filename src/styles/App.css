@@ -68,13 +68,13 @@ h2.title {
 a.inline-link-dark {
   color: var(--main-background);
   background-color: var(--calm-water-accent);
-  padding: 0 0.5em;
+  text-decoration: underline;
 }
 
 a.inline-link-light {
   color: var(--main-background);
   background-color: var(--calm-water);
-  padding: 0 0.5em;
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {

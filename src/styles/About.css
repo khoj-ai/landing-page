@@ -17,12 +17,6 @@ div.article {
     margin: 0 25%;
 }
 
-a.inline-content-link {
-  color: var(--main-background);
-  background-color: var(--calm-water);
-  padding: 0 0.5em;
-}
-
 ul.content {
     list-style: decimal;
 }
