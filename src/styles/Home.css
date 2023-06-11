@@ -1,7 +1,7 @@
 @import 'colors.css';
 
 div.fishing-block {
-    background-color: var(--calm-water);
+    background-color: var(--mild-sun);
 }
 
 div.fishing-image-container {
@@ -9,8 +9,8 @@ div.fishing-image-container {
         to bottom,
         var(--light) 0%,
         var(--light) 40%,
-        var(--calm-water) 40%,
-        var(--calm-water) 100%
+        var(--mild-sun) 40%,
+        var(--mild-sun) 100%
       );
 }
 
@@ -118,7 +118,7 @@ span.founders-item-bio {
 }
 
 div.production-description-subcomponent {
-    background-color: var(--calm-water);
+    background-color: var(--mild-sun);
     padding: 2% 25%;
     padding-bottom: 4.5%;
     font-size: large;
