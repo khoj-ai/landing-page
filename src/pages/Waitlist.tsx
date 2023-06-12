@@ -13,17 +13,18 @@ export function Waitlist() {
 		email: Yup.string().email('Invalid email').required('Required'),
 	});
 
-	const APIURL = process.env.REACT_APP_KHOJ_API_URL ?? 'http://localhost:5000/beta/users/';
+	const APIURL = process.env.NODE_ENV == 'production' ? "https://lantern.khoj.dev" : 'http://localhost:5000';
+
 	return (
 		<section className='core-page'>
 			<h2 className='title'>Join the Waitlist</h2>
 			<div className='waitlist-form'>
 				<Formik
-					initialValues={{ email: '', firstName: '', lastName: '', interest: '' }}
+					initialValues={{ email: '', interest: '' }}
 					validationSchema={SignupSchema}
 					onSubmit={(values, { setSubmitting }) => {
 						setTimeout(() => {
-							fetch(`${APIURL}`, {
+							fetch(`${APIURL}/beta/users/`, {
 								method: 'POST',
 								headers: {
 									'Content-Type': 'application/json',
