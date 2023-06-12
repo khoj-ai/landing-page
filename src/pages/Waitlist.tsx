@@ -13,8 +13,7 @@ export function Waitlist() {
 		email: Yup.string().email('Invalid email').required('Required'),
 	});
 
-	const APIURL = "http://localhost:5000/beta/users/";
-
+	const APIURL = process.env.REACT_APP_KHOJ_API_URL ?? 'http://localhost:5000/beta/users/';
 	return (
 		<section className='core-page'>
 			<h2 className='title'>Join the Waitlist</h2>
@@ -71,6 +70,9 @@ export function Waitlist() {
 								status={(errors.email && touched.email) ? "error" : ""}
 								addonBefore="Email"
 							/>
+							<label className='waitlist'>
+								Which of the following best describes your industry?
+							</label>
 							<Select 
 								name="interest"
 								placeholder="What's your area of interest?"

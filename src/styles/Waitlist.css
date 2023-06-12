@@ -11,6 +11,10 @@ form.waitlist-form {
     grid-gap: 1rem;
 }
 
+label.waitlist {
+    text-align: left;
+}
+
 @media screen and (max-width: 760px) {
     div.waitlist-form {
         margin-left: 1rem;
