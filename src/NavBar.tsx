@@ -23,6 +23,9 @@ export default function NavBar() {
                             <Button type="text" shape="default" style={{ borderRadius: '4px' }}>
                                 <Link className="navLinks" to="/about">About</Link>
                             </Button>
+                            <Button type="text" shape="default" style={{ borderRadius: '4px' }}>
+                                <Link className="navLinks" to="/waitlist">Waitlist</Link>
+                            </Button>
                         </li>
                     </ul>
                 </div>

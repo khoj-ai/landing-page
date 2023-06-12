@@ -2,6 +2,7 @@ import NavBar from './NavBar';
 import './styles/App.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Waitlist from './pages/Waitlist';
 
 import { ConfigProvider } from 'antd';
 
@@ -23,6 +24,7 @@ function App() {
 							colorPrimary: '#000',
 						}
 					}
+					
 				}>
 
 				<BrowserRouter>
@@ -30,6 +32,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
+						<Route path="/waitlist" element={<Waitlist />} />
 					</Routes>
 				</BrowserRouter>
 				<footer className="footer-container">

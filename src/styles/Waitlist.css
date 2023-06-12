@@ -1,0 +1,19 @@
+@import url(colors.css);
+
+div.waitlist-form {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+form.waitlist-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+    div.waitlist-form {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
