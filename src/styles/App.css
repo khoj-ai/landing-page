@@ -45,7 +45,7 @@ p.footer-text {
   font-size: small;
 }
 
-img.footer-lighthouse {
+img.footer-garden {
   background-color: var(--light);
 }
 
@@ -53,7 +53,7 @@ section.core-page {
   margin: 0;
 }
 
-a:visited, a:hover, a:active {
+section.core-page > a:visited, a:hover, a:active {
   color: inherit;
 }
 
