@@ -23,8 +23,31 @@ a.navLinks {
     text-decoration: none;
 }
 div.navLogo {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logoWrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.logoWrapper::before,
+.logoWrapper::after {
+    content: "";
+    position: absolute;
+    top: 72.5%;
+    width: min(40%, 240px);
+    height: 1px;
+    background-color: #000;
+}
+
+.logoWrapper::before {
+    left: min(40%, 420px);
+}
+
+.logoWrapper::after {
+    right: min(40%, 420px);
 }
 
 img.khoj-logo {

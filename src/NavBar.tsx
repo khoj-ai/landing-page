@@ -7,8 +7,10 @@ export default function NavBar() {
         <nav className="navBar">
             <section className="navSection">
                 <div className="navLogo">
-                    <Link className="navLinks" to="/">
-                        <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
+                    <Link to="/">
+                        <div className="logoWrapper">
+                            <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
+                        </div>
                     </Link>
                 </div>
                 <div className="navContent">
