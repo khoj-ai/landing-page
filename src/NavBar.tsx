@@ -11,20 +11,17 @@ export default function NavBar() {
                         <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
                     </Link>
                 </div>
-                <div className="navLogo" id="khoj-waves">
-                    <img className='khoj-waves' src="./header_waves.svg" alt="Khoj" />
-                </div>
                 <div className="navContent">
-                    <ul className="navLinks">
-                        <li className="navLinks">
-                            <Button type="primary" shape="default" style={{ borderRadius: '4px' }}>
-                                <Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Install</Link>
-                            </Button>
-                            <Button type="text" shape="default" style={{ borderRadius: '4px' }}>
-                                <Link className="navLinks" to="/about">About</Link>
-                            </Button>
-                        </li>
-                    </ul>
+                    <div></div>
+                    <div className="centeredLinks">
+                        <Button type="primary" size="middle" shape="default" style={{borderRadius: '4px'}}>
+                            <Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Install</Link>
+                        </Button>
+                        <Button type="text" size="middle" shape="default" style={{borderRadius: '4px', border: '1px solid #000', backgroundColor: '#f9f5de'}}>
+                            <Link className="navLinks" to="/about">About</Link>
+                        </Button>
+                    </div>
+                    <div></div>
                 </div>
             </section>
             <Outlet />
