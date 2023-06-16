@@ -35,7 +35,7 @@ function App() {
 					</Routes>
 				</BrowserRouter>
 				<footer className="footer-container">
-					<img src='./footer_garden.svg' className='footer-garden' alt='footer-garden' />
+					<img src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/footer_garden.svg' className='footer-garden' alt='footer-garden' />
 					<p className='footer-text'>
 						Designed with ❤️ by Debankon.<br />Developed with 🥵 by Saba and Debanjum.
 					</p>
