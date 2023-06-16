@@ -8,18 +8,16 @@ export default function NavBar() {
             <section className="navSection">
                 <div className="navLogo">
                     <Link to="/">
-                        <div className="logoWrapper">
-                            <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
-                        </div>
+                        <img className='khoj-logo' src="./khoj_logo.svg" alt="Khoj" />
                     </Link>
                 </div>
                 <div className="navContent">
                     <div></div>
                     <div className="centeredLinks">
-                        <Button type="primary" size="middle" shape="default" style={{borderRadius: '4px'}}>
+                        <Button type="primary" size="large" shape="default" style={{borderRadius: '4px'}}>
                             <Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Install</Link>
                         </Button>
-                        <Button type="text" size="middle" shape="default" style={{borderRadius: '4px', border: '1px solid #000', backgroundColor: '#f9f5de'}}>
+                        <Button type="text" size="large" shape="default" style={{borderRadius: '4px', border: '1px solid #000', backgroundColor: '#f9f5de'}}>
                             <Link className="navLinks" to="/about">About</Link>
                         </Button>
                     </div>
