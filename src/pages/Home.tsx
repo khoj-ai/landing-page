@@ -2,7 +2,7 @@ import '../styles/Home.css';
 
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
-import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon, Camping } from '../components/Icons';
+import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
 
 export function Home() {
@@ -46,7 +46,7 @@ export function Home() {
 			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>
-					<Camping />
+					<img src='./hero_camping.svg' className='hero-camping' alt='hero-camping' />
 				</div>
 			</div>
 			<div id="mission" className='camping-block'>
