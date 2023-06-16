@@ -16,7 +16,7 @@ export function Home() {
 					</p>
 				</div>
 				<video id="demo-video" autoPlay controls>
-					<source src="https://github.com/debanjum/khoj/assets/65192171/7daa38d3-cfbb-4604-954f-e489f36e48c1" type="video/mp4" />
+					<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-chat-demo.mp4" type="video/mp4" />
 					Your browser may not support video
 				</video>
 				<div className="product-description-text top-section-links">
