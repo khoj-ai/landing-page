@@ -8,8 +8,8 @@ div.fishing-image-container {
     background: linear-gradient(
         to bottom,
         var(--light) 0%,
-        var(--light) 40%,
-        var(--mild-sun) 40%,
+        var(--light) 60%,
+        var(--mild-sun) 60%,
         var(--mild-sun) 100%
       );
 }

@@ -46,8 +46,15 @@ p.footer-text {
 }
 
 img.footer-garden {
-  background-color: var(--light);
+    background: linear-gradient(
+        to bottom,
+        var(--light) 0%,
+        var(--light) 70%,
+        var(--mild-sun) 70%,
+        var(--mild-sun) 100%
+      );
 }
+
 
 section.core-page {
   margin: 0;
