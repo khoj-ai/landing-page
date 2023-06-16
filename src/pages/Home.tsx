@@ -86,7 +86,7 @@ export function Home() {
 						Khoj supports lightning fast search, with results from your data sources appearing as you type. It generates embeddings that allow you to perform semantic search on your data. This means that you can search for things that are similar to what you're looking for, not just exact matches. This data never leaves your server.
 					</p>
 					<video id="demo-video" autoPlay controls>
-						<source src="https://github.com/debanjum/khoj/assets/65192171/d6362e7c-05d9-4502-b70b-cfe0d6b5aa2a" type="video/mp4" />
+						<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-search-demo.mp4" type="video/mp4" />
 						Your browser may not support video
 					</video>
 				</div>
