@@ -14,3 +14,7 @@ This repository holds the code for its landing page.
 
 ## Linter
 1. Run `yarn eslint .`
+
+## Run the docker image
+1. Run `docker-compose up`
+2. Open `http://localhost:3000` in your browser

@@ -20,6 +20,9 @@ export default function NavBar() {
                         <Button type="text" size="large" shape="default" style={{borderRadius: '4px', border: '1px solid #000', backgroundColor: '#f9f5de'}}>
                             <Link className="navLinks" to="/about">About</Link>
                         </Button>
+                        <Button type="text" size="large" shape="default" style={{borderRadius: '4px', border: '1px solid #000', backgroundColor: '#f9f5de'}}>
+                            <Link className="navLinks" to="/waitlist">Waitlist</Link>
+                        </Button>
                     </div>
                     <div></div>
                 </div>
