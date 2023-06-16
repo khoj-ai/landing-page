@@ -44,14 +44,14 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='fishing-image-container'>
-				<div className='fishing-image-subcontainer'>
+			<div className='camping-image-container'>
+				<div className='camping-image-subcontainer'>
 					<Camping />
 				</div>
 			</div>
-			<div id="mission" className='fishing-block'>
+			<div id="mission" className='camping-block'>
 				<div className="product-description">
-					<div className='production-description-subcomponent fishing-description-subcomponent'>
+					<div className='production-description-subcomponent camping-description-subcomponent'>
 						<h2 className='production-description-subcomponent'>Our mission</h2>
 						<p className='product-description-subcomponent'>
 							Our mission is to democratize access to AI assistance.
