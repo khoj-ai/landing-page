@@ -2,7 +2,7 @@ import '../styles/Home.css';
 
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
-import { GithubIcon, DiscordIcon, FishingRod, EmacsIcon, ObsidianIcon } from '../components/Icons';
+import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon, Camping } from '../components/Icons';
 import Icon from '@ant-design/icons';
 
 export function Home() {
@@ -44,14 +44,14 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='fishing-image-container'>
-				<div className='fishing-image-subcontainer'>
-					<FishingRod />
+			<div className='camping-image-container'>
+				<div className='camping-image-subcontainer'>
+					<Camping />
 				</div>
 			</div>
-			<div id="mission" className='fishing-block'>
+			<div id="mission" className='camping-block'>
 				<div className="product-description">
-					<div className='production-description-subcomponent fishing-description-subcomponent'>
+					<div className='production-description-subcomponent camping-description-subcomponent'>
 						<h2 className='production-description-subcomponent'>Our mission</h2>
 						<p className='product-description-subcomponent'>
 							Our mission is to democratize access to AI assistance.

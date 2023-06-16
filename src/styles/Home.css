@@ -1,20 +1,20 @@
 @import 'colors.css';
 
-div.fishing-block {
-    background-color: var(--calm-water);
+div.camping-block {
+    background-color: var(--mild-sun);
 }
 
-div.fishing-image-container {
+div.camping-image-container {
     background: linear-gradient(
         to bottom,
         var(--light) 0%,
-        var(--light) 40%,
-        var(--calm-water) 40%,
-        var(--calm-water) 100%
+        var(--light) 60%,
+        var(--mild-sun) 60%,
+        var(--mild-sun) 100%
       );
 }
 
-div.fishing-image-subcontainer {
+div.camping-image-subcontainer {
     margin: 0 20%;
 }
 
@@ -48,7 +48,7 @@ p.product-description {
     font-weight: bold;
 }
 
-img.fishing-image {
+img.camping-image {
     object-fit: cover;
     max-width: 100vw;
 }
@@ -67,7 +67,7 @@ div.top-section-links {
     margin-top: 37px;
 }
 
-p.fishing-text {
+p.camping-text {
     display: block;
     font-size: large;
     margin-right: 25%;
@@ -118,13 +118,13 @@ span.founders-item-bio {
 }
 
 div.production-description-subcomponent {
-    background-color: var(--calm-water);
+    background-color: var(--mild-sun);
     padding: 2% 25%;
     padding-bottom: 4.5%;
     font-size: large;
     text-align: left;
 }
-div.fishing-description-subcomponent {
+div.camping-description-subcomponent {
     margin: 0px
 }
 
@@ -163,7 +163,7 @@ div.supported-icons {
         display: grid;
         grid-template-columns: 1fr;
     }
-    p.fishing-text {
+    p.camping-text {
         margin: 0 5%;
         width: 90%;
     }

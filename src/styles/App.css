@@ -37,7 +37,7 @@ footer.footer-container {
   justify-content: center;
   font-size: medium;
   color: var(--main-background);
-  background-color: var(--calm-water);
+  background-color: var(--mild-sun);
 }
 p.footer-text {
   font-family: 'EB Garamond', serif;
@@ -45,15 +45,22 @@ p.footer-text {
   font-size: small;
 }
 
-img.footer-lighthouse {
-  background-color: var(--light);
+img.footer-garden {
+    background: linear-gradient(
+        to bottom,
+        var(--light) 0%,
+        var(--light) 70%,
+        var(--mild-sun) 70%,
+        var(--mild-sun) 100%
+      );
 }
+
 
 section.core-page {
   margin: 0;
 }
 
-a:visited, a:hover, a:active {
+section.core-page > a:visited, a:hover, a:active {
   color: inherit;
 }
 
@@ -73,7 +80,7 @@ a.inline-link-dark {
 
 a.inline-link-light {
   color: var(--main-background);
-  background-color: var(--calm-water);
+  background-color: var(--mild-sun);
   text-decoration: underline;
 }
 
