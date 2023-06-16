@@ -185,7 +185,7 @@ div.supported-icons {
     }
 
     img.founders-item-image {
-        max-width: 100%;
+        max-width: auto;
     }
 
     #demo-video {
@@ -210,8 +210,13 @@ div.supported-icons {
 
     div.founders-item-image-container {
         margin: 0;
+        max-width: none;
     }
     #conclude {
         margin-bottom: 0%;
+    }
+
+    div.camping-image-subcontainer {
+        margin: 0;
     }
 }
