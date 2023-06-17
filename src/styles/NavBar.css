@@ -2,7 +2,6 @@
 
 section.navSection {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     grid-auto-flow: row;
 }
 
@@ -58,7 +57,14 @@ li.navLinks {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: row;
     }
-    ul.navLinks {
+    div.navLogo {
+        display: grid;
+        justify-items: center;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+   ul.navLinks {
         display: grid;
         grid-template-columns: 1fr;
     }

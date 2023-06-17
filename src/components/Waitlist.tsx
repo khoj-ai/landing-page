@@ -57,22 +57,26 @@ export function Waitlist() {
 						isSubmitting,
 						/* and other goodies */
 					}) => (
-						<div className='signup-bar'>
-							<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
-							<Form className='signup-form'>
-								<Input
-									type="email"
-									name="email"
-									placeholder="Enter your email address"
-									onChange={handleChange}
-									onBlur={handleBlur}
-									value={values.email}
-									status={(errors.email && touched.email) ? "error" : ""}
-								/>
-								<SubmitButton size='large' disabled={false} loading={isSubmitting} style={{padding: '5px 10px'}}>
-									Sign up
-								</SubmitButton>
-							</Form>
+						<div className="signup-spacer">
+							<div></div>
+							<div className='signup-inner-bar'>
+								<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
+								<Form className='signup-form'>
+									<Input
+										type="email"
+										name="email"
+										placeholder="Enter your email address"
+										onChange={handleChange}
+										onBlur={handleBlur}
+										value={values.email}
+										status={(errors.email && touched.email) ? "error" : ""}
+									/>
+									<SubmitButton size='large' disabled={false} loading={isSubmitting} style={{padding: '9px'}}>
+										Sign up
+									</SubmitButton>
+								</Form>
+							</div>
+							<div></div>
 						</div>
 					)}
 				</Formik>
