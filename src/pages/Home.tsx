@@ -22,6 +22,13 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
+			<div className="signup-bar">
+			<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
+			<form className="signup-form">
+				<input type="email" name="email" placeholder="Enter your email address" required />
+				<button type="submit">Sign up</button>
+			</form>
+			</div>
 			<h2 className='title'>Introducing Khoj</h2>
 			<div className='product-description'>
 				<div className="product-description-text">
