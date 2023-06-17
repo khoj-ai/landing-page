@@ -1,23 +1,48 @@
 @import url(colors.css);
 
-div.waitlist-form {
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
-form.waitlist-form {
+.signup-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(205, 205, 205, 0.7);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    z-index: 9999;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 70% 30%;
+    align-items: center;
 }
 
-label.waitlist {
-    text-align: left;
+.signup-description {
+  margin: 0;
+  font-size: larger;
 }
 
-@media screen and (max-width: 760px) {
-    div.waitlist-form {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.signup-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: medium;
+  grid-column: 1 / -2;
+}
+
+.signup-form button[type="submit"] {
+  padding: 10px 10px;
+  margin: 0 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--main-background);
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
 }

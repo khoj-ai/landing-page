@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
+import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 
 export function Home() {
@@ -22,13 +23,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<div className="signup-bar">
-			<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
-			<form className="signup-form">
-				<input type="email" name="email" placeholder="Enter your email address" required />
-				<button type="submit">Sign up</button>
-			</form>
-			</div>
+			<Waitlist />
 			<h2 className='title'>Introducing Khoj</h2>
 			<div className='product-description'>
 				<div className="product-description-text">

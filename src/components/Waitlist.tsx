@@ -2,7 +2,7 @@ import '../styles/Waitlist.css';
 
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { Input, SubmitButton, Select } from 'formik-antd'
+import { Input, SubmitButton } from 'formik-antd'
 import { useState } from 'react';
 
 
@@ -16,9 +16,7 @@ export function Waitlist() {
 	const APIURL = process.env.NODE_ENV == 'production' ? "https://lantern.khoj.dev" : 'http://localhost:5000';
 
 	return (
-		<section className='core-page'>
-			<h2 className='title'>Join the Waitlist</h2>
-			<div className='waitlist-form'>
+			<div className='signup-bar'>
 				<Formik
 					initialValues={{ email: '', interest: '' }}
 					validationSchema={SignupSchema}
@@ -59,41 +57,23 @@ export function Waitlist() {
 						isSubmitting,
 						/* and other goodies */
 					}) => (
-						<Form className='waitlist-form'>
-							<Input
-								className='waitlist'
-								placeholder="input email"
-								type="email"
-								name="email"
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.email}
-								status={(errors.email && touched.email) ? "error" : ""}
-								addonBefore="Email"
-							/>
-							<label className='waitlist'>
-								Which of the following best describes your industry?
-							</label>
-							<Select 
-								name="interest"
-								placeholder="What's your area of interest?"
-								onChange={handleChange}
-								onBlur={handleBlur}
-								value={values.interest}
-							>
-								<Select.Option value="Art">Art</Select.Option>
-								<Select.Option value="Business">Business</Select.Option>
-								<Select.Option value="Education">Education</Select.Option>
-								<Select.Option value="Health">Health</Select.Option>
-								<Select.Option value="Science">Science</Select.Option>
-								<Select.Option value="Technology">Technology</Select.Option>
-								<Select.Option value="Research">Research</Select.Option>
-								<Select.Option value="Other">Other</Select.Option>
-							</Select>
-							<SubmitButton disabled={false} loading={isSubmitting}>
-								Submit
-							</SubmitButton>
-						</Form>
+						<div className='signup-bar'>
+							<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
+							<Form className='signup-form'>
+								<Input
+									type="email"
+									name="email"
+									placeholder="Enter your email address"
+									onChange={handleChange}
+									onBlur={handleBlur}
+									value={values.email}
+									status={(errors.email && touched.email) ? "error" : ""}
+								/>
+								<SubmitButton size='large' disabled={false} loading={isSubmitting} style={{padding: '5px 10px'}}>
+									Sign up
+								</SubmitButton>
+							</Form>
+						</div>
 					)}
 				</Formik>
 				{
@@ -103,7 +83,6 @@ export function Waitlist() {
 					failed ? <p>Sorry, something went wrong. Please try again.</p> : null
 				}
 			</div>
-		</section>
 	);
 }
 
