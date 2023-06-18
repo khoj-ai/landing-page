@@ -98,4 +98,8 @@ a.inline-link-light {
   section.core-page {
     margin: 0;
   }
+
+  img.footer-garden {
+    padding: 0;
+  }
 }

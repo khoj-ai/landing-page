@@ -1,23 +1,65 @@
 @import url(colors.css);
 
-div.waitlist-form {
-    margin-left: 40%;
-    margin-right: 40%;
+.waitlist-bar {
+    position: relative;
+    width: 100%;
+    background-color: rgba(205, 205, 205, 0.7);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    z-index: 9999;
 }
-
-form.waitlist-form {
+.waitlist-spacer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+ }
+.waitlist-inner-bar {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    justify-self: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+.waitlist-description {
+  margin: 0;
+  font-size: larger;
 }
 
-label.waitlist {
-    text-align: left;
+.waitlist-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin: 0;
 }
 
-@media screen and (max-width: 760px) {
-    div.waitlist-form {
-        margin-left: 1rem;
-        margin-right: 1rem;
+.waitlist-form input[type="email"] {
+  min-width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+.waitlist-form button[type="submit"] {
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--main-background);
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1360px) {
+    .waitlist-inner-bar {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px;
+        justify-self: center;
+        align-items: center;
+        margin: 10px 10px;
     }
 }

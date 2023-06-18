@@ -2,7 +2,7 @@ import NavBar from './NavBar';
 import './styles/App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Waitlist from './pages/Waitlist';
+import Waitlist from './components/Waitlist';
 
 import { ConfigProvider } from 'antd';
 

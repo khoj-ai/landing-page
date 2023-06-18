@@ -41,14 +41,24 @@ export default function About() {
                         <h2 className='article-title'>Why we're making it</h2>
                         <div className='content'>
                             <p className='content'>
+                                <b>We're on a mission to democratize access to these tools</b>, so that the productivity gains from these advances are available to the most diverse range of people possible without giving up your privacy.
+                                Given what is at stake, there is no reason to settle for anything less.
+                            </p>
+                            <p className='content'>
                                 We've seen zetabytes of data moving online over the last 3-4 decades.
                                 But the tools to access and use this data have not kept up, especially for personal data.
                                 The current wave of AI innovations are creating tools that will vastly improve the ability of people to use this data.
                                 We have the opportunity to guide this wave of innovation.
                             </p>
                             <p className='content'>
-                                <b>We're on a mission to democratize access to these tools</b>, so that the productivity gains from these advances are available to the most diverse range of people possible without giving up your privacy.
-                                Given what is at stake, there is no reason to settle for anything less.
+                                As the ongoing information revolution accelerates, finding ways to work with the exploding quantities of data will be paramount.
+                            </p>
+                            <p className='content'>
+                                Khoj is designed to be that way.
+                            </p>
+                            <p className='content'>
+                                Khoj is <b>your</b> personal AI assistant.
+                                It's a thinking tool for your daily life. It will allow you to create, reason and build faster and better.
                             </p>
                         </div>
                         <h2 className='article-title'>Get in touch</h2>
