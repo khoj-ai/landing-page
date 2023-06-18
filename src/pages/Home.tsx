@@ -38,7 +38,7 @@ export function Home() {
 							style={{borderRadius: '4px'}}
 							ghost
 							icon={<Icon component={DiscordIcon} />}
-							href="https://discord.gg/5UhUG5fh">
+							href="https://discord.gg/fP89zSJb">
 								Join us on Discord
 						</Button>
 					</div>
