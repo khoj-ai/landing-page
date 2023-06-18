@@ -46,6 +46,7 @@ p.footer-text {
 }
 
 img.footer-garden {
+    padding: 0 7%;
     background: linear-gradient(
         to bottom,
         var(--light) 0%,

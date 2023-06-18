@@ -1,11 +1,25 @@
 import '../styles/Home.css';
-
+import { useState, useRef } from 'react';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
 
 export function Home() {
+	const [showControls, setShowControls] = useState(false);
+	const videoRef = useRef<HTMLVideoElement>(null);
+	const handleMouseEnter = () => {
+		setShowControls(true);
+	};
+
+	const handleMouseLeave = () => {
+		setShowControls(false);
+	};
+
+	const handleEnded = () => {
+		setShowControls(false);
+	};
+
 	return (
 		<section className='core-page'>
 			<h2 className='title'>Introducing Khoj</h2>
@@ -15,8 +29,15 @@ export function Home() {
 						An AI personal assistant for your digital brain
 					</p>
 				</div>
-				<video id="demo-video" autoPlay controls>
-					<source src="https://github.com/debanjum/khoj/assets/65192171/7daa38d3-cfbb-4604-954f-e489f36e48c1" type="video/mp4" />
+				<video
+					id="demo-video"
+					autoPlay
+					ref={videoRef}
+					controls={showControls}
+					onEnded={handleEnded}
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseLeave}>
+					<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-chat-demo.mp4" type="video/mp4" />
 					Your browser may not support video
 				</video>
 				<div className="product-description-text top-section-links">
@@ -46,7 +67,7 @@ export function Home() {
 			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>
-					<img src='./hero_camping.svg' className='hero-camping' alt='hero-camping' />
+					<img src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/hero_camping.svg' className='hero-camping' alt='hero-camping' />
 				</div>
 			</div>
 			<div id="mission" className='camping-block'>
@@ -73,7 +94,14 @@ export function Home() {
 					<p className='product-description-subcomponent-light'>
 						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
 					</p>
-					<video id="demo-video" autoPlay controls>
+					<video
+						id="demo-video"
+						autoPlay
+						ref={videoRef}
+						controls={showControls}
+						onEnded={handleEnded}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}>
 						<source src="https://github.com/khojai/landing-page/assets/65192171/434299dd-378c-4aa7-a2b6-b1af6ec9acca" type="video/mp4" />
 						Your browser may not support video
 					</video>
@@ -85,8 +113,15 @@ export function Home() {
 					<p className='product-description-subcomponent-light'>
 						Khoj supports lightning fast search, with results from your data sources appearing as you type. It generates embeddings that allow you to perform semantic search on your data. This means that you can search for things that are similar to what you're looking for, not just exact matches. This data never leaves your server.
 					</p>
-					<video id="demo-video" autoPlay controls>
-						<source src="https://github.com/debanjum/khoj/assets/65192171/d6362e7c-05d9-4502-b70b-cfe0d6b5aa2a" type="video/mp4" />
+					<video
+						id="demo-video"
+						autoPlay
+						ref={videoRef}
+						controls={showControls}
+						onEnded={handleEnded}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}>
+						<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-search-demo.mp4" type="video/mp4" />
 						Your browser may not support video
 					</video>
 				</div>
@@ -109,13 +144,13 @@ export function Home() {
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='./deb_founder_bw.jpg' alt='Debanjum Singh' />
+								<img className='founders-item-image' src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/deb_founder_bw.jpg' alt='Debanjum Singh' />
 								<p className='founders-item-name'>Debanjum Singh Solanky</p>
 							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='./saba_founder_bw.jpg' alt='Saba Imran' />
+								<img className='founders-item-image' src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/saba_founder_bw.jpg' alt='Saba Imran' />
 								<p className='founders-item-name'>Saba Imran</p>
 							</div>
 						</div>
