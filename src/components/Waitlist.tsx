@@ -72,7 +72,7 @@ export function Waitlist() {
 										status={(errors.email && touched.email) ? "error" : ""}
 									/>
 									<SubmitButton size='large' disabled={false} loading={isSubmitting} style={{padding: '9px'}}>
-										Sign up
+										Join
 									</SubmitButton>
 								</Form>
 							</div>
