@@ -23,7 +23,6 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<Waitlist />
 			<h2 className='title'>Introducing Khoj</h2>
 			<div className='product-description'>
 				<div className="product-description-text">
