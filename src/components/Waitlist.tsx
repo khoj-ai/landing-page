@@ -60,7 +60,7 @@ export function Waitlist() {
 						<div className="waitlist-spacer">
 							<div></div>
 							<div className='waitlist-inner-bar'>
-								<p className="waitlist-description">Sign up to get an early invite to Khoj cloud</p>
+								<p className="waitlist-description">Get an early invite to Khoj cloud</p>
 								<Form className='waitlist-form'>
 									<Input
 										type="email"
