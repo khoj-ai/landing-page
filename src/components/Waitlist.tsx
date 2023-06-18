@@ -16,7 +16,7 @@ export function Waitlist() {
 	const APIURL = process.env.NODE_ENV == 'production' ? "https://lantern.khoj.dev" : 'http://localhost:5000';
 
 	return (
-			<div className='signup-bar'>
+			<div className='waitlist-bar'>
 				<Formik
 					initialValues={{ email: '', interest: '' }}
 					validationSchema={SignupSchema}
@@ -34,7 +34,7 @@ export function Waitlist() {
 									if (!response.ok) {
 										setFailed(true);
 										setSuccess(false);
-										throw new Error('Network response was not ok');
+										throw new Error('📵 Network response was not ok');
 									}
 									setSuccess(true);
 									setFailed(false);
@@ -57,11 +57,11 @@ export function Waitlist() {
 						isSubmitting,
 						/* and other goodies */
 					}) => (
-						<div className="signup-spacer">
+						<div className="waitlist-spacer">
 							<div></div>
-							<div className='signup-inner-bar'>
-								<p className="signup-description">Sign up to get an early invite to Khoj cloud</p>
-								<Form className='signup-form'>
+							<div className='waitlist-inner-bar'>
+								<p className="waitlist-description">Sign up to get an early invite to Khoj cloud</p>
+								<Form className='waitlist-form'>
 									<Input
 										type="email"
 										name="email"

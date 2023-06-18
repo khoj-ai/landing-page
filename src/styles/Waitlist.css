@@ -1,6 +1,6 @@
 @import url(colors.css);
 
-.signup-bar {
+.waitlist-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,12 +11,12 @@
     box-sizing: border-box;
     z-index: 9999;
 }
-.signup-spacer {
+.waitlist-spacer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     justify-items: center;
  }
-.signup-inner-bar {
+.waitlist-inner-bar {
     display: grid;
     grid-auto-flow: column;
     gap: 50px;
@@ -24,19 +24,19 @@
     align-items: center;
     margin: 10px 0;
 }
-.signup-description {
+.waitlist-description {
   margin: 0;
   font-size: larger;
 }
 
-.signup-form {
+.waitlist-form {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   margin: 0;
 }
 
-.signup-form input[type="email"] {
+.waitlist-form input[type="email"] {
   min-width: 200px;
   padding: 10px;
   border: none;
@@ -44,7 +44,7 @@
   font-size: medium;
 }
 
-.signup-form button[type="submit"] {
+.waitlist-form button[type="submit"] {
   margin: 0 5px;
   border: none;
   border-radius: 3px;
@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width: 1360px) {
-    .signup-inner-bar {
+    .waitlist-inner-bar {
         display: grid;
         grid-auto-flow: row;
         gap: 10px;
