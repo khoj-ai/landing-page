@@ -102,11 +102,11 @@ export function Home() {
 							<h2 className='production-description-subcomponent'>What is Khoj?</h2>
 							<p className='product-description-subcomponent-light'>
 								Khoj is an open-source, AI personal assistant. It is meant to be a thinking tool that is transparent, fun and easy to engage with.
-								Create, reason and build faster and better on top of your notes, documents, emails, emails and more.
+								Create, reason and build faster and better on top of your notes, documents, emails and more.
 							</p>
 							<p className='product-description-subcomponent-light'>
 								Khoj currently exposes the ability to search and chat with your personal knowledge base. You remain in control of your data.
-								Host your assistant locally or on the cloud, inspect the code or revoke it's access to your data at any time.
+								Host your assistant locally or on the cloud, inspect the code, or revoke Khoj's access to your data at any time.
 							</p>
                             <p className='product-description-subcomponent-light'>
                                 Khoj started with the founding principle that it should be hostable on your own machines.
@@ -117,8 +117,7 @@ export function Home() {
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
-                                We've heard the feedback, and we know that self-hosting is a blocker for several people who want to try Khoj.
-                                Managing servers and developer dependencies is tricky.
+                                We've heard the feedback, and we know that self-hosting is a blocker for folks who want to try Khoj, but aren't developers.
                                 We're working on a cloud hosted version of Khoj that will be available for personal use.
                                 If you're interested in trying out Khoj on the cloud, please sign up for early access below.
                             </p>
