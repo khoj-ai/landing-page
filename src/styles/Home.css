@@ -18,12 +18,11 @@ div.camping-image-subcontainer {
     margin: 3% 5% 0;
 }
 
-#app-subtitle {
-    /* font-family: 'DM Serif Display', serif; */
-    font-family: 'EB Garamond', serif;
-    font-weight: normal;
-    font-size: larger;
-    margin-bottom: 47px;
+div#showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20%;
+    grid-gap: 32px;
 }
 
 div.product-description {
@@ -154,6 +153,16 @@ div.supported-icons {
     margin-bottom: -5%;
 }
 
+div.typing-components {
+    color: #000;
+    text-align: center;
+    white-space: pre-line;
+    font-size: x-large;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 8px;
+    margin-bottom: 32px;
+}
+
 #conclude {
     margin-bottom: -3%;
 }
@@ -218,5 +227,15 @@ div.supported-icons {
 
     div.camping-image-subcontainer {
         margin: 0;
+    }
+
+    div#showcase {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    div.typing-components {
+        padding: 0 10%;
     }
 }

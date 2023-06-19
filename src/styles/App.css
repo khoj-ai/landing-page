@@ -19,8 +19,8 @@ h2.title {
   text-align: center;
   font-size: var(--title-size);
   font-weight: normal;
-  margin-top: 42px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 16px;
   color: var(--main-background);
 }
 
@@ -67,10 +67,6 @@ section.core-page > a:visited, a:hover, a:active {
 
 a {
   text-decoration: none;
-}
-
-h2.title {
-  color: var(--main-background);
 }
 
 a.inline-link-dark {

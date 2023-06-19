@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
+import { TypeAnimation } from 'react-type-animation';
 
 export function Home() {
 	const [showControls, setShowControls] = useState(false);
@@ -21,15 +22,40 @@ export function Home() {
 		setShowControls(false);
 	};
 
+	const showcaseRolesComponent = () => {
+		return(
+			<TypeAnimation
+				cursor={true}
+				repeat={0}
+				omitDeletionAnimation={true}
+				speed={25}
+				sequence={[
+					500,
+					"I'm a cancer researcher and I want to query papers about melanoma",
+					1000,
+					"I'm a chief of staff and I want to create my organization's OKRs",
+					1000,
+					"I'm a dev ops engineer and I want to search my commit logs",
+					1000,
+					"I'm a geologist and I want to search my field notes about igneous rocks",
+					1000,
+					"I'm a writer and I want to build my character's backstory",
+					1000,
+					"I'm a student and I want to revise my notes about the Krebs cycle",
+					1000,
+					"I'm a person and I want to do more",
+					500,
+				]} />
+		);
+	}
+
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Introducing Khoj</h2>
+			<h2 className='title'>Your open source AI personal assistant</h2>
+			<div className='typing-components'>
+				{showcaseRolesComponent()}
+			</div>
 			<div className='product-description'>
-				<div className="product-description-text">
-					<p id="app-subtitle" className="product-description">
-						An <b>open source</b> AI personal assistant for your digital brain.
-					</p>
-				</div>
 				<video
 					id="demo-video"
 					autoPlay
@@ -38,7 +64,7 @@ export function Home() {
 					onEnded={handleEnded}
 					onMouseEnter={handleMouseEnter}
 					onMouseLeave={handleMouseLeave}>
-					<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-chat-demo.mp4" type="video/mp4" />
+					<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-chat-demo.mp4#t=5" type="video/mp4" />
 					Your browser may not support video
 				</video>
 				<div className="product-description-text top-section-links">
@@ -90,6 +116,12 @@ export function Home() {
 							</p>
 							<p className='product-description-subcomponent-light'>
 								<b>We're in the thick of building and improving Khoj, and we want to hear from you.</b> Please join the <a className='inline-link-light' href="https://discord.gg/fP89zSJb">Discord</a> to voice your opinions and tell us about which features you'd like to see.
+							</p>
+							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
+								<Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Self Host</Link>
+							</Button>
+							<p className='product-description-subcomponent-light'>
+								<b>Want to try Khoj on the cloud?</b> Sign up for early access below.
 							</p>
 							<Waitlist />
 						</div>
