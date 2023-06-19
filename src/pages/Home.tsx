@@ -101,26 +101,34 @@ export function Home() {
 						<div className='production-description-subcomponent camping-description-subcomponent'>
 							<h2 className='production-description-subcomponent'>What is Khoj?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj is an AI personal assistant that is designed with the intention of keeping you in control of your data. It works by connecting to your personal knowledge base and exposing interfaces to search and chat. You can give and revoke Khoj's access to your data at any time. We see Khoj as a tool that can help you build a digital brain that is an extension of your own. Imagine being able to chat with your notes, documents, images, email, and far more.
+								Khoj is an open-source, AI personal assistant. It is meant to be a thinking tool that is transparent, fun and easy to engage with.
+								Create, reason and build faster and better on top of your notes, documents, emails, emails and more.
 							</p>
 							<p className='product-description-subcomponent-light'>
-								Khoj started with the founding principle that it should be hostable on your own server. This means that it's completely private and personal, and that will always be the case.
+								Khoj currently exposes the ability to search and chat with your personal knowledge base. You remain in control of your data.
+								Host your assistant locally or on the cloud, inspect the code or revoke it's access to your data at any time.
 							</p>
-							<p className='product-description-subcomponent-light'>
-								But we've heard the feedback, and we know that self-hosting is a blocker for several people who want to try Khoj. Managing servers and developer dependencies is tricky. We're working on a hosted version of Khoj that will be available for personal use. If you're interested in trying out Khoj on the cloud, please sign up for early access below.
-							</p>
-							<p className='product-description-subcomponent-light'>
-								We're also working on creating a desktop application that will make installation as easy as clicking a button and running the application. This will eventually help people who want to self-host Khoj, but (like any sane person) don't want to deal with the hassle of managing their Python versions and dependencies.
-							</p>
-							<p className='product-description-subcomponent-light'>
-								<b>We're in the thick of building and improving Khoj, and we want to hear from you.</b> Please join the <a className='inline-link-light' href="https://discord.gg/fP89zSJb">Discord</a> to voice your opinions and tell us about which features you'd like to see.
-							</p>
+                            <p className='product-description-subcomponent-light'>
+                                Khoj started with the founding principle that it should be hostable on your own machines.
+                                This means that it's completely private and personal, and always will be.
+                            </p>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
 								<Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Self Host</Link>
 							</Button>
-							<p className='product-description-subcomponent-light'>
-								<b>Want to try Khoj on the cloud?</b> Sign up for early access below.
-							</p>
+                            <h3 className='production-description-subcomponent'>Current Plans</h3>
+                            <p className='product-description-subcomponent-light'>
+                                We've heard the feedback, and we know that self-hosting is a blocker for several people who want to try Khoj.
+                                Managing servers and developer dependencies is tricky.
+                                We're working on a cloud hosted version of Khoj that will be available for personal use.
+                                If you're interested in trying out Khoj on the cloud, please sign up for early access below.
+                            </p>
+                            <p className='product-description-subcomponent-light'>
+                                We're also working on creating a desktop application that will make setup as easy as clicking a button.
+                                This will help people who want to self-host Khoj but without the hassle of managing their Python versions and dependencies.
+                            </p>
+                            <p className='product-description-subcomponent-light'>
+                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b> Join the <b><a className='inline-link-light' href="https://discord.gg/fP89zSJb">Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
+                            </p>
 							<Waitlist />
 						</div>
 					</div>
