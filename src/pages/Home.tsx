@@ -28,22 +28,20 @@ export function Home() {
 				cursor={true}
 				repeat={0}
 				omitDeletionAnimation={true}
-				speed={25}
+				speed={50}
 				sequence={[
 					500,
-					"I'm a cancer researcher and I want to query papers about melanoma",
+					"I'm a writer and I want to build my character's backstory",
+					1000,
+					"I'm a software engineer and I want to search my commit logs",
 					1000,
 					"I'm a chief of staff and I want to create my organization's OKRs",
 					1000,
-					"I'm a dev ops engineer and I want to search my commit logs",
-					1000,
-					"I'm a geologist and I want to search my field notes about igneous rocks",
-					1000,
-					"I'm a writer and I want to build my character's backstory",
+					"I'm a cancer researcher and I want to query papers about melanoma",
 					1000,
 					"I'm a student and I want to revise my notes about the Krebs cycle",
 					1000,
-					"I'm a person and I want to do more",
+					"I'm a person and I want to do more.",
 					500,
 				]} />
 		);
