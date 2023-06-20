@@ -239,4 +239,8 @@ div.typing-components {
     div.typing-components {
         padding: 0 10%;
     }
+
+    h2.production-description-subcomponent {
+        padding: 1rem 0;
+    }
 }
