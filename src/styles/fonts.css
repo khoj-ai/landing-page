@@ -1,4 +1,6 @@
 :root {
     --title-size: 36px;
     --subtitle-size: 24px;
+    --impact: 'DM Serif Display', serif;
+    --reader: 'EB Garamond', serif;
 }

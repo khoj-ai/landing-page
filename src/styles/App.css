@@ -40,13 +40,12 @@ footer.footer-container {
   background-color: var(--mild-sun);
 }
 p.footer-text {
-  font-family: 'EB Garamond', serif;
+  font-family: var(--reader);
   font-weight: normal;
   font-size: small;
 }
 
 img.footer-garden {
-    padding: 0 7%;
     background: linear-gradient(
         to bottom,
         var(--light) 0%,
