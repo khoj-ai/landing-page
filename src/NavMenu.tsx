@@ -70,7 +70,7 @@ export default function NavMenu() {
         authAction,
         {
             label: (
-                <a href="https://github.com/debanjum/khoj#Setup" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/khoj-ai/khoj#Setup" target="_blank" rel="noopener noreferrer">
                     Self-Host
                 </a>
                 ),
