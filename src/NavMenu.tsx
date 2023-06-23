@@ -98,7 +98,7 @@ export default function NavMenu() {
                 label: 'Settings',
                 children: [
                 {
-                    label: 'Update Configuraiton',
+                    label: 'Update Configuration',
                     key: 'setting:1',
                 },
                 {
