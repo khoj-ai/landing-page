@@ -1,4 +1,5 @@
 @import 'colors.css';
+@import 'fonts.css';
 
 div.camping-block {
     background-color: var(--mild-sun);
@@ -29,7 +30,7 @@ div.product-description {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-around;
-    font-family: 'EB Garamond', serif;
+    font-family: var(--reader);
     font-size: medium;
 }
 
@@ -137,7 +138,7 @@ div.production-description-subcomponent-light {
 
 h2.production-description-subcomponent {
     text-align: left;
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--impact);
     margin: 0;
 }
 
@@ -159,7 +160,7 @@ div.typing-components {
     text-align: center;
     white-space: pre-line;
     font-size: x-large;
-    font-family: 'EB Garamond', serif;
+    font-family: var(--reader);
     margin-top: 8px;
     margin-bottom: 32px;
 }

@@ -6,6 +6,7 @@ import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/
 import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
+import { DISCORD_LINK } from '../common/constants';
 
 export function Home() {
 	const [showControls, setShowControls] = useState(false);
@@ -84,7 +85,7 @@ export function Home() {
 							style={{borderRadius: '4px'}}
 							ghost
 							icon={<Icon component={DiscordIcon} />}
-							href="https://discord.gg/fP89zSJb">
+							href={DISCORD_LINK}>
 								Join us on Discord
 						</Button>
 					</div>
@@ -126,7 +127,7 @@ export function Home() {
                                 This will help people who want to self-host Khoj but without the hassle of managing their Python versions and dependencies.
                             </p>
                             <p className='product-description-subcomponent-light'>
-                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b> Join the <b><a className='inline-link-light' href="https://discord.gg/fP89zSJb">Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
+                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b> Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
                             </p>
 							<Waitlist />
 						</div>

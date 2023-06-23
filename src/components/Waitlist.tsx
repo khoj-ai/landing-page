@@ -4,6 +4,8 @@ import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { Input, SubmitButton } from 'formik-antd'
 import { useState } from 'react';
+import { APIURL } from '../common/constants';
+import { useLocation } from 'react-router-dom';
 
 
 export function Waitlist() {
@@ -13,7 +15,12 @@ export function Waitlist() {
 		email: Yup.string().email('Invalid email').required('Required'),
 	});
 
-	const APIURL = process.env.NODE_ENV == 'production' ? "https://lantern.khoj.dev" : 'http://localhost:5000';
+    // Get the path of the URL
+    const location = useLocation();
+    if (location.pathname.includes('invited') || location.pathname.includes('login')) {
+        return null;
+    }
+
 
 	return (
 			<div className='waitlist-bar'>
@@ -41,7 +48,7 @@ export function Waitlist() {
 									return response.json()
 							})
 							.catch((error) => {
-								console.log(error);
+								setFailed(true);
 							});
 							setSubmitting(false);
 						}, 400);
@@ -63,6 +70,7 @@ export function Waitlist() {
 								<p className="waitlist-description">Get an early invite to Khoj cloud</p>
 								<Form className='waitlist-form'>
 									<Input
+										disabled={success}
 										type="email"
 										name="email"
 										placeholder="Enter your email address"
@@ -71,7 +79,7 @@ export function Waitlist() {
 										value={values.email}
 										status={(errors.email && touched.email) ? "error" : ""}
 									/>
-									<SubmitButton size='large' disabled={false} loading={isSubmitting} style={{padding: '9px'}}>
+									<SubmitButton size='large' disabled={success} loading={isSubmitting} style={{padding: '9px'}}>
 										Join
 									</SubmitButton>
 								</Form>
@@ -81,7 +89,7 @@ export function Waitlist() {
 					)}
 				</Formik>
 				{
-					success ? <p>Thanks for requesting early access 🌈! We'll reach out shortly. Until then take this short <a href="https://forms.gle/FRe6XPkcgkKsVbzC9">survey</a> to guide our feature development roadmap.</p> : null
+					success ? <p>✅ Thanks for requesting early access! We'll reach out shortly. Until then, take this short <a className='inline-link-light' href="https://forms.gle/FRe6XPkcgkKsVbzC9">survey</a>.</p> : null
 				}
 				{
 					failed ? <p>Woops, that did not go as expected 😵‍💫. Try again or contact <a href="mailto:team@khoj.dev">team@khoj.dev</a></p> : null
