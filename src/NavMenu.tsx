@@ -56,7 +56,7 @@ export default function NavMenu() {
 
     const loginItem = {
         label: (
-            <a href="/login" target="_blank" rel="noopener noreferrer">
+            <a href="/login" target="_blank">
                 Login
             </a>
         ),
@@ -70,7 +70,7 @@ export default function NavMenu() {
         authAction,
         {
             label: (
-                <a href="https://github.com/khoj-ai/khoj#Setup" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/khoj-ai/khoj#Setup" target="_blank">
                     Self-Host
                 </a>
                 ),
@@ -79,7 +79,7 @@ export default function NavMenu() {
         },
         {
             label: (
-                <a href="/about" target="_blank" rel="noopener noreferrer">
+                <a href="/about" target="_blank">
                     About
                 </a>
                 ),
@@ -120,7 +120,7 @@ export default function NavMenu() {
         });
         items.push({
             label: (
-                <a href={KHOJ_LINK} target="_blank" rel="noopener noreferrer">
+                <a href={KHOJ_LINK} target="_blank">
                     Go
                 </a>
                 ),
