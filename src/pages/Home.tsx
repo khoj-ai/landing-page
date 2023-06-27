@@ -50,7 +50,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Your open source AI personal assistant</h2>
+			<h2 className='title'>An open source AI assistant<br/>that learns from your personal data.</h2>
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
@@ -102,15 +102,14 @@ export function Home() {
 						<div className='production-description-subcomponent camping-description-subcomponent'>
 							<h2 className='production-description-subcomponent'>What is Khoj?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj is an open-source, AI personal assistant. It is meant to be a thinking tool that is transparent, fun and easy to engage with.
-								Create, reason and build faster and better on top of your notes, documents, emails and more.
+								Khoj is an open-source, AI personal assistant that connects to the sources of your knowledge base. It is meant to be a thinking tool that is transparent, fun and easy to engage with.
+								By hooking into your data sources, Khoj can help you search, reason and build faster. It is intended to learn from your notes, documents, emails so it can be an extension of your brain and help you focus on what matters.
 							</p>
 							<p className='product-description-subcomponent-light'>
-								Khoj currently exposes the ability to search and chat with your personal knowledge base. You remain in control of your data.
-								Host your assistant locally or on the cloud, inspect the code, or revoke Khoj's access to your data at any time.
+								Khoj currently exposes the ability to search and chat with your personal knowledge base in your file system, while keeping you in control of your data.
 							</p>
                             <p className='product-description-subcomponent-light'>
-                                Khoj started with the founding principle that it should be hostable on your own machines.
+                                Khoj started with the founding principle that it should be hostable on your own machine.
                                 This means that it's completely private and personal, and always will be.
                             </p>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
@@ -119,7 +118,9 @@ export function Home() {
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
                                 We've heard the feedback, and we know that self-hosting is a blocker for folks who want to try Khoj, but aren't developers.
-                                We're working on a cloud hosted version of Khoj that will be available for personal use.
+                                We're working on a cloud hosted version of Khoj that will be available for personal use. Whether you host your own instance or use our cloud hosted version, you'll always be able to control Khoj's access to your data.
+							</p>
+							<p className='product-description-subcomponent-light'>
                                 If you're interested in trying out Khoj on the cloud, please sign up for early access below.
                             </p>
                             <p className='product-description-subcomponent-light'>
@@ -138,7 +139,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Chat</h2>
 					<p className='product-description-subcomponent-light'>
-						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
+						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge. Chat currently only supports OpenAI's family of LLMs. Setting this up is completely voluntary.
 					</p>
 					<video
 						id="demo-video"
