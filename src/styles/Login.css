@@ -1,7 +1,7 @@
 @import 'colors.css';
 @import 'fonts.css';
 
-input#email, input#password {
+input#login-email, input#login-password {
     font-family: var(--reader);
     font-size: var(--subtitle-size);
 }
