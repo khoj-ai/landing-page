@@ -50,7 +50,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Your open source AI personal assistant</h2>
+			<h2 className='title'>Get more done with your <br/>AI powered personal assistant</h2>
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
@@ -102,32 +102,39 @@ export function Home() {
 						<div className='production-description-subcomponent camping-description-subcomponent'>
 							<h2 className='production-description-subcomponent'>What is Khoj?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj is an open-source, AI personal assistant. It is meant to be a thinking tool that is transparent, fun and easy to engage with.
-								Create, reason and build faster and better on top of your notes, documents, emails and more.
+								Khoj is an open-source, AI personal assistant that links up all your knowledge bases.
+								It is a thinking tool that is transparent, fun and easy to engage with.
+								Khoj can help you build faster and better by using an AI assistant to search and reason across your disparate data sources.
+								Khoj learns from your notes, documents, emails to function as an extension of your brain.
+								So that you can stay focused on doing what matters.
 							</p>
 							<p className='product-description-subcomponent-light'>
-								Khoj currently exposes the ability to search and chat with your personal knowledge base. You remain in control of your data.
-								Host your assistant locally or on the cloud, inspect the code, or revoke Khoj's access to your data at any time.
+								Khoj currently exposes the ability to search and chat with your personal knowledge base in your file system,
+								while keeping you in control of your data.
 							</p>
                             <p className='product-description-subcomponent-light'>
-                                Khoj started with the founding principle that it should be hostable on your own machines.
-                                This means that it's completely private and personal, and always will be.
+                                Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
+                                This means you can always customize and self-host your Khoj on your own machines.
                             </p>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to="https://github.com/debanjum/khoj#Setup">Self Host</Link>
+								<Link className="navLinks" to="https://github.com/khoj-ai/khoj#Setup">Self Host</Link>
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
                                 We've heard the feedback, and we know that self-hosting is a blocker for folks who want to try Khoj, but aren't developers.
                                 We're working on a cloud hosted version of Khoj that will be available for personal use.
+								Whether you host your own instance or use our cloud hosted version, you'll always be in control of Khoj's access to your data.
+							</p>
+							<p className='product-description-subcomponent-light'>
                                 If you're interested in trying out Khoj on the cloud, please sign up for early access below.
                             </p>
                             <p className='product-description-subcomponent-light'>
                                 We're also working on creating a desktop application that will make setup as easy as clicking a button.
-                                This will help people who want to self-host Khoj but without the hassle of managing their Python versions and dependencies.
+                                This will simplify self-hosting Khoj without the hassle of managing Python versions and dependencies.
                             </p>
                             <p className='product-description-subcomponent-light'>
-                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b> Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
+                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b>
+								Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
                             </p>
 							<Waitlist />
 						</div>
@@ -139,6 +146,7 @@ export function Home() {
 					<h2 className='production-description-subcomponent'>Chat</h2>
 					<p className='product-description-subcomponent-light'>
 						Khoj exposes a conversational interface to your personal assistant. Carry out natural, multi-turn conversations with your personal assistant to create, reason and build on top of your existing knowledge.
+						Chat uses OpenAI's GPT family on online AI models. You need to use your OpenAI API key to enable this feature.
 					</p>
 					<video
 						id="demo-video"
@@ -157,7 +165,10 @@ export function Home() {
 				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Search</h2>
 					<p className='product-description-subcomponent-light'>
-						Khoj supports lightning fast search, with results from your data sources appearing as you type. It generates embeddings that allow you to perform semantic search on your data. This means that you can search for things that are similar to what you're looking for, rather than exact or fuzzy matches. In the self-hosted version, this data never leaves your server.
+						Khoj provides lightning-fast, semantic search. Results from your data sources appear as you type.
+						Khoj's offline AI models allow you to find information using natural language queries.
+						Search using terms that are similar to what you're looking for, rather than exact or fuzzy matches.
+						Khoj search works offline. So if you self-host your data never leaves your machine and search works without internet.
 					</p>
 					<video
 						id="demo-video"
@@ -176,7 +187,9 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Plugins</h2>
 					<p className='product-description-subcomponent'>
-						Our code supports integration of additional plugins for data sources and search interfaces, but we also maintain some first party plugins. We currently support two major plugins which we've built in-house, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>. All of our products are available to use via the browser or the API as well.
+						Our code makes it easy to build external data and UI integrations.
+						We currently maintain two major first-party plugins, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
+						All of our products are available to use via the browser or the API as well.
 					</p>
 					<div className='supported-icons'>
 						<EmacsIcon />

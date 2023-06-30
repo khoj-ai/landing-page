@@ -70,14 +70,14 @@ export function Login() {
 					{({ isSubmitting, errors }) => (
 						<Form className='invited-form'>
 							<Input
-								id="email"
+								id="login-email"
 								name="email"
 								placeholder='email'
 								style={{ marginBottom: '1rem' }}
 							/>
 							<div className='error-message'>{errors.email}</div>
 							<Input.Password
-								id="password"
+								id="login-password"
 								name="password"
 								placeholder='password'
 								style={{ marginBottom: '1rem' }}
