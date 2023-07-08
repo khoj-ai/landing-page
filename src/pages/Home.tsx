@@ -50,7 +50,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Get more done with your <br/>AI powered personal assistant</h2>
+			<h2 className='title'>Get more done with your open-source<br/>AI personal assistant</h2>
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
