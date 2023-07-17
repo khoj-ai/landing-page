@@ -25,7 +25,7 @@ export default function NavMenu() {
             }).then((res) => {
                 if (res.status === 200) {
                     window.location.href = '/';
-            }}).catch((error) => {
+            }}).catch(() => {
                 console.log("Logout failed");
             }
         );
@@ -39,7 +39,7 @@ export default function NavMenu() {
     }
 
     if (!authenticated) {
-        isAuth().catch((error) => {
+        isAuth().catch(() => {
             setAuthenticated(false);
         });
     }

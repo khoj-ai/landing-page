@@ -14,7 +14,7 @@ export default function NavBar() {
     }
 
     if (!authenticated) {
-        isAuth().catch((_) => {
+        isAuth().catch(() => {
             setAuthenticated(false);
         });
     }

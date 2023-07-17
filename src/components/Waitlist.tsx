@@ -47,7 +47,7 @@ export function Waitlist() {
 									setFailed(false);
 									return response.json()
 							})
-							.catch((error) => {
+							.catch(() => {
 								setFailed(true);
 							});
 							setSubmitting(false);
