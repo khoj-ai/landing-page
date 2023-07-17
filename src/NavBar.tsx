@@ -26,7 +26,7 @@ export default function NavBar() {
                 <NavMenu />
                 <div className="navLogo">
                     <Link to="/">
-                        <img className='khoj-logo' src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj_lantern_logo.svg" alt="Khoj" />
+                        <img className='khoj-logo' src="/khoj_lantern_logo.svg" alt="Khoj" />
                     </Link>
                 </div>
             </section>
