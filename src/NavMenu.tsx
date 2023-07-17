@@ -56,7 +56,7 @@ export default function NavMenu() {
 
     const loginItem = {
         label: (
-            <a href="/login" target="_blank">
+            <a href="/login">
                 Login
             </a>
         ),
@@ -79,7 +79,7 @@ export default function NavMenu() {
         },
         {
             label: (
-                <a href="/about" target="_blank">
+                <a href="/about">
                     About
                 </a>
                 ),
@@ -120,7 +120,7 @@ export default function NavMenu() {
         });
         items.push({
             label: (
-                <a href={KHOJ_LINK} target="_blank">
+                <a href={KHOJ_LINK}>
                     Go
                 </a>
                 ),
