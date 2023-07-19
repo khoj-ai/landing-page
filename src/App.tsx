@@ -41,7 +41,7 @@ function App() {
 								</Routes>
 							</Content>
 							<footer className="footer-container">
-								<img src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/footer_garden.svg' className='footer-garden' alt='footer-garden' />
+								<img src='/footer_garden.svg' className='footer-garden' alt='footer-garden' />
 								<p className='footer-text'>
 									Designed with ❤️ by <a className='inline-link-light' href="https://debankon.com/">Debankon</a>.<br />Developed with 🥵 by Saba and Debanjum.
 								</p>

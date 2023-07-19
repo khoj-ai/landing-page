@@ -50,7 +50,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Get more done with your <br/>AI powered personal assistant</h2>
+			<h2 className='title'>Get more done with your open-source<br/>AI personal assistant</h2>
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
@@ -63,7 +63,7 @@ export function Home() {
 					onEnded={handleEnded}
 					onMouseEnter={handleMouseEnter}
 					onMouseLeave={handleMouseLeave}>
-					<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-chat-demo.mp4#t=5" type="video/mp4" />
+					<source src="/khoj-chat-demo.mp4#t=5" type="video/mp4" />
 					Your browser may not support video
 				</video>
 				<div className="product-description-text top-section-links">
@@ -93,7 +93,7 @@ export function Home() {
 			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>
-					<img src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/hero_camping.svg' className='hero-camping' alt='hero-camping' />
+					<img src='/hero_camping.svg' className='hero-camping' alt='hero-camping' />
 				</div>
 			</div>
 			<section id="mission">
@@ -178,7 +178,7 @@ export function Home() {
 						onEnded={handleEnded}
 						onMouseEnter={handleMouseEnter}
 						onMouseLeave={handleMouseLeave}>
-						<source src="https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/khoj-search-demo.mp4" type="video/mp4" />
+						<source src="/khoj-search-demo.mp4" type="video/mp4" />
 						Your browser may not support video
 					</video>
 				</div>
@@ -203,13 +203,13 @@ export function Home() {
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/deb_founder_bw.jpg' alt='Debanjum Singh' />
+								<img className='founders-item-image' src='/deb_founder_bw.jpg' alt='Debanjum Singh' />
 								<p className='founders-item-name'>Debanjum Singh Solanky</p>
 							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='https://raw.githubusercontent.com/khoj-ai/landing-page/master/public/saba_founder_bw.jpg' alt='Saba Imran' />
+								<img className='founders-item-image' src='/saba_founder_bw.jpg' alt='Saba Imran' />
 								<p className='founders-item-name'>Saba Imran</p>
 							</div>
 						</div>

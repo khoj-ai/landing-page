@@ -1,6 +1,5 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Input, SubmitButton } from 'formik-antd'
-import { Link } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
 import { APIURL, DISCORD_LINK } from '../common/constants';
 import { Form, Formik } from 'formik';
@@ -38,7 +37,7 @@ export function Invited() {
 		confirmPassword: Yup.string().required('Required').oneOf([Yup.ref('password')], 'Passwords must match'),
 	});
 
-	if (inviteId === undefined || inviteId === null || inviteId === '') {
+	if (!inviteId || inviteId.trim() === '') {
 		navigate('/');
 	} else {
 		if (!checkedInvite) {
@@ -66,7 +65,7 @@ export function Invited() {
 						setEmail(data.email);
 					}
 				})
-				.catch((error) => {
+				.catch(() => {
 					setStatus(Status.Oops);
 				});
 			setCheckedInvite(true);
@@ -92,16 +91,19 @@ export function Invited() {
 					initialValues={{ password: '', confirmPassword: '' }}
 					validationSchema={PasswordSchema}
 					onSubmit={(values, { setSubmitting, setErrors },) => {
-						setTimeout(() => {
-							fetch(`${APIURL}/beta/invite/${inviteId!}/set-password/`, {
-								method: 'POST',
-								headers: {
-									'Content-Type': 'application/json',
-								},
-								body: JSON.stringify({
-									password: values.password,
+						if (!inviteId || inviteId.trim() === '') {
+							setStatus(Status.NotFound);
+						} else {
+							setTimeout(() => {
+								fetch(`${APIURL}/beta/invite/${inviteId}/set-password/`, {
+									method: 'POST',
+									headers: {
+										'Content-Type': 'application/json',
+									},
+									body: JSON.stringify({
+										password: values.password,
+									})
 								})
-							})
 								.then(response =>
 									{
 										if (response.status === 200) {
@@ -121,11 +123,12 @@ export function Invited() {
 											setErrors({confirmPassword: data.errors[0]});
 										}
 									})
-								.catch((error) => {
+								.catch(() => {
 									setStatus(Status.Oops);
-							});
-							setSubmitting(false);
-						}, 400);
+								});
+								setSubmitting(false);
+							}, 400);
+						}
 					}}
 				>
 					{({ isSubmitting, errors }) => (
