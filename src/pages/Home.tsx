@@ -133,8 +133,7 @@ export function Home() {
                                 This will simplify self-hosting Khoj without the hassle of managing Python versions and dependencies.
                             </p>
                             <p className='product-description-subcomponent-light'>
-                                We're in the thick of building and improving Khoj, and <b>we want to hear from you.</b>
-								Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
+                                We're in the thick of building and improving Khoj, and <b>we want to hear from you. </b> Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
                             </p>
 							<Waitlist />
 						</div>
