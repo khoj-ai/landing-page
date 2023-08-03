@@ -70,8 +70,8 @@ export default function NavMenu() {
         authAction,
         {
             label: (
-                <a href="https://github.com/khoj-ai/khoj#Setup" target="_blank">
-                    Self-Host
+                <a href="https://docs.khoj.dev/#/setup" target="_blank">
+                    Install
                 </a>
                 ),
             key: 'selfhost',
