@@ -89,7 +89,7 @@ export function Waitlist() {
 					)}
 				</Formik>
 				{
-					success ? <p>✅ Thanks for requesting early access! We'll reach out shortly. Until then, take this short <a className='inline-link-light' href="https://forms.gle/FRe6XPkcgkKsVbzC9">survey</a>.</p> : null
+					success ? <p>✅ Thanks for requesting early access! We'll reach out shortly. Until then, take this short <a className='inline-link-light' href="https://forms.gle/wUwKaxaodUhmp4Hj6">survey</a>.</p> : null
 				}
 				{
 					failed ? <p>Woops, that did not go as expected 😵‍💫. Try again or contact <a href="mailto:team@khoj.dev">team@khoj.dev</a></p> : null
