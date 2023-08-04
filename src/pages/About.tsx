@@ -1,6 +1,7 @@
 import '../styles/About.css';
-import { DISCORD_LINK } from '../common/constants';
+import { DISCORD_LINK, GITHUB_DOCS } from '../common/constants';
 
+console.log("test" + GITHUB_DOCS);
 export default function About() {
     return (
         <section className="core-page">
@@ -10,10 +11,10 @@ export default function About() {
                         <div className="content">
                             <p className='content'>
                                 Khoj is an AI powered personal assistant. It provides search and chat functionality. This simplifies finding and building on top of your personal data.
-                                You can interact with Khoj on your computer from <a className='inline-link-light' href="https://github.com/debanjum/khoj/tree/master/src/interface/emacs#readme">Emacs</a>, <a className='inline-link-light' href="https://github.com/debanjum/khoj/blob/master/src/interface/obsidian/README.md">Obsidian</a> or your <a href="https://github.com/debanjum/khoj/blob/master/README.md#interfaces" className='inline-link-light'>web browser</a>.
+                                You can interact with Khoj on your computer from <a className='inline-link-light' href= {GITHUB_DOCS+ "emacs.md"}>Emacs</a>, <a className='inline-link-light' href={GITHUB_DOCS + "obsidian.md"}>Obsidian</a> or your <a href= {GITHUB_DOCS +"web.md"} className='inline-link-light'>web browser</a>.
                             </p>
                             <p className='content'>
-                                To use Khoj, refer to the <a className='inline-link-light' href="https://github.com/debanjum/khoj#setup">installation guide</a>.
+                                To use Khoj, refer to the <a className='inline-link-light' href= {GITHUB_DOCS + "setup.md"}>installation guide</a>.
                                 To get started, you just have to set up the server on your computer and index your data sources.
                             </p>
                             <p className='content'>
