@@ -74,7 +74,7 @@ export function Home() {
 							style={{borderRadius: '4px'}}
 							ghost
 							icon={<Icon component={GithubIcon} />}
-							href="https://github.com/debanjum/khoj">
+							href="https://github.com/khoj-ai/khoj">
 								See code on Github
 						</Button>
 					</div>
