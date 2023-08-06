@@ -156,6 +156,7 @@ div.supported-icons {
 }
 
 div.typing-components {
+    height: 50px;
     color: #000;
     text-align: center;
     white-space: pre-line;
@@ -239,6 +240,7 @@ div.typing-components {
 
     div.typing-components {
         padding: 0 10%;
+        height: 70px;
     }
 
     h2.production-description-subcomponent {
