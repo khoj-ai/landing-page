@@ -55,17 +55,19 @@ export function Home() {
 				{showcaseRolesComponent()}
 			</div>
 			<div className='product-description'>
-				<video
-					id="demo-video"
-					autoPlay
-					ref={videoRef}
-					controls={showControls}
-					onEnded={handleEnded}
-					onMouseEnter={handleMouseEnter}
-					onMouseLeave={handleMouseLeave}>
-					<source src="/khoj-chat-demo.mp4#t=5" type="video/mp4" />
-					Your browser may not support video
-				</video>
+				<div className='product-description-video'>
+					<video
+						id="demo-video"
+						autoPlay
+						ref={videoRef}
+						controls={showControls}
+						onEnded={handleEnded}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}>
+						<source src="/khoj-chat-demo.mp4#t=5" type="video/mp4" />
+						Your browser may not support video
+					</video>
+				</div>
 				<div className="product-description-text top-section-links">
 					<div className='product-description-link'>
 						<Button

@@ -171,6 +171,9 @@ div.typing-components {
 }
 
 @media screen and (max-width: 760px) {
+    h2.title {
+        margin: 0 4px;
+    }
     div.product-description {
         display: grid;
         grid-template-columns: 1fr;
@@ -200,6 +203,9 @@ div.typing-components {
         max-width: auto;
     }
 
+    div.product-description-video {
+        margin: 0 10px;
+    }
     #demo-video {
         outline: 1px solid var(--main-background);
         outline-offset: 8px;
