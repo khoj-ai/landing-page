@@ -60,7 +60,7 @@ a.github-logo {
 
 div.product-description-link {
     text-align: left;
-    margin: 2rem;
+    margin: 1.8rem;
     display: inline;
 }
 div.top-section-links {
@@ -78,8 +78,8 @@ p.camping-text {
 div.product-description-bubbles {
     outline: 1px solid var(--main-background);
     outline-offset: 4px;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgb(0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0, 0, 0.5);
     width: 100%;
     max-width: 600px;
     object-fit: cover;
@@ -140,7 +140,9 @@ div.chat-message::after {
 
 #demo-video {
     outline: 1px solid var(--main-background);
-    outline-offset: 8px;
+    outline-offset: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0, 0, 0.5);
     width: 100%;
     max-width: 600px;
     object-fit: cover;
@@ -166,7 +168,8 @@ img.founders-item-image {
 
 div.founders-item-image-container {
     outline: 1px solid var(--main-background);
-    outline-offset: 8px;
+    outline-offset: 4px;
+    box-shadow: 0 0 8px rgb(0, 0, 0.5);
     max-width: 250px;
     margin: 8px;
 }
@@ -314,7 +317,9 @@ span.self-host-code {
     }
     #demo-video {
         outline: 1px solid var(--main-background);
-        outline-offset: 8px;
+        outline-offset: 4px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgb(0, 0, 0.5);
         width: 95%;
         max-width: 600px;
         object-fit: cover;
@@ -335,6 +340,8 @@ span.self-host-code {
     div.founders-item-image-container {
         margin: 0;
         max-width: none;
+        box-shadow: 0 0 8px rgb(0, 0, 0.5);
+        border-radius: 8px;
     }
     #conclude {
         margin-bottom: 0%;
