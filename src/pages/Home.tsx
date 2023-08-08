@@ -1,6 +1,7 @@
 import '../styles/Home.css';
 import { useState, useRef } from 'react';
 import { Button } from 'antd';
+import { BookFilled } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Waitlist from '../components/Waitlist';
@@ -77,7 +78,18 @@ export function Home() {
 							ghost
 							icon={<Icon component={GithubIcon} />}
 							href="https://github.com/khoj-ai/khoj">
-								See code on Github
+								See the code
+						</Button>
+					</div>
+					<div className='product-description-link'>
+						<Button
+							type="primary"
+							size='large'
+							style={{borderRadius: '4px'}}
+							ghost
+							icon={<BookFilled />}
+							href="https://docs.khoj.dev">
+								Read the docs
 						</Button>
 					</div>
 					<div className='product-description-link'>
