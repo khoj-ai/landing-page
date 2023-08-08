@@ -73,7 +73,7 @@ export default function About() {
                                     <p className='content'>This is best if you're looking to learn more about the product and participate in discussions.</p>
                                 </li>
                                 <li className='content'>
-                                    <a className="inline-link-light" href="https://github.com/debanjum/khoj/issues">Github Issues</a>
+                                    <a className="inline-link-light" href="https://github.com/khoj-ai/khoj/issues">Github Issues</a>
                                     <p className='content'>This is best if you have a feature request or bug to report.</p>
                                 </li>
                                 <li className='content'>
