@@ -332,7 +332,6 @@ span.self-host-code {
     div.founders-item-image-container {
         margin: 0;
         max-width: none;
-        box-shadow: 0 0 8px rgb(0, 0, 0.5);
         border-radius: 8px;
     }
     #conclude {

@@ -167,7 +167,7 @@ export function Home() {
 							<p className='product-description-subcomponent-light'>
 								Khoj is a desktop application to search and chat with your notes, documents and images.
 								It is an offline-first, open source AI personal assistant that is accessible from Emacs, Obsidian or your Web browser.
-								It works with jpeg, markdown, notion, org-mode, pdf files and github repositories.
+								You can see our supported data sources <a className='inline-link-light' href={DEV_DOCS + "features?id=supported-data-sources"}>here</a>.
 							</p>
 							<p className='product-description-subcomponent-light'>
 								Khoj is a thinking tool that is transparent, fun and easy to engage with.
