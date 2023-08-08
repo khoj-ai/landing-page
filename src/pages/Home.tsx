@@ -7,7 +7,7 @@ import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/
 import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
-import { DISCORD_LINK } from '../common/constants';
+import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 
 export function Home() {
 	const [showControls, setShowControls] = useState(false);
@@ -88,7 +88,7 @@ export function Home() {
 							style={{borderRadius: '4px'}}
 							ghost
 							icon={<BookFilled />}
-							href="https://docs.khoj.dev">
+							href={DEV_DOCS}>
 								Read the docs
 						</Button>
 					</div>
@@ -131,7 +131,7 @@ export function Home() {
                                 This means you can always customize and self-host your Khoj on your own machines.
                             </p>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to="https://docs.khoj.dev/#/setup">Self Host</Link>
+								<Link className="navLinks" to={DEV_DOCS + "setup"}>Self Host</Link>
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
