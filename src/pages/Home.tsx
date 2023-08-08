@@ -131,7 +131,7 @@ export function Home() {
                                 This means you can always customize and self-host your Khoj on your own machines.
                             </p>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to="https://docs.khoj/#/setup">Self Host</Link>
+								<Link className="navLinks" to="https://docs.khoj.dev/#/setup">Self Host</Link>
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
@@ -154,7 +154,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Chat</h2>
 					<p className='product-description-subcomponent-light'>
-						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power, its your choice.
+						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
 						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
 					</p>
 					<video
