@@ -191,7 +191,7 @@ export function Home() {
 								</code>
 							</pre>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to={DEV_DOCS + "setup"}>Self Host</Link>
+								<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
