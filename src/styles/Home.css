@@ -77,12 +77,19 @@ p.camping-text {
 
 div.product-description-bubbles {
     outline: 1px solid var(--main-background);
-    outline-offset: 8px;
+    outline-offset: 4px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgb(0, 0, 0.5);
     width: 100%;
     max-width: 600px;
     object-fit: cover;
     justify-self: center;
     margin: 8px;
+    padding-bottom: 8px;
+}
+
+div.convo-turn {
+    padding: 0 8px;
 }
 
 div.chat-message {
@@ -108,7 +115,7 @@ div.chat-message-text.you {
     color: #f8fafc;
     background: #475569;
     margin-right: auto;
-    text-align: right;
+    text-align: left;
 }
 
 div.chat-message-text {
