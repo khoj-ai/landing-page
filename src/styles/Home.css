@@ -76,8 +76,6 @@ p.camping-text {
 }
 
 div.product-description-bubbles {
-    outline: 1px solid var(--main-background);
-    outline-offset: 4px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgb(0, 0, 0.5);
     width: 100%;
@@ -139,8 +137,6 @@ div.chat-message::after {
 }
 
 #demo-video {
-    outline: 1px solid var(--main-background);
-    outline-offset: 4px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgb(0, 0, 0.5);
     width: 100%;
@@ -167,8 +163,6 @@ img.founders-item-image {
 }
 
 div.founders-item-image-container {
-    outline: 1px solid var(--main-background);
-    outline-offset: 4px;
     box-shadow: 0 0 8px rgb(0, 0, 0.5);
     max-width: 250px;
     margin: 8px;
@@ -316,8 +310,6 @@ span.self-host-code {
         width: 80%;
     }
     #demo-video {
-        outline: 1px solid var(--main-background);
-        outline-offset: 4px;
         border-radius: 8px;
         box-shadow: 0 0 8px rgb(0, 0, 0.5);
         width: 95%;
