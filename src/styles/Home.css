@@ -222,6 +222,47 @@ div.typing-components {
     margin-bottom: 32px;
 }
 
+code.product-description-subcomponent {
+    font-size: large;
+}
+
+pre.product-description-subcomponent {
+    position: relative;
+    overflow: auto;
+  
+    border-radius: 10px;
+}
+
+pre.product-description-subcomponent button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  
+    font-size: 0.9rem;
+    padding: 0.15rem;
+    background-color: var(--main-background);
+    color: var(--mild-sun);
+  
+    border: ridge 1px var(--light);
+    border-radius: 5px;
+    text-shadow: #c4c4c4 0 0 2px;
+}
+  
+pre.product-description-subcomponent button:hover {
+    cursor: pointer;
+    background-color: var(--mild-sun);
+    color: var(--main-background);
+}
+
+span.self-host-code {
+    color: #000;
+    font-size: large;
+    display: block;
+    background-color: var(--light);
+    padding: 4px 12px;
+}
+  
+
 #conclude {
     margin-bottom: -3%;
 }

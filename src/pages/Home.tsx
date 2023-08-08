@@ -49,6 +49,20 @@ export function Home() {
 		);
 	}
 
+	function copyToClipboardAction() {
+		const codeSnippetElements = document.getElementsByClassName('self-host-code');
+		const codeSnippet = Array.from(codeSnippetElements).map((element) => element.textContent?.split('$')[1].trim()).join('\n');
+		navigator.clipboard.writeText(codeSnippet).then(() => {
+			console.log('Copied to clipboard');
+		})
+		.catch((error) => {
+			console.error('Failed to copy: ', error);
+		});
+
+		const copyButton = document.getElementById('copy-self-host-button')!;
+		copyButton.textContent = 'Copied!';
+	}
+
 	function generateChatBubbles() {
 		const conversation = [
 			{
@@ -57,7 +71,7 @@ export function Home() {
 			},
 			{
 				"you": "What did I do in Balboa Park?",
-				"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate churros near the Botanical Building. You describe it as a memorable trip.",
+				"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
 			},
 			{
 				"you": "Remind me about that surfing experience. I want to write about it.",
@@ -165,8 +179,19 @@ export function Home() {
                                 Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
                                 This means you can always customize and self-host your Khoj on your own machines.
                             </p>
+							<h3 className='production-description-subcomponent'>Quickstart</h3>
+							<p className='product-description-subcomponent-light'>
+								Get started with the Khoj desktop setup in a few minutes.
+							</p>
+							<pre className='product-description-subcomponent'>
+								<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
+								<code className='product-description-subcomponent' >
+									<span className='self-host-code'>$ pip install khoj-assistant</span>
+									<span className='self-host-code'>$ khoj</span>
+								</code>
+							</pre>
 							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to="https://docs.khoj/#/setup">Self Host</Link>
+								<Link className="navLinks" to="https://docs.khoj.dev/#/setup">Setup</Link>
 							</Button>
                             <h3 className='production-description-subcomponent'>Current Plans</h3>
                             <p className='product-description-subcomponent-light'>
@@ -189,7 +214,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Chat</h2>
 					<p className='product-description-subcomponent-light'>
-						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power, its your choice.
+						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
 						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
 					</p>
 					<video
