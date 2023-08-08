@@ -18,3 +18,9 @@ This repository holds the code for its landing page.
 ## Run the docker image
 1. Run `docker-compose up`
 2. Open `http://localhost:3000` in your browser
+
+   ### Shutdown docker process
+   `docker-compose down`
+
+   ### Build the Docker image to reflect changes
+   `docker-compose build`
