@@ -59,8 +59,8 @@ export function Home() {
 			console.error('Failed to copy: ', error);
 		});
 
-		const copyButton = document.getElementById('copy-self-host-button')!;
-		copyButton.textContent = 'Copied!';
+		const copyButton = document.getElementById('copy-self-host-button');
+		if (copyButton) copyButton.textContent = 'Copied!';
 	}
 
 	function generateChatBubbles() {
