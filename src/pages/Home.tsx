@@ -181,7 +181,7 @@ export function Home() {
                             </p>
 							<h3 className='production-description-subcomponent'>Quickstart</h3>
 							<p className='product-description-subcomponent-light'>
-								Get started with the Khoj desktop setup in a few minutes.
+								Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal. If you're not comfortable with a terminal, we recommend you try the <a className='inline-link-light' href="https://docs.khoj.dev/#/desktop_installation">desktop installations</a>.
 							</p>
 							<pre className='product-description-subcomponent'>
 								<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
