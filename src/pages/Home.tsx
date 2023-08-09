@@ -209,13 +209,13 @@ export function Home() {
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='/deb_founder_bw.jpg' alt='Debanjum Singh' />
+								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/deb_founder_bw.jpg' alt='Debanjum Singh' />
 								<p className='founders-item-name'>Debanjum Singh Solanky</p>
 							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='/saba_founder_bw.jpg' alt='Saba Imran' />
+								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/saba_founder_bw.jpg' alt='Saba Imran' />
 								<p className='founders-item-name'>Saba Imran</p>
 							</div>
 						</div>
