@@ -16,7 +16,7 @@ export function Announcement() {
         <div className='announcement-bar'>
             <p className='announcement-text'>
                 <WhatsAppOutlined className='announcement-icon' />
-                <a href="/whatsapp" className='announcement-link'> Talk to Khoj on WhatsApp</a>
+                <a href="/whatsapp" className='announcement-link'> Journal with Khoj on WhatsApp</a>
             </p>
         </div>
 	);

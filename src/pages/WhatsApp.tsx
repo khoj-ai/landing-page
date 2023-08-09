@@ -139,7 +139,7 @@ export default function About() {
                                 </Button>
                             </div>
                         </div>
-                        <h2 className='article-title'>Start Chatting</h2>
+                        <h2 className='article-title'>Start Exploring</h2>
                         <div className='content'>
                             <p className='content'>
                                 You have two ways to get started with Khoj on WhatsApp.
