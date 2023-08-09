@@ -8,6 +8,7 @@ import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import ChatBubbles from '../components/ChatBubbles';
 
 export function Home() {
 	const [showControls, setShowControls] = useState(false);
@@ -62,51 +63,21 @@ export function Home() {
 		const copyButton = document.getElementById('copy-self-host-button');
 		if (copyButton) copyButton.textContent = 'Copied!';
 	}
-
-	function generateChatBubbles() {
-		const conversation = [
-			{
-				"you": "Hey Khoj, where did I visit in San Diego?",
-				"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
-			},
-			{
-				"you": "What did I do in Balboa Park?",
-				"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
-			},
-			{
-				"you": "Remind me about that surfing experience. I want to write about it.",
-				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
-			}
-		]
-
-		let currTime = new Date();
-
-		const chatBubbles = conversation.map((message, index) => {
-
-			const youMessageDate = new Date(currTime.getTime() + (index * 240000));
-			const youMessageDateString = youMessageDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-			const khojMessageDate = new Date(youMessageDate.getTime() + 120000);
-			const khojMessageDateString = khojMessageDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-			currTime = khojMessageDate;
-
-			return (
-				<div className='convo-turn'>
-					<div data-meta={`🤔 You at ${youMessageDateString}`} className="chat-message you">
-						<div className="chat-message-text you">{message.you}</div>
-					</div>
-					<div data-meta={`🏮 Khoj at ${khojMessageDateString}`} className="chat-message khoj">
-						<div className="chat-message-text khoj">{message.khoj}</div>
-					</div>
-				</div>
-			)
-		});
-
-		return chatBubbles;
-	}
-
-	const messages = generateChatBubbles();
+	
+	const conversation = [
+		{
+			"you": "Hey Khoj, where did I visit in San Diego?",
+			"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
+		},
+		{
+			"you": "What did I do in Balboa Park?",
+			"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
+		},
+		{
+			"you": "Remind me about that surfing experience. I want to write about it.",
+			"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
+		}
+	];
 
 	return (
 		<section className='core-page'>
@@ -116,7 +87,7 @@ export function Home() {
 			</div>
 			<div className='product-description'>
 				<div className='product-description-bubbles'>
-					{messages}
+					<ChatBubbles conversation={conversation} />
 				</div>
 				<div className="product-description-text top-section-links">
 					<div className='product-description-link'>

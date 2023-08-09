@@ -86,56 +86,6 @@ div.product-description-bubbles {
     padding-bottom: 8px;
 }
 
-div.convo-turn {
-    padding: 0 8px;
-}
-
-div.chat-message {
-    font: var(--reader);
-}
-
-div.chat-message-text.khoj {
-    background-color: var(--mild-sun);
-    color: var(--main-background);
-    margin-left: auto;
-    white-space: pre-line;
-}
-
-div.chat-message.khoj {
-    text-align: left;
-}
-
-div.chat-message.you {
-    text-align: right;
-}
-
-div.chat-message-text.you {
-    color: #f8fafc;
-    background: #475569;
-    margin-right: auto;
-    text-align: left;
-}
-
-div.chat-message-text {
-    margin: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    max-width: 80%;
-    text-align: left;
-}
-
-/* add chat metatdata to bottom of bubble */
-div.chat-message::after {
-    content: attr(data-meta);
-    display: block;
-    font-size: x-small;
-    color: #475569;
-    margin: -8px 4px 0 -5px;
-}
-
 #demo-video {
     border-radius: 8px;
     box-shadow: 0 0 8px rgb(0, 0, 0.5);

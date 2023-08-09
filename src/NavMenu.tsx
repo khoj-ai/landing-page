@@ -85,6 +85,14 @@ export default function NavMenu() {
                 ),
             key: 'about',
         },
+        {
+            label: (
+                <a href="/whatsapp">
+                    WhatsApp
+                </a>
+                ),
+            key: 'whatsapp',
+        }
     ];
 
     if (authenticated) {

@@ -1,0 +1,9 @@
+@import url(colors.css);
+
+div.announcement-bar {
+    background-color: var(--soft-green);
+}
+
+a.announcement-link {
+    color: var(--dark-water);
+}

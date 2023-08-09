@@ -1,0 +1,39 @@
+@import url(colors.css);
+@import url(fonts.css);
+
+img#whatsapp-qr-code {
+    max-width: 400px;
+}
+
+div.content.link {
+    margin: 0;
+}
+
+p.whatsapp-faq {
+    font-family: var(--reader);
+    font-weight: lighter;
+}
+
+div.chat-examples.content {
+    max-width: 50vw;
+}
+
+.ant-carousel .slick-dots li button {
+    background: var(--main-background);
+    opacity: 0.4;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    opacity: 1;
+    background: var(--main-background);
+}
+
+@media screen and (max-width: 600px) {
+    div.chat-examples.content {
+        max-width: 100%;
+    }
+
+    img#whatsapp-qr-code {
+        max-width: 100%;
+    }
+}

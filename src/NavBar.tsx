@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './styles/NavBar.css';
-import Waitlist from "./components/Waitlist";
+import Announcement from "./components/Announcement";
 import { checkAuthentication } from "./common/auth";
 import { useState } from "react";
 import NavMenu from "./NavMenu";
@@ -22,7 +22,7 @@ export default function NavBar() {
     return (
         <nav className="navBar">
             <section className="navSection">
-                {!authenticated && <Waitlist />}
+                <Announcement />
                 <NavMenu />
                 <div className="navLogo">
                     <Link to="/">
