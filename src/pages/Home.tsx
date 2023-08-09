@@ -188,17 +188,7 @@ export function Home() {
 						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
 						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
 					</p>
-					<video
-						id="demo-video"
-						autoPlay
-						ref={videoRef}
-						controls={showControls}
-						onEnded={handleEnded}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-						<source src="https://github.com/khojai/landing-page/assets/65192171/434299dd-378c-4aa7-a2b6-b1af6ec9acca" type="video/mp4" />
-						Your browser may not support video
-					</video>
+					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="search-demo" />
 				</div>
 			</div>
 			<div id="search" className='product-description'>
@@ -210,17 +200,7 @@ export function Home() {
 						Search using terms that are similar to what you're looking for, rather than exact or fuzzy matches.
 						Khoj search works offline. So if you self-host your data never leaves your machine and search works without internet.
 					</p>
-					<video
-						id="demo-video"
-						autoPlay
-						ref={videoRef}
-						controls={showControls}
-						onEnded={handleEnded}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-						<source src="/khoj-search-demo.mp4" type="video/mp4" />
-						Your browser may not support video
-					</video>
+					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/searchdemo.gif" alt="search-demo" />
 				</div>
 			</div>
 			<div id="plugins" className='product-description'>
