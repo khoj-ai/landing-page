@@ -1,5 +1,4 @@
 import '../styles/Home.css';
-import { useState, useRef } from 'react';
 import { Button } from 'antd';
 import { BookFilled } from '@ant-design/icons';
 import { Link } from "react-router-dom";
@@ -11,19 +10,6 @@ import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
 
 export function Home() {
-	const [showControls, setShowControls] = useState(false);
-	const videoRef = useRef<HTMLVideoElement>(null);
-	const handleMouseEnter = () => {
-		setShowControls(true);
-	};
-
-	const handleMouseLeave = () => {
-		setShowControls(false);
-	};
-
-	const handleEnded = () => {
-		setShowControls(false);
-	};
 
 	const showcaseRolesComponent = () => {
 		return(
