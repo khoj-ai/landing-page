@@ -87,13 +87,14 @@ div.product-description-bubbles {
 }
 
 #demo-video {
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgb(0, 0, 0.5);
+    border-radius: 0px;
     width: 100%;
     max-width: 600px;
     object-fit: cover;
     justify-self: center;
     margin: 8px;
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
 }
 
 div.founders-text {
@@ -113,7 +114,8 @@ img.founders-item-image {
 }
 
 div.founders-item-image-container {
-    box-shadow: 0 0 8px rgb(0, 0, 0.5);
+    outline: 1px solid var(--main-background);
+    outline-offset: 8px;
     max-width: 250px;
     margin: 8px;
 }
@@ -260,8 +262,6 @@ span.self-host-code {
         width: 80%;
     }
     #demo-video {
-        border-radius: 8px;
-        box-shadow: 0 0 8px rgb(0, 0, 0.5);
         width: 95%;
         max-width: 600px;
         object-fit: cover;
@@ -282,7 +282,6 @@ span.self-host-code {
     div.founders-item-image-container {
         margin: 0;
         max-width: none;
-        border-radius: 8px;
     }
     #conclude {
         margin-bottom: 0%;
