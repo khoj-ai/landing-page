@@ -231,6 +231,9 @@ export function Home() {
 					<p className='product-description-subcomponent-light'>
 						To learn more about the product, <Link className='inline-link-light' to="/about">click here</Link>.
 					</p>
+					<a href="https://www.ycombinator.com/companies/khoj">
+						<img id='yc-logo' src="https://khoj-web-bucket.s3.amazonaws.com/backedbyyc.svg" alt="Backed by YCominbator" />
+					</a>
 				</div>
 			</div>
 

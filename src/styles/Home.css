@@ -217,6 +217,10 @@ span.self-host-code {
     background-color: var(--light);
     padding: 4px 12px;
 }
+
+img#yc-logo {
+    max-width: 150px;
+}
   
 
 #conclude {
