@@ -1,5 +1,4 @@
 import '../styles/Home.css';
-import { useState, useRef } from 'react';
 import { Button } from 'antd';
 import { BookFilled } from '@ant-design/icons';
 import { Link } from "react-router-dom";
@@ -8,21 +7,9 @@ import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import ChatBubbles from '../components/ChatBubbles';
 
 export function Home() {
-	const [showControls, setShowControls] = useState(false);
-	const videoRef = useRef<HTMLVideoElement>(null);
-	const handleMouseEnter = () => {
-		setShowControls(true);
-	};
-
-	const handleMouseLeave = () => {
-		setShowControls(false);
-	};
-
-	const handleEnded = () => {
-		setShowControls(false);
-	};
 
 	const showcaseRolesComponent = () => {
 		return(
@@ -62,51 +49,21 @@ export function Home() {
 		const copyButton = document.getElementById('copy-self-host-button');
 		if (copyButton) copyButton.textContent = 'Copied!';
 	}
-
-	function generateChatBubbles() {
-		const conversation = [
-			{
-				"you": "Hey Khoj, where did I visit in San Diego?",
-				"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
-			},
-			{
-				"you": "What did I do in Balboa Park?",
-				"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
-			},
-			{
-				"you": "Remind me about that surfing experience. I want to write about it.",
-				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
-			}
-		]
-
-		let currTime = new Date();
-
-		const chatBubbles = conversation.map((message, index) => {
-
-			const youMessageDate = new Date(currTime.getTime() + (index * 240000));
-			const youMessageDateString = youMessageDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-			const khojMessageDate = new Date(youMessageDate.getTime() + 120000);
-			const khojMessageDateString = khojMessageDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-			currTime = khojMessageDate;
-
-			return (
-				<div className='convo-turn'>
-					<div data-meta={`🤔 You at ${youMessageDateString}`} className="chat-message you">
-						<div className="chat-message-text you">{message.you}</div>
-					</div>
-					<div data-meta={`🏮 Khoj at ${khojMessageDateString}`} className="chat-message khoj">
-						<div className="chat-message-text khoj">{message.khoj}</div>
-					</div>
-				</div>
-			)
-		});
-
-		return chatBubbles;
-	}
-
-	const messages = generateChatBubbles();
+	
+	const conversation = [
+		{
+			"you": "Hey Khoj, where did I visit in San Diego?",
+			"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
+		},
+		{
+			"you": "What did I do in Balboa Park?",
+			"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
+		},
+		{
+			"you": "Remind me about that surfing experience. I want to write about it.",
+			"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
+		}
+	];
 
 	return (
 		<section className='core-page'>
@@ -116,7 +73,7 @@ export function Home() {
 			</div>
 			<div className='product-description'>
 				<div className='product-description-bubbles'>
-					{messages}
+					<ChatBubbles conversation={conversation} />
 				</div>
 				<div className="product-description-text top-section-links">
 					<div className='product-description-link'>
@@ -217,17 +174,7 @@ export function Home() {
 						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
 						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
 					</p>
-					<video
-						id="demo-video"
-						autoPlay
-						ref={videoRef}
-						controls={showControls}
-						onEnded={handleEnded}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-						<source src="https://github.com/khojai/landing-page/assets/65192171/434299dd-378c-4aa7-a2b6-b1af6ec9acca" type="video/mp4" />
-						Your browser may not support video
-					</video>
+					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="search-demo" />
 				</div>
 			</div>
 			<div id="search" className='product-description'>
@@ -239,17 +186,7 @@ export function Home() {
 						Search using terms that are similar to what you're looking for, rather than exact or fuzzy matches.
 						Khoj search works offline. So if you self-host your data never leaves your machine and search works without internet.
 					</p>
-					<video
-						id="demo-video"
-						autoPlay
-						ref={videoRef}
-						controls={showControls}
-						onEnded={handleEnded}
-						onMouseEnter={handleMouseEnter}
-						onMouseLeave={handleMouseLeave}>
-						<source src="/khoj-search-demo.mp4" type="video/mp4" />
-						Your browser may not support video
-					</video>
+					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/searchdemo.gif" alt="search-demo" />
 				</div>
 			</div>
 			<div id="plugins" className='product-description'>
@@ -272,13 +209,13 @@ export function Home() {
 					<div className='founders-text'>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='/deb_founder_bw.jpg' alt='Debanjum Singh' />
+								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/deb_founder_bw.jpg' alt='Debanjum Singh' />
 								<p className='founders-item-name'>Debanjum Singh Solanky</p>
 							</div>
 						</div>
 						<div className='founders-item'>
 							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='/saba_founder_bw.jpg' alt='Saba Imran' />
+								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/saba_founder_bw.jpg' alt='Saba Imran' />
 								<p className='founders-item-name'>Saba Imran</p>
 							</div>
 						</div>

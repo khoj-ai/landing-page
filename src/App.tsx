@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Invited from './pages/Invited';
 import Login from './pages/Login';
+import WhatsApp from './pages/WhatsApp';
 
 import { ConfigProvider, Layout } from 'antd';
 
@@ -38,6 +39,7 @@ function App() {
 									<Route path="/about" element={<About />} />
 									<Route path="/invited/:inviteId" element={<Invited />} />
 									<Route path="/login" element={<Login />} />
+									<Route path="/whatsapp" element={<WhatsApp />} />
 								</Routes>
 							</Content>
 							<footer className="footer-container">
