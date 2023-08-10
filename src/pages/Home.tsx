@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 import { Button } from 'antd';
-import { BookFilled, WhatsAppOutlined } from '@ant-design/icons';
+import { WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Waitlist from '../components/Waitlist';
