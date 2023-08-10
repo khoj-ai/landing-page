@@ -131,7 +131,7 @@ export default function About() {
                                 <Button
                                     type="primary"
                                     size='large'
-                                    style={{borderRadius: '4px'}}
+                                    style={{borderRadius: '4px', color: 'green'}}
                                     ghost
                                     icon={<WhatsAppOutlined />}
                                     href="https://wa.me/18488004242">
