@@ -60,11 +60,11 @@ a.github-logo {
 
 div.product-description-link {
     text-align: left;
-    margin: 1.8rem;
+    margin: 1.5rem;
     display: inline;
 }
 div.top-section-links {
-    margin-top: 37px;
+    margin-top: 0px;
 }
 
 p.camping-text {
@@ -84,6 +84,7 @@ div.product-description-bubbles {
     justify-self: center;
     margin: 8px;
     padding-bottom: 8px;
+    margin-top: 36px;
 }
 
 #demo-video {
@@ -175,7 +176,11 @@ div.typing-components {
     font-size: x-large;
     font-family: var(--reader);
     margin-top: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+}
+
+a.ant-btn.cta-button {
+    width: auto;
 }
 
 code.product-description-subcomponent {
@@ -308,5 +313,9 @@ img#yc-logo {
 
     h2.production-description-subcomponent {
         padding: 1rem 0;
+    }
+
+    a.ant-btn.cta-button {
+        width: 80%;
     }
 }

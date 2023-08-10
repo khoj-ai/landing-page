@@ -68,15 +68,14 @@ export function Home() {
 				{showcaseRolesComponent()}
 			</div>
 			<div className='product-description'>
-				<div className='product-description-bubbles'>
-					<ChatBubbles conversation={conversation} />
-				</div>
+
 				<div className="product-description-text top-section-links">
 					<div className='product-description-link'>
 						<Button
 							type="primary"
 							size='large'
-							style={{borderRadius: '4px'}}
+							className='cta-button'
+							style={{borderRadius: '4px' }}
 							ghost
 							icon={<Icon component={GithubIcon} />}
 							href="https://github.com/khoj-ai/khoj">
@@ -87,7 +86,8 @@ export function Home() {
 						<Button
 							type="primary"
 							size='large'
-							style={{borderRadius: '4px', color: 'green'}}
+							className='cta-button'
+							style={{borderRadius: '4px', color: 'green' }}
 							ghost
 							icon={<WhatsAppOutlined />}
 							href="https://wa.me/18488004242">
@@ -98,13 +98,17 @@ export function Home() {
 						<Button
 							type="primary"
 							size='large'
-							style={{borderRadius: '4px'}}
+							className='cta-button'
+							style={{borderRadius: '4px' }}
 							ghost
 							icon={<Icon component={DiscordIcon} />}
 							href={DISCORD_LINK}>
 								Join us on Discord
 						</Button>
 					</div>
+				</div>
+				<div className='product-description-bubbles'>
+					<ChatBubbles conversation={conversation} />
 				</div>
 			</div>
 			<div className='camping-image-container'>

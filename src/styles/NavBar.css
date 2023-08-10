@@ -36,13 +36,12 @@ a.navLinksFocus {
 div.navLogo {
     display: grid;
     justify-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 img.khoj-logo {
     width: min(60vw, 250px);
-    padding: 10px 0;
 }
 
 li.navLinks {
