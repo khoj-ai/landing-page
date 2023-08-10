@@ -6,6 +6,9 @@ img#whatsapp-qr-code {
 }
 
 div.content.link {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
     margin: 0;
 }
 
@@ -29,6 +32,13 @@ div.chat-examples.content {
 }
 
 @media screen and (max-width: 600px) {
+    div.content.link {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 1rem;
+        margin: 0;
+    }
+
     div.chat-examples.content {
         max-width: 100%;
     }

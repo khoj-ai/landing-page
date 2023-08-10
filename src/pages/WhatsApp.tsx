@@ -133,6 +133,15 @@ export default function About() {
                                     size='large'
                                     style={{borderRadius: '4px'}}
                                     ghost
+                                    icon={<WhatsAppOutlined />}
+                                    href="https://wa.me/18488004242">
+                                       Chat with Khoj
+                                </Button>
+                                <Button
+                                    type="primary"
+                                    size='large'
+                                    style={{borderRadius: '4px'}}
+                                    ghost
                                     icon={<Icon component={GithubIcon} />}
                                     href="https://github.com/khoj-ai/flint">
                                         See the code
@@ -141,19 +150,8 @@ export default function About() {
                         </div>
                         <h2 className='article-title'>Start Exploring</h2>
                         <div className='content'>
-                            <p className='content'>
-                                You have two ways to get started with Khoj on WhatsApp.
-                            </p>
-                            <ol className='content'>
-                                <li className='content'>
-                                    <p className='content'>Manually add Khoj as a contact: <a className="inline-link-light" href="https://wa.me/18488004242">+1 (848)-800-4242</a>
-                                    </p>
-                                </li>
-                                <li className='content'>
-                                    <p className='content'>Scan the QR code below</p>
-                                    <img id='whatsapp-qr-code' className='content' src="https://khoj-web-bucket.s3.amazonaws.com/khojwhatsapp.png" alt="Khoj WhatsApp QR Code" />
-                                </li>
-                            </ol>
+                            Add Khoj to your WhatsApp at <a className="inline-link-light" href="https://wa.me/18488004242">+1 (848)-800-4242</a> or use the QR code below.<br />
+                            <img id='whatsapp-qr-code' className='content' src="https://khoj-web-bucket.s3.amazonaws.com/khojwhatsapp.png" alt="Khoj WhatsApp QR Code" />
                         </div>
                         <h2 className='article-title'>What should I ask Khoj?</h2>
                         <div className='content'>
