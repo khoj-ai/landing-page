@@ -13,12 +13,14 @@ export function Announcement() {
 
 
 	return (
-        <div className='announcement-bar'>
-            <p className='announcement-text'>
-                <WhatsAppOutlined className='announcement-icon' />
-                <a href="/whatsapp" className='announcement-link'> Journal with Khoj on WhatsApp</a>
-            </p>
-        </div>
+        <a href="/whatsapp" className='announcement-link'> 
+            <div className='announcement-bar'>
+                <p className='announcement-text'>
+                    <WhatsAppOutlined className='announcement-icon' />
+                    Journal with Khoj on WhatsApp
+                </p>
+            </div>
+        </a>
 	);
 }
 

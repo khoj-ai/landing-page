@@ -1,9 +1,23 @@
 @import url(colors.css);
 
-div.announcement-bar {
+a.announcement-link {
     background-color: var(--soft-green);
+}
+
+a.announcement-link:hover {
+    background-color: var(--soft-dark-green);
 }
 
 a.announcement-link {
     color: var(--dark-water);
+    padding: 12px;
+}
+
+p.announcement-text {
+    margin: 0;
+}
+
+.announcement-icon {
+    padding-left: 8px;
+    padding-right: 8px;
 }
