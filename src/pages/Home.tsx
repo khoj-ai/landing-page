@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 import { Button } from 'antd';
-import { BookFilled } from '@ant-design/icons';
+import { BookFilled, WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Waitlist from '../components/Waitlist';
@@ -56,10 +56,6 @@ export function Home() {
 			"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
 		},
 		{
-			"you": "What did I do in Balboa Park?",
-			"khoj": "You visited the San Diego Museum of Art, and the San Diego Air & Space Museum with your mom and dad. You ate ice cream near the Botanical Building. You describe it as a memorable trip.",
-		},
-		{
 			"you": "Remind me about that surfing experience. I want to write about it.",
 			"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
 		}
@@ -91,11 +87,11 @@ export function Home() {
 						<Button
 							type="primary"
 							size='large'
-							style={{borderRadius: '4px'}}
+							style={{borderRadius: '4px', color: 'green'}}
 							ghost
-							icon={<BookFilled />}
-							href={DEV_DOCS}>
-								Read the docs
+							icon={<WhatsAppOutlined />}
+							href="https://wa.me/18488004242">
+								Chat with Khoj
 						</Button>
 					</div>
 					<div className='product-description-link'>
