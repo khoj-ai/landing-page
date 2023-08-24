@@ -67,21 +67,43 @@ export function Home() {
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
-			<div className='product-description'>
-
-				<div className="product-description-text top-section-links">
-					<div className='product-description-link'>
-						<Button
-							type="primary"
-							size='large'
-							className='cta-button'
-							style={{borderRadius: '4px' }}
-							ghost
-							icon={<Icon component={GithubIcon} />}
-							href="https://github.com/khoj-ai/khoj">
-								See the code
-						</Button>
-					</div>
+   <div className='product-description'>
+   
+   	<div className="product-description-text top-section-links">
+   		<div className='product-description-link'>
+   			<Button
+   				type="primary"
+   				size='large'
+   				className='cta-button'
+   				style={{borderRadius: '4px' }}
+   				ghost
+   				icon={<Icon component={GithubIcon} />}
+   				href="https://github.com/khoj-ai/khoj">
+   					See the code
+   			</Button>
+   		</div>
+   		<div className='product-description-link'>
+   			<Button
+   				type="primary"
+   				size='large'
+   				className='cta-button'
+   				style={{borderRadius: '4px' }}
+   				ghost
+   				href="https://github.com/khoj-ai/khoj/releases/latest/download/khoj_amd64.exe">
+   					Download Khoj for Windows
+   			</Button>
+   		</div>
+   		<div className='product-description-link'>
+   			<Button
+   				type="primary"
+   				size='large'
+   				className='cta-button'
+   				style={{borderRadius: '4px' }}
+   				ghost
+   				href="https://github.com/khoj-ai/khoj/releases/latest/download/khoj_arm64.dmg">
+   					Download Khoj for MacOS
+   			</Button>
+   		</div>
 					<div className='product-description-link'>
 						<Button
 							type="primary"
