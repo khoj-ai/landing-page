@@ -1,0 +1,18 @@
+@import 'colors.css';
+@import 'fonts.css';
+
+div.privacy-policy {
+    text-align: left;
+    margin: 0 20%;
+}
+
+p.privacy-policy,
+li.privacy-policy {
+    font-family: var(--reader);
+}
+
+@media screen and (max-width: 760px) {
+    div.privacy-policy {
+        margin: 0 1rem;
+    }
+}
