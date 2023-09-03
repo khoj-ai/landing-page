@@ -1,5 +1,5 @@
 # Khoj Landing Page
-[Khoj](https://github.com/khoj-ai/khoj) is an AI personal assistant for your digital brain.
+[Khoj](https://github.com/khoj-ai/khoj) is an open-source AI copilot for your second brain.
 
 This repository holds the code for its landing page.
 
