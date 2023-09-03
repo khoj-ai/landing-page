@@ -6,7 +6,9 @@ import { Menu } from 'antd';
 import {
 	UserOutlined,
 	SettingOutlined,
-	CloudDownloadOutlined,
+    BookOutlined,
+    WhatsAppOutlined,
+    InfoCircleOutlined
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 
@@ -71,11 +73,11 @@ export default function NavMenu() {
         {
             label: (
                 <a href="https://docs.khoj.dev/#/setup" target="_blank">
-                    Install
+                   Docs
                 </a>
                 ),
             key: 'selfhost',
-            icon: <CloudDownloadOutlined />,
+            icon: <BookOutlined />,
         },
         {
             label: (
@@ -84,6 +86,7 @@ export default function NavMenu() {
                 </a>
                 ),
             key: 'about',
+            icon: <InfoCircleOutlined />,
         },
         {
             label: (
@@ -92,6 +95,7 @@ export default function NavMenu() {
                 </a>
                 ),
             key: 'whatsapp',
+            icon: <WhatsAppOutlined />,
         }
     ];
 

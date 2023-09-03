@@ -63,7 +63,7 @@ export function Home() {
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Get more done with your open-source<br/>AI personal assistant</h2>
+			<h2 className='title'>Your open-source, personal AI copilot for life</h2>
 			<div className='typing-components'>
 				{showcaseRolesComponent()}
 			</div>
@@ -196,7 +196,7 @@ export function Home() {
 						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
 						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
 					</p>
-					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="search-demo" />
+					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="chat-demo" />
 				</div>
 			</div>
 			<div id="search" className='product-description'>
