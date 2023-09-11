@@ -96,6 +96,14 @@ export default function NavMenu() {
                 ),
             key: 'whatsapp',
             icon: <WhatsAppOutlined />,
+        },
+        {
+            label: (
+                <a href="https://faq.khoj.dev/" target="_blank">
+                    Demo
+                </a>
+                ),  
+            key: 'demo',
         }
     ];
 
