@@ -46,4 +46,8 @@ div.chat-examples.content {
     img#whatsapp-qr-code {
         max-width: 100%;
     }
+
+    div.chat-examples.content {
+        max-width: 100%;
+    }
 }
