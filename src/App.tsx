@@ -31,10 +31,10 @@ function App() {
 					}
 				}>
 				<BrowserRouter>
-					<Layout>
+					<Layout style={{ minHeight: '100vh' }}>
 						<Layout style={{ padding: 0, background: "#fff" }}>
 							<NavBar />
-							<Content>
+							<Content style={{ flex: '1 0 auto' }}>
 								<Routes>
 									<Route path="/" element={<Home />} />
 									<Route path="/about" element={<About />} />
