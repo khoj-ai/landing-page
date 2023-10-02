@@ -5,3 +5,21 @@ input#login-email, input#login-password {
     font-family: var(--reader);
     font-size: var(--subtitle-size);
 }
+
+.login-page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+input#login-email{
+    margin-top: 20px;
+    max-width: 442px;
+    width: calc(70vw + 42px);
+}
+
+input#login-password {
+    max-width: 400px;
+    width: 70vw;
+}
