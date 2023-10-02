@@ -4,6 +4,9 @@
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -46,21 +49,22 @@ p.footer-text {
 }
 
 img.footer-garden {
-    background: linear-gradient(
-        to bottom,
-        var(--light) 0%,
-        var(--light) 70%,
-        var(--mild-sun) 70%,
-        var(--mild-sun) 100%
-      );
+  background: linear-gradient(
+    to bottom,
+    var(--light) 0%,
+    var(--light) 70%,
+    var(--mild-sun) 70%,
+    var(--mild-sun) 100%
+  );
 }
-
 
 section.core-page {
   margin: 0;
 }
 
-section.core-page > a:visited, a:hover, a:active {
+section.core-page > a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 
