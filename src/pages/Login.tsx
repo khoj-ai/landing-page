@@ -26,7 +26,7 @@ export function Login() {
 
 	function LoginComponent() {
 		return (
-			<section className='core-page'>
+			<section className='core-page login-page'>
 				<h2 className='title'>Welcome back!</h2>
 				<Formik
 					initialValues={{ email: '', password: '' }}
