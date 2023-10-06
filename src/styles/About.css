@@ -27,11 +27,6 @@ h2.article-title {
 }
 
 @media screen and (max-width: 760px) {
-    div.content-sections {
-        display: flex;
-        flex-direction: column;
-    }
-
     div.article {
         margin: 0 1rem;
     }

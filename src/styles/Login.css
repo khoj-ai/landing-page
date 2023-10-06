@@ -20,6 +20,6 @@ input#login-email{
 }
 
 input#login-password {
-    max-width: 400px;
     width: 70vw;
+    max-width: 400px;
 }
