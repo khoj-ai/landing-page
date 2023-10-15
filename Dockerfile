@@ -1,6 +1,8 @@
 # Build Stage
 FROM node:current-alpine as build
 WORKDIR /app
+ARG POSTHOG_API_KEY
+ENV REACT_APP_POSTHOG_API_KEY=$POSTHOG_API_KEY
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install
