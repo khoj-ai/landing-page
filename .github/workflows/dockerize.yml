@@ -34,3 +34,5 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository }}:${{ env.DOCKER_IMAGE_TAG }}
+          build-args: |
+            POSTHOG_API_KEY=${{ secrets.POSTHOG_API_KEY }}
