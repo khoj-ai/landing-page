@@ -5,8 +5,8 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 body {

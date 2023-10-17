@@ -18,6 +18,15 @@ import {
 	Routes,
 } from "react-router-dom";
 
+import posthog from 'posthog-js'
+
+const posthogAPIKey = process.env.REACT_APP_POSTHOG_API_KEY;
+
+if (posthogAPIKey !== undefined) {
+	posthog.init(posthogAPIKey, { api_host: 'https://app.posthog.com' });
+}
+
+
 function App() {
 	return (
 		<div className="App">

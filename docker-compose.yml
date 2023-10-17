@@ -3,6 +3,8 @@ services:
   landing:
     build:
       context: .
+      args:
+        - POSTHOG_API_KEY=${POSTHOG_API_KEY}
     ports:
       - "3000:80"
     volumes:
