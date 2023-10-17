@@ -6,6 +6,7 @@ import Invited from './pages/Invited';
 import Login from './pages/Login';
 import WhatsApp from './pages/WhatsApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 import { ConfigProvider, Layout } from 'antd';
 
@@ -42,13 +43,15 @@ function App() {
 									<Route path="/login" element={<Login />} />
 									<Route path="/whatsapp" element={<WhatsApp />} />
 									<Route path="/privacy-policy" element={<PrivacyPolicy />} />
+									<Route path="/terms-of-service" element={<TermsOfService />} />
 								</Routes>
 							</Content>
 							<footer className="footer-container">
 								<img src='/footer_garden.svg' className='footer-garden' alt='footer-garden' />
 								<p className='footer-text'>
-									<a className='inline-link-light' href="/privacy-policy">Privacy Policy</a> |
-									<a className='inline-link-light' href="/about">About</a>
+									<a className='inline-link-light' href="/privacy-policy">Privacy Policy</a>&nbsp;|&nbsp;
+									<a className='inline-link-light' href="/about">About</a>&nbsp;|&nbsp;
+									<a className='inline-link-light' href="/terms-of-service">Terms of Service</a>
 								</p>
 								<p className='footer-text'>
 									Designed with ❤️ by <a className='inline-link-light' href="https://debankon.com/">Debankon</a>.<br />Developed with 🥵 by Saba and Debanjum.
