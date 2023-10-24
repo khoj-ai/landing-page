@@ -24,11 +24,6 @@ export default function NavBar() {
             <section className="navSection">
                 <Announcement />
                 <NavMenu />
-                <div className="navLogo">
-                    <Link to="/">
-                        <img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
-                    </Link>
-                </div>
             </section>
         </nav>
     );

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 
@@ -5,6 +6,11 @@ console.log("test" + DEV_DOCS);
 export default function About() {
     return (
         <section className="core-page">
+            <div className="navLogo">
+                <Link to="/">
+                    <img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
+                </Link>
+            </div>
             <div className='content-sections'>
                 <div className='article'>
                     <h2 className="article-title">What we're making</h2>

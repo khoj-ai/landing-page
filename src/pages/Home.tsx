@@ -49,27 +49,92 @@ export function Home() {
 		const copyButton = document.getElementById('copy-self-host-button');
 		if (copyButton) copyButton.textContent = 'Copied!';
 	}
-	
-	const conversation = [
-		{
-			"you": "Hey Khoj, where did I visit in San Diego?",
-			"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
-		},
-		{
-			"you": "Remind me about that surfing experience. I want to write about it.",
-			"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
-		}
-	];
+
+	const conversationSamples = [
+		[
+			{
+				"you": "Hey Khoj, where did I visit in San Diego?",
+				"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
+			},
+			{
+				"you": "Remind me about that surfing experience. I want to write about it.",
+				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
+			}
+		],
+		[
+			{
+				"you": "Can you pull up the email address for the person I met at the conference last week?",
+				"khoj": "Sure, you met with Hamid Khan. His email address is hkhan@acme.com.",
+			},
+			{
+				"you": "Awesome. Can you also summarize the notes I took during the meeting?",
+				"khoj": "Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, so he was able to provide some useful insights.",
+			}
+		],
+		[
+			{
+				"you": "We had an incident at work this week due to a DNS misconfiguration. Can you pull up the takeaways from the postmortem?",
+				"khoj": "Definitely. The incident was caused by a misconfigured DNS record. The takeaways were to improve the team's DNS monitoring.",
+			},
+			{
+				"you": "Thanks. Do you have any recommendations to add to the next steps?",
+				"khoj": "Yes, we should also add a DNS validation step to our deployment pipeline.",
+			}
+		],
+		[
+			{
+				"you": "I have a quiz coming up on the Krebs cycle. Which notes should I review?",
+				"khoj": "You should start with your notes on the citric acid cycle. You also have some notes on the electron transport chain. It would be important to note the specific substrates involved in each step, including acetyl-CoA and associated products (ATP, NADH, FADH2). I can send you a summary of these notes.",
+			},
+			{
+				"you": "Hmm, I think I'm good on the summary. Can you send me a list of sample questions?",
+				"khoj": "Definitely. You should be able to answer these question: \n- What is the relationship between the Krebs Cycle and glycolysis?\n- How are the intermediates of the Krebs Cycle replenished?\n- What is the role of NADH in feedback inhibition?",
+			}
+		]
+	]
+
+	function getRandomConvo() {
+		return conversationSamples[Math.floor(Math.random() * conversationSamples.length)];
+	}
 
 	return (
 		<section className='core-page'>
-			<h2 className='title'>Your open-source, personal AI copilot for life</h2>
-			<div className='typing-components'>
-				{showcaseRolesComponent()}
+			<div className='hero-container'>
+				<div className='hero-container-left'>
+					<div className="navLogo hero-container">
+						<Link to="/">
+							<img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
+						</Link>
+					</div>
+					<h2 className='title'>Understand your docs</h2>
+					<div className='hero-container-subtitle'>
+						Khoj is an AI copilot for you knowledge base that makes it easier for you to retrieve information from your notes and documents, so you can spend less time searching and more time doing.
+					</div>
+					{/* <div className='typing-components'>
+						{showcaseRolesComponent()}
+					</div> */}
+					<div className='primary-cta'>
+						<div className='primary-cta-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
+								href="https://app.khoj.dev">
+									Try it Out
+								</Button>
+						</div>
+					</div>
+				</div>
+				<div className='hero-container-right'>
+					<div className='product-description-bubbles'>
+						<ChatBubbles conversation={getRandomConvo()} />
+					</div>
+				</div>
 			</div>
 			<div className='product-description'>
 
-				<div className="product-description-text top-section-links">
+				{/* <div className="product-description-text top-section-links">
 					<div className='product-description-link'>
 						<Button
 							type="primary"
@@ -106,10 +171,7 @@ export function Home() {
 								Join us on Discord
 						</Button>
 					</div>
-				</div>
-				<div className='product-description-bubbles'>
-					<ChatBubbles conversation={conversation} />
-				</div>
+				</div> */}
 			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>

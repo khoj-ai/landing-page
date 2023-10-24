@@ -19,7 +19,7 @@ body {
 }
 
 h2.title {
-  text-align: center;
+  text-align: left;
   font-size: var(--title-size);
   font-weight: normal;
   margin-top: 0;
