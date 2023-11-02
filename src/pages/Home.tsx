@@ -3,7 +3,6 @@ import { Button } from 'antd';
 import { WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
-import Waitlist from '../components/Waitlist';
 import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';

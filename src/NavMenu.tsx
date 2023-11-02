@@ -12,9 +12,9 @@ import {
 import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
 
-import { KHOJ_LINK, APIURL } from './common/constants';
+import { KHOJ_LINK } from './common/constants';
 import { DiscordIcon } from './components/Icons';
-import { DISCORD_LINK, DEV_DOCS } from './common/constants';
+import { DISCORD_LINK } from './common/constants';
 
 export default function NavMenu() {
 

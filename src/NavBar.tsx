@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
 import './styles/NavBar.css';
-import Announcement from "./components/Announcement";
+// import Announcement from "./components/Announcement";
 import { checkAuthentication } from "./common/auth";
 import { useState } from "react";
 import NavMenu from "./NavMenu";
@@ -23,7 +22,7 @@ export default function NavBar() {
     return (
         <nav className="navBar">
             <section className="navSection">
-                <Announcement />
+                {/* <Announcement /> */}
                 <NavMenu />
             </section>
         </nav>
