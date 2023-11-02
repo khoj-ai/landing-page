@@ -1,6 +1,6 @@
 @import 'colors.css';
 @import 'fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal&family=EB+Garamond&family=Questrial&display=swap');
 
 .App {
   text-align: center;
@@ -25,6 +25,10 @@ h2.title {
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--main-background);
+}
+
+h2.major {
+  font-size: var(--major-size);
 }
 
 @media (prefers-reduced-motion: no-preference) {

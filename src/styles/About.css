@@ -1,10 +1,11 @@
 @import 'colors.css';
+@import 'fonts.css';
 
 div.content {
     text-align: left;
     color: var(--main-background);
     margin: 0 2rem;
-    font-family: 'EB Garamond', serif;
+    font-family: var(--reader);
     font-size: large;
 }
 

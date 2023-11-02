@@ -4,38 +4,11 @@ import { WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
-import { TypeAnimation } from 'react-type-animation';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
 
 export function Home() {
-
-	const showcaseRolesComponent = () => {
-		return(
-			<TypeAnimation
-				cursor={true}
-				repeat={5}
-				className='typing-text'
-				omitDeletionAnimation={true}
-				speed={50}
-				sequence={[
-					500,
-					"I'm a writer and I want to build my character's backstory",
-					1000,
-					"I'm a software engineer and I want to search my commit logs",
-					1000,
-					"I'm a chief of staff and I want to create my organization's OKRs",
-					1000,
-					"I'm a cancer researcher and I want to query papers about melanoma",
-					1000,
-					"I'm a student and I want to revise my notes about the Krebs cycle",
-					1000,
-					"I'm a person and I want to do more.",
-					500,
-				]} />
-		);
-	}
 
 	function copyToClipboardAction() {
 		const codeSnippetElements = document.getElementsByClassName('self-host-code');
@@ -107,9 +80,9 @@ export function Home() {
 							<img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
 						</Link>
 					</div>
-					<h2 className='title'>Understand your docs</h2>
+					<h2 className='title major'>Understand your docs</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is an open-source AI copilot for you knowledge base. It makes it easier for you to retrieve information from your notes and documents, so you can spend less time searching and more time doing.
+						Khoj is an open-source AI copilot for you knowledge base. Easily retrieve key information from your documents, so you can spend less time searching and more time doing.
 					</div>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -158,10 +131,10 @@ export function Home() {
 					<div className='production-description-subcomponent-light'>
 						<h2 className='production-description-subcomponent'>How does Khoj help me?</h2>
 						<p className='product-description-subcomponent-light'>
-							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails, and documents. By indexing these different data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
+							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails. By applying AI to these data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data with a semantic understand of what the words mean.
+							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data with a semantic comprehension of what the words mean.
 						</p>
 					</div>
 				</div>
@@ -257,9 +230,6 @@ export function Home() {
 			</div>
 			<div id="conclude" className='product-discussion'>
 				<div className='production-description-subcomponent-light'>
-					<div className='typing-components'>
-						{showcaseRolesComponent()}
-					</div>
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use.
 						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.
