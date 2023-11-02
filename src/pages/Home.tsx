@@ -8,6 +8,7 @@ import Icon from '@ant-design/icons';
 import { TypeAnimation } from 'react-type-animation';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
+import IconDisplay from '../components/IconsDisplay';
 
 export function Home() {
 
@@ -15,7 +16,8 @@ export function Home() {
 		return(
 			<TypeAnimation
 				cursor={true}
-				repeat={0}
+				repeat={5}
+				className='typing-text'
 				omitDeletionAnimation={true}
 				speed={50}
 				sequence={[
@@ -108,11 +110,8 @@ export function Home() {
 					</div>
 					<h2 className='title'>Understand your docs</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is an AI copilot for you knowledge base that makes it easier for you to retrieve information from your notes and documents, so you can spend less time searching and more time doing.
+						Khoj is an open-source AI copilot for you knowledge base. It makes it easier for you to retrieve information from your notes and documents, so you can spend less time searching and more time doing.
 					</div>
-					{/* <div className='typing-components'>
-						{showcaseRolesComponent()}
-					</div> */}
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
 							<Button
@@ -132,47 +131,6 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div className='product-description'>
-
-				{/* <div className="product-description-text top-section-links">
-					<div className='product-description-link'>
-						<Button
-							type="primary"
-							size='large'
-							className='cta-button'
-							style={{borderRadius: '4px' }}
-							ghost
-							icon={<Icon component={GithubIcon} />}
-							href="https://github.com/khoj-ai/khoj">
-								See the code
-						</Button>
-					</div>
-					<div className='product-description-link'>
-						<Button
-							type="primary"
-							size='large'
-							className='cta-button'
-							style={{borderRadius: '4px', color: 'green' }}
-							ghost
-							icon={<WhatsAppOutlined />}
-							href="https://wa.me/18488004242">
-								Chat with Khoj
-						</Button>
-					</div>
-					<div className='product-description-link'>
-						<Button
-							type="primary"
-							size='large'
-							className='cta-button'
-							style={{borderRadius: '4px' }}
-							ghost
-							icon={<Icon component={DiscordIcon} />}
-							href={DISCORD_LINK}>
-								Join us on Discord
-						</Button>
-					</div>
-				</div> */}
-			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>
 					<img src='/hero_camping.svg' className='hero-camping' alt='hero-camping' />
@@ -182,110 +140,127 @@ export function Home() {
 				<div id="mission" className='camping-block'>
 					<div className="product-description">
 						<div className='production-description-subcomponent camping-description-subcomponent'>
-							<h2 className='production-description-subcomponent'>What is Khoj?</h2>
+							<h2 className='production-description-subcomponent'>What data can I index?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj is a desktop application to search and chat with your notes, documents and images.
-								It is an offline-first, open source AI personal assistant that is accessible from Emacs, Obsidian or your Web browser.
-								You can see our supported data sources <a className='inline-link-light' href={DEV_DOCS + "features?id=supported-data-sources"}>here</a>.
+								Khoj supports indexing a variety of data sources, with more in the works. If you have more data sources you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. Using our Desktop application, you can index files directly from your computer.
 							</p>
-							<p className='product-description-subcomponent-light'>
-								Khoj is a thinking tool that is transparent, fun and easy to engage with.
-								You can build faster and better by using Khoj to search and reason across all your data sources.
-								Khoj learns from your notes and documents to function as an extension of your brain.
-								So that you can stay focused on doing what matters.
-							</p>
-                            <p className='product-description-subcomponent-light'>
-                                Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
-                                This means you can always customize and self-host your Khoj on your own machines.
-                            </p>
-							<h3 className='production-description-subcomponent'>Quickstart</h3>
-							<p className='product-description-subcomponent-light'>
-								Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal. If you're not comfortable with a terminal, we recommend you try the <a className='inline-link-light' href="https://docs.khoj.dev/#/desktop_installation">desktop installations</a>.
-							</p>
-							<pre className='product-description-subcomponent'>
-								<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
-								<code className='product-description-subcomponent' >
-									<span className='self-host-code'>$ pip install khoj-assistant</span>
-									<span className='self-host-code'>$ khoj</span>
-								</code>
-							</pre>
-							<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-								<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
-							</Button>
-                            <h3 className='production-description-subcomponent'>Current Plans</h3>
-                            <p className='product-description-subcomponent-light'>
-								We know that self-hosting is a blocker for folks who want an always available assistant without the hassle of setting it up on your computer.
-								We've built a cloud hosted version of Khoj that will be available for personal use.
-								Whether you host your own instance or use our cloud hosted version, you'll always be in control of Khoj's access to your data.
-							</p>
-							<p className='product-description-subcomponent-light'>
-								If you're interested in trying out Khoj on the cloud, please sign up for early access below.
-                            </p>
-                            <p className='product-description-subcomponent-light'>
-								We're in the thick of building and improving Khoj to be useful and accessible to more people, and <b>we want to hear from you.  </b> Join the <b><a className='inline-link-light' href={DISCORD_LINK}>Discord</a></b> to voice your opinions and tell us which features you'd like us to prioritize.
-                            </p>
-							<Waitlist />
+						</div>
+						<div className='production-description-subcomponent camping-description-subcomponent'>
+							<IconDisplay />
 						</div>
 					</div>
 				</div>
 			</section>
-			<div id="chat" className='product-description'>
-				<div className='production-description-subcomponent-light'>
-					<h2 className='production-description-subcomponent'>Chat</h2>
-					<p className='product-description-subcomponent-light'>
-						Khoj allows you to chat with your notes and documents. Chat completely offline for privacy or online for speed and power. It's your choice.
-						Carry out natural, multi-turn conversations with Khoj to create, reason and build on top of your existing knowledge.
-					</p>
-					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="chat-demo" />
+			<div>
+				<div className="product-description">
+					<div className='production-description-subcomponent-light'>
+						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="chat-demo" />
+					</div>
+					<div className='production-description-subcomponent-light'>
+						<h2 className='production-description-subcomponent'>How does Khoj help me?</h2>
+						<p className='product-description-subcomponent-light'>
+							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails, and documents. By indexing these different data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
+						</p>
+						<p className='product-description-subcomponent-light'>
+							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data with a semantic understand of what the words mean.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div id="search" className='product-description'>
-				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Search</h2>
-					<p className='product-description-subcomponent-light'>
-						Khoj provides lightning-fast, semantic search; results from your data sources appear as you type.
-						Khoj's offline AI models allow you to use natural language to quickly find information in your documents.
-						Search using terms that are similar to what you're looking for, rather than exact or fuzzy matches.
-						Khoj search works offline. So if you self-host your data never leaves your machine and search works without internet.
-					</p>
-					<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/searchdemo.gif" alt="search-demo" />
+			<div>
+				<div className="product-description">
+					<div className='production-description-subcomponent'>
+						<h2 className='production-description-subcomponent'>Can I host this myself?</h2>
+						<p className='product-description-subcomponent'>
+							Absolutely!	We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
+							This means you can always customize and self-host your Khoj on your own machines.
+						</p>
+						<p className='product-description-subcomponent'>
+							This is designed to be a thinking tool that can extend your digital brain. Khoj supports swapping of offline and online models, so you can choose to use the cloud or keep your data on your machine.
+						</p>
+					</div>
+					<div className='production-description-subcomponent'>
+						<h3 className='production-description-subcomponent'>Quickstart</h3>
+						<p className='product-description-subcomponent'>
+							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal. If you're not comfortable with a terminal, we recommend you try the <a className='inline-link-light' href="https://docs.khoj.dev/#/desktop_installation">desktop installations</a>.
+						</p>
+						<pre className='product-description-subcomponent'>
+							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
+							<code className='product-description-subcomponent' >
+								<span className='self-host-code'>$ pip install khoj-assistant</span>
+								<span className='self-host-code'>$ khoj</span>
+							</code>
+						</pre>
+						<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
+							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
+						</Button>
+					</div>
+				</div>
+			</div>
+			<div id="chat" className='product-discussion'>
+				<div className='production-description-subcomponent-light'>
+					<h2 className='product-discussion'>Check Us Out</h2>
+					<div className="product-description-text top-section-links">
+						<div className='product-description-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px' }}
+								ghost
+								icon={<Icon component={GithubIcon} />}
+								href="https://github.com/khoj-ai/khoj">
+									See the code
+							</Button>
+						</div>
+						<div className='product-description-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px', color: 'green' }}
+								ghost
+								icon={<WhatsAppOutlined />}
+								href="./whatsapp">
+									Chat with Khoj
+							</Button>
+						</div>
+						<div className='product-description-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px' }}
+								ghost
+								icon={<Icon component={DiscordIcon} />}
+								href={DISCORD_LINK}>
+									Join us on Discord
+							</Button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="plugins" className='product-description'>
-				<div className='production-description-subcomponent-light'>
+				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Plugins</h2>
 					<p className='product-description-subcomponent'>
 						Our code makes it easy to build external data and UI integrations.
 						We currently maintain two major first-party plugins, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
 						All of our products are available to use via the browser or the API as well.
 					</p>
+				</div>
+				<div className='production-description-subcomponent'>
 					<div className='supported-icons'>
 						<EmacsIcon />
 						<ObsidianIcon />
 					</div>
 				</div>
 			</div>
-			<div id="team" className="product-description">
-				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Team</h2>
-					<div className='founders-text'>
-						<div className='founders-item'>
-							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/deb_founder_bw.jpg' alt='Debanjum Singh' />
-								<p className='founders-item-name'>Debanjum Singh Solanky</p>
-							</div>
-						</div>
-						<div className='founders-item'>
-							<div className='founders-item-image-container'>
-								<img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/saba_founder_bw.jpg' alt='Saba Imran' />
-								<p className='founders-item-name'>Saba Imran</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="conclude" className='product-description'>
+			<div id="conclude" className='product-discussion'>
 				<div className='production-description-subcomponent-light'>
+					<div className='typing-components'>
+						{showcaseRolesComponent()}
+					</div>
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use.
 						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.

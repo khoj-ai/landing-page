@@ -28,10 +28,38 @@ div#showcase {
 
 div.product-description {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     font-family: var(--reader);
     font-size: medium;
+}
+
+h2.product-discussion {
+    text-align: center;
+    font-family: var(--impact);
+    margin: 0;
+}
+
+div.product-discussion {
+    font-size: medium;
+    font-family: var(--reader);
+}
+
+div.icon-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    font-family: var(--reader);
+    font-size: medium;
+    grid-gap: 10px;
+    margin: 10%;
+}
+img.example-icon {
+    width: 100px;
+    border: 1px solid var(--main-background);
+    background-color: var(--mild-sun);
+    padding: 8px;
+    border-radius: 4px;
 }
 
 div.hero-container {
@@ -76,12 +104,15 @@ a.github-logo {
 }
 
 div.product-description-link {
-    text-align: left;
+    text-align: center;
     margin: 1.5rem;
     display: inline;
 }
+
 div.top-section-links {
     margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 div.hero-container-subtitle {
@@ -196,12 +227,16 @@ div.supported-icons {
 div.typing-components {
     height: 50px;
     color: #000;
-    text-align: center;
+    text-align: left;
     white-space: pre-line;
     font-size: x-large;
     font-family: var(--reader);
     margin-top: 8px;
     margin-bottom: 20px;
+    border: 1px solid var(--main-background);
+    border-radius: 4px;
+    height: 80px;
+    padding: 4px;
 }
 
 a.ant-btn.cta-button {
@@ -348,5 +383,11 @@ img#yc-logo {
     div.hero-container {
         grid-template-columns: 1fr;
         margin: 10px 5%;
+    }
+
+    div.top-section-links {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

@@ -5,6 +5,7 @@ import { checkAuthentication } from "./common/auth";
 import { useState } from "react";
 import NavMenu from "./NavMenu";
 
+
 export default function NavBar() {
     const [authenticated, setAuthenticated] = useState(false);
 

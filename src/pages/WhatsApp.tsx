@@ -1,4 +1,5 @@
 import '../styles/WhatsApp.css';
+import { Link } from 'react-router-dom';
 
 import { Button } from 'antd';
 import Icon from '@ant-design/icons';
@@ -108,6 +109,11 @@ const chatConversation = [
 export default function About() {
     return (
         <section className="core-page">
+            <div className="navLogo">
+                <Link to="/">
+                    <img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
+                </Link>
+            </div>
             <div className='content-sections'>
                 <div className='article'>
                     <h2 className="article-title">Khoj on WhatsApp <WhatsAppOutlined /></h2>

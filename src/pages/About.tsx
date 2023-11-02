@@ -88,6 +88,31 @@ export default function About() {
                                 </li>
                             </ul>
                         </div>
+                        <div id="team" className="product-description">
+                            <div className='production-description-subcomponent-light'>
+                                <h2 className='production-description-subcomponent'>Team</h2>
+                                <div className='founders-text'>
+                                    <div className='founders-item'>
+                                        <div className='founders-item-image-container'>
+                                            <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/deb_founder_bw.jpg' alt='Debanjum Singh' />
+                                            <p className='founders-item-name'>Debanjum Singh Solanky</p>
+                                        </div>
+                                    </div>
+                                    <div className='founders-item'>
+                                        <div className='founders-item-image-container'>
+                                            <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/saba_founder_bw.jpg' alt='Saba Imran' />
+                                            <p className='founders-item-name'>Saba Imran</p>
+                                        </div>
+                                    </div>
+                                    <div className='founders-item'>
+                                        <div className='founders-item-image-container'>
+                                            <img className='founders-item-image' src='/yellow_traveler_4.png' alt='An voyager discovers new lands in the mountains' />
+                                            <p className='founders-item-name'>You?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </div>
         </section>
