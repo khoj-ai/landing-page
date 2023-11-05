@@ -80,7 +80,7 @@ export function Home() {
 							<img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
 						</Link>
 					</div>
-					<h2 className='title major'>Understand your docs</h2>
+					<h2 className='title major'>Meet your Knowledge Copilot</h2>
 					<div className='hero-container-subtitle'>
 						Khoj is an open-source AI copilot for you knowledge base. Easily retrieve key information from your documents, so you can spend less time searching and more time doing.
 					</div>
