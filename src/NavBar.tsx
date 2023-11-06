@@ -1,5 +1,4 @@
 import './styles/NavBar.css';
-import Announcement from "./components/Announcement";
 import NavMenu from "./NavMenu";
 
 
