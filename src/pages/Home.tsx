@@ -80,9 +80,9 @@ export function Home() {
 							<img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
 						</Link>
 					</div>
-					<h2 className='title major'>Meet your Knowledge Copilot</h2>
+					<h2 className='title major'>Meet Your Knowledge-Base Copilot</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is an open-source AI copilot for you knowledge base. Easily retrieve key information from your documents, so you can spend less time searching and more time doing.
+						Khoj is an open-source AI copilot for you knowledge base. Easily retrieve and understand key information from your documents, so you can spend less time searching and more time doing.
 					</div>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -112,7 +112,7 @@ export function Home() {
 				<div id="mission" className='camping-block'>
 					<div className="product-description">
 						<div className='production-description-subcomponent camping-description-subcomponent'>
-							<h2 className='production-description-subcomponent'>What data can I index?</h2>
+							<h2 className='production-description-subcomponent'>What data does Khoj understand?</h2>
 							<p className='product-description-subcomponent-light'>
 								Khoj supports indexing a variety of data sources, with more in the works. If you have more data sources you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. Using our Desktop application, you can index files directly from your computer.
 							</p>
