@@ -2,8 +2,6 @@ import NavBar from './NavBar';
 import './styles/App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Invited from './pages/Invited';
-import Login from './pages/Login';
 import WhatsApp from './pages/WhatsApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -48,8 +46,6 @@ function App() {
 								<Routes>
 									<Route path="/" element={<Home />} />
 									<Route path="/about" element={<About />} />
-									<Route path="/invited/:inviteId" element={<Invited />} />
-									<Route path="/login" element={<Login />} />
 									<Route path="/whatsapp" element={<WhatsApp />} />
 									<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 									<Route path="/terms-of-service" element={<TermsOfService />} />

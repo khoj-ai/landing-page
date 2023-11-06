@@ -4,8 +4,7 @@ import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { Input, SubmitButton } from 'formik-antd'
 import { useState } from 'react';
-import { APIURL } from '../common/constants';
-import { useLocation } from 'react-router-dom';
+import { WAITLIST_API_URL } from '../common/constants';
 
 
 export function Waitlist() {
@@ -16,12 +15,6 @@ export function Waitlist() {
 	});
 
     // Get the path of the URL
-    const location = useLocation();
-    if (location.pathname.includes('invited') || location.pathname.includes('login')) {
-        return null;
-    }
-
-
 	return (
 			<div className='waitlist-bar'>
 				<Formik
@@ -29,7 +22,7 @@ export function Waitlist() {
 					validationSchema={SignupSchema}
 					onSubmit={(values, { setSubmitting }) => {
 						setTimeout(() => {
-							fetch(`${APIURL}/beta/users/`, {
+							fetch(`${WAITLIST_API_URL}/beta/users/`, {
 								method: 'POST',
 								headers: {
 									'Content-Type': 'application/json',
