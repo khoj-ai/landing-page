@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Menu } from 'antd';
 
 import {
-	UserOutlined,
     BookOutlined,
     WhatsAppOutlined,
     InfoCircleOutlined
@@ -12,22 +11,12 @@ import {
 import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
 
-import { KHOJ_LINK } from './common/constants';
 import { DiscordIcon } from './components/Icons';
 import { DISCORD_LINK } from './common/constants';
 
 export default function NavMenu() {
 
     const items: MenuProps['items'] = [
-        {
-            label: (
-                <a href={KHOJ_LINK}>
-                    Login
-                </a>
-            ),
-            key: 'logout',
-            icon: <UserOutlined />,
-        },
         {
             label: (
                 <a href="https://docs.khoj.dev/#/setup" target="_blank">

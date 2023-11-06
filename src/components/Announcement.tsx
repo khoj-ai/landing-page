@@ -7,7 +7,7 @@ import { WhatsAppOutlined } from '@ant-design/icons';
 export function Announcement() {
     // Get the path of the URL
     const location = useLocation();
-    if (location.pathname.includes('whatsapp') || location.pathname.includes('login')) {
+    if (location.pathname.includes('whatsapp')) {
         return null;
     }
 
