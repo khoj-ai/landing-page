@@ -126,7 +126,7 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light'>
-						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/chatdemo.gif" alt="chat-demo" />
+						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/doing_good_better_demo.png" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light'>
 						<h2 className='production-description-subcomponent'>How does Khoj help me?</h2>
