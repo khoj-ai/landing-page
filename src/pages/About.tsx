@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 
-console.log("test" + DEV_DOCS);
 export default function About() {
     return (
         <section className="core-page">

@@ -25,7 +25,7 @@ function ChatBubbles(props: ChatBubblesProps) {
         currTime = khojMessageDate;
 
         return (
-            <div className='convo-turn'>
+            <div className='convo-turn' key={index}>
                 <div data-meta={`🤔 You at ${youMessageDateString}`} className="chat-message you">
                     <div className="chat-message-text you">{message.you}</div>
                 </div>

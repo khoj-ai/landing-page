@@ -32,6 +32,7 @@ div.product-description {
     justify-content: space-around;
     font-family: var(--reader);
     font-size: medium;
+    margin-top: 20px;
 }
 
 h2.product-discussion {
@@ -54,13 +55,35 @@ div.icon-display {
     grid-gap: 10px;
     margin: 10%;
 }
+
+div.product-description.first-description {
+    margin-top: 0;
+}
+
 img.example-icon {
+    padding: 8px;
+    border: 1px solid var(--main-background);
+    border-radius: 50%;
     width: 100px;
     height: 100px;
-    border: 1px solid var(--main-background);
+    background-color: var(--mild-sun);
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+
+img.datasource-diagram {
+    width: 300px;
+    height: auto;
     background-color: var(--mild-sun);
     padding: 8px;
-    border-radius: 50%;
+    animation: bounce 3s infinite;
 }
 
 div.hero-container {
@@ -210,6 +233,11 @@ h2.production-description-subcomponent {
     text-align: left;
     font-family: var(--impact);
     margin: 0;
+    font-size: xx-large;
+}
+
+p.product-description-subcomponent-light {
+    font-size: large;
 }
 
 p.founders-item-name {
