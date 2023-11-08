@@ -69,21 +69,17 @@ img.example-icon {
     background-color: var(--mild-sun);
 }
 
-@keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-}
-
 img.datasource-diagram {
     width: 300px;
     height: auto;
     background-color: var(--mild-sun);
     padding: 8px;
-    animation: bounce 3s infinite;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+img.datasource-diagram:hover {
+    transform: scale(1.1); /* Make it 10% bigger */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
 }
 
 div.hero-container {
@@ -214,7 +210,7 @@ div.production-description-subcomponent {
     background-color: var(--mild-sun);
     padding: 2% 25%;
     padding-bottom: 2.5%;
-    font-size: large;
+    font-size: x-large;
     text-align: left;
 }
 div.camping-description-subcomponent {
@@ -225,7 +221,7 @@ div.production-description-subcomponent-light {
     background-color: var(--light);
     padding: 2% 25%;
     padding-bottom: 4.5%;
-    font-size: large;
+    font-size: x-large;
     text-align: left;
 }
 
@@ -237,7 +233,7 @@ h2.production-description-subcomponent {
 }
 
 p.product-description-subcomponent-light {
-    font-size: large;
+    font-size: x-large;
 }
 
 p.founders-item-name {

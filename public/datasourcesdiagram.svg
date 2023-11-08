@@ -1,11 +1,11 @@
 <svg width="441" height="468" viewBox="0 0 441 468" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="62" cy="123" r="50" fill="#FFE76C"/>
-<circle cx="228" cy="215" r="75" fill="#FFE76C"/>
-<circle cx="221" cy="50" r="50" fill="#FFE76C"/>
-<circle cx="50" cy="314" r="50" fill="#FFE76C"/>
-<circle cx="392" cy="341" r="49" fill="#FFE76C"/>
-<circle cx="383.5" cy="122.5" r="49.5" fill="#FFE76C"/>
-<circle cx="222" cy="414" r="50" fill="#FFE76C"/>
+<circle cx="62" cy="123" r="50" fill="#F1E8B3"/>
+<circle cx="228" cy="215" r="75" fill="#F1E8B3"/>
+<circle cx="221" cy="50" r="50" fill="#F1E8B3"/>
+<circle cx="50" cy="314" r="50" fill="#F1E8B3"/>
+<circle cx="392" cy="341" r="49" fill="#F1E8B3"/>
+<circle cx="383.5" cy="122.5" r="49.5" fill="#F1E8B3"/>
+<circle cx="222" cy="414" r="50" fill="#F1E8B3"/>
 <circle cx="228" cy="215" r="43" fill="url(#pattern0)"/>
 <g clip-path="url(#clip0_1_100)">
 <path d="M359.309 97.3721L389.742 95.1243C393.481 94.8036 394.441 95.0198 396.792 96.7286L406.507 103.572C408.109 104.749 408.642 105.07 408.642 106.351V143.885C408.642 146.237 407.788 147.629 404.798 147.841L369.457 149.982C367.213 150.088 366.144 149.767 364.969 148.27L357.815 138.967C356.532 137.255 356 135.973 356 134.475V101.112C356 99.1888 356.854 97.585 359.309 97.3721Z" fill="white"/>
