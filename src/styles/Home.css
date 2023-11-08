@@ -243,7 +243,7 @@ p.product-description-subcomponent-light {
     }
     25% {
         opacity: 0.8;
-        transform: translateX(50vw) translateY(15vh);
+        transform: translateX(50vw) translateY(10vh);
     }
     50% {
         opacity: 0.6;
