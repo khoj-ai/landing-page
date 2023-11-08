@@ -56,10 +56,11 @@ div.icon-display {
 }
 img.example-icon {
     width: 100px;
+    height: 100px;
     border: 1px solid var(--main-background);
     background-color: var(--mild-sun);
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 div.hero-container {
@@ -241,6 +242,13 @@ div.typing-components {
 
 a.ant-btn.cta-button {
     width: auto;
+}
+
+div.production-description-subcomponent-light,
+div.production-description-subcomponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 code.product-description-subcomponent {

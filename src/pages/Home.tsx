@@ -114,7 +114,7 @@ export function Home() {
 						<div className='production-description-subcomponent camping-description-subcomponent'>
 							<h2 className='production-description-subcomponent'>What data does Khoj understand?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj supports indexing a variety of data sources, with more in the works. If you have more data sources you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. Using our Desktop application, you can index files directly from your computer.
+								Khoj supports indexing a variety of data sources, with more in the works. Using our Desktop application, you can index files directly from your computer.
 							</p>
 						</div>
 						<div className='production-description-subcomponent camping-description-subcomponent'>
@@ -233,6 +233,7 @@ export function Home() {
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use.
 						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.
+						If you have more feature requests you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. 
 					</p>
 					<p className='product-description-subcomponent-light'>
 						To learn more about the product, <Link className='inline-link-light' to="/about">click here</Link>.
