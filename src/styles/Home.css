@@ -236,6 +236,60 @@ p.product-description-subcomponent-light {
     font-size: x-large;
 }
 
+@keyframes blink {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    25% {
+        opacity: 0.8;
+        transform: translateX(50vw) translateY(15vh);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateX(100vw) translateY(-5vh);
+    }
+    75% {
+        opacity: 0.3;
+        transform: translateX(50vw) translateY(15vh);
+    }
+    100% {
+        opacity: 0.7;
+        transform: translateX(0);
+    }
+}
+
+div#firefly {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--rose);
+    margin: 0 5px;
+    animation: blink 20s infinite;
+    animation-delay: calc(1s * var(--i)); /* Add a delay based on the index */
+}
+
+
+div#firefly::before,
+div#firefly::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--rose);
+}
+
+div#firefly::before {
+    top: -5px;
+    left: 2.5px;
+}
+
+div#firefly::after {
+    bottom: -5px;
+    left: 2.5px;
+}
+
 p.founders-item-name {
     margin: 0;
     padding: 0;

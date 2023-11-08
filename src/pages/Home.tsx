@@ -103,6 +103,8 @@ export function Home() {
 					</div>
 				</div>
 			</div>
+			<div id="firefly">
+			</div>
 			<div className='camping-image-container'>
 				<div className='camping-image-subcontainer'>
 					<img src='/hero_camping.svg' className='hero-camping' alt='hero-camping' />
