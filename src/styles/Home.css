@@ -299,10 +299,8 @@ p.founders-item-name {
 
 div.supported-icons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-items: center;
-    margin-top: 7%;
-    margin-bottom: -5%;
 }
 
 div.typing-components {

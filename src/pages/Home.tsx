@@ -2,7 +2,7 @@ import '../styles/Home.css';
 import { Button } from 'antd';
 import { WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
-import { GithubIcon, DiscordIcon, EmacsIcon, ObsidianIcon } from '../components/Icons';
+import { GithubIcon, DiscordIcon } from '../components/Icons';
 import Icon from '@ant-design/icons';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
@@ -141,33 +141,18 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div>
-				<div className="product-description">
-					<div className='production-description-subcomponent'>
-						<h2 className='production-description-subcomponent'>Can I host this myself?</h2>
-						<p className='product-description-subcomponent'>
-							Absolutely!	We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
-							This means you can always customize and self-host your Khoj on your own machines.
-						</p>
-						<p className='product-description-subcomponent'>
-							This is designed to be a thinking tool that can extend your digital brain. Khoj supports swapping of offline and online models, so you can choose to use the cloud or keep your data on your machine.
-						</p>
-					</div>
-					<div className='production-description-subcomponent'>
-						<h3 className='production-description-subcomponent'>Quickstart</h3>
-						<p className='product-description-subcomponent'>
-							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal.
-						</p>
-						<pre className='product-description-subcomponent'>
-							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
-							<code className='product-description-subcomponent' >
-								<span className='self-host-code'>$ pip install khoj-assistant</span>
-								<span className='self-host-code'>$ khoj</span>
-							</code>
-						</pre>
-						<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
-						</Button>
+			<div id="plugins" className='product-description'>
+				<div className='production-description-subcomponent'>
+					<h2 className='production-description-subcomponent'>Clients</h2>
+					<p className='product-description-subcomponent'>
+						Our code makes it easy to build external data and UI integrations.
+						We currently have a native desktop client, and maintain two first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
+						All of our products are available to use via the browser or the API as well.
+					</p>
+				</div>
+				<div className='production-description-subcomponent'>
+					<div className='supported-icons'>
+						<img className='clients-diagram' src='/clients.svg' alt='Data Sources Diagram' title="Khoj can be accessed from Obsidian, Emacs, the browser, or our native Desktop client. WhatsApp coming soon." />
 					</div>
 				</div>
 			</div>
@@ -214,23 +199,39 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div id="plugins" className='product-description'>
-				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Clients</h2>
-					<p className='product-description-subcomponent'>
-						Our code makes it easy to build external data and UI integrations.
-						We currently maintain two major first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
-						All of our products are available to use via the browser or the API as well.
-					</p>
-				</div>
-				<div className='production-description-subcomponent'>
-					<div className='supported-icons'>
-						<img className='clients-diagram' src='/clients.svg' alt='Data Sources Diagram' title="Khoj can parse markdown, org, plaintext, pdf files. It can also connect to GitHub and Notion." />
+			<div>
+				<div className="product-description">
+					<div className='production-description-subcomponent'>
+						<h2 className='production-description-subcomponent'>Can I host this myself?</h2>
+						<p className='product-description-subcomponent'>
+							Absolutely!	We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
+							This means you can always customize and self-host your Khoj on your own machines.
+						</p>
+						<p className='product-description-subcomponent'>
+							This is designed to be a thinking tool that can extend your digital brain. Khoj supports swapping of offline and online models, so you can choose to use the cloud or keep your data on your machine.
+						</p>
+					</div>
+					<div className='production-description-subcomponent'>
+						<h3 className='production-description-subcomponent'>Quickstart</h3>
+						<p className='product-description-subcomponent'>
+							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal.
+						</p>
+						<pre className='product-description-subcomponent'>
+							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
+							<code className='product-description-subcomponent' >
+								<span className='self-host-code'>$ pip install khoj-assistant</span>
+								<span className='self-host-code'>$ khoj</span>
+							</code>
+						</pre>
+						<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
+							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
+						</Button>
 					</div>
 				</div>
 			</div>
 			<div id="conclude" className='product-discussion'>
 				<div className='production-description-subcomponent-light'>
+					<h2 className='production-description-subcomponent'>Get involved</h2>
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use.
 						We plan to fix this by making information from your chosen data sources accessible to you in a transparent and secure way.
