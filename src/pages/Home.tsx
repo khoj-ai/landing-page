@@ -114,7 +114,7 @@ export function Home() {
 				<div id="mission" className='camping-block'>
 					<div className="product-description first-description">
 						<div className='production-description-subcomponent camping-description-subcomponent'>
-							<h2 className='production-description-subcomponent'>What does Khoj understand?</h2>
+							<h2 className='production-description-subcomponent'>Connect Khoj to your data</h2>
 							<p className='product-description-subcomponent-light'>
 								Khoj can understand your PDFs, markdown, plaintext, GitHub, Notion, with more in the works. Using our Desktop application, you can index files directly from your computer.
 							</p>
@@ -131,7 +131,7 @@ export function Home() {
 						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/doing_good_better_demo.png" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light'>
-						<h2 className='production-description-subcomponent'>How does Khoj help me?</h2>
+						<h2 className='production-description-subcomponent'>Simplify your reasoning</h2>
 						<p className='product-description-subcomponent-light'>
 							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails. By applying AI to these data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
 						</p>
@@ -143,12 +143,24 @@ export function Home() {
 			</div>
 			<div id="plugins" className='product-description'>
 				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Clients</h2>
+					<h2 className='production-description-subcomponent'>Use it where you're comfortable</h2>
 					<p className='product-description-subcomponent'>
 						Our code makes it easy to build external data and UI integrations.
 						We currently have a native desktop client, and maintain two first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
 						All of our products are available to use via the browser or the API as well.
 					</p>
+					<div className='primary-cta'>
+						<div className='primary-cta-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
+								href="https://app.khoj.dev">
+									Get started
+								</Button>
+						</div>
+					</div>
 				</div>
 				<div className='production-description-subcomponent'>
 					<div className='supported-icons'>
@@ -202,7 +214,7 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent'>
-						<h2 className='production-description-subcomponent'>Can I host this myself?</h2>
+						<h2 className='production-description-subcomponent'>Can Khoj be self-hosted?</h2>
 						<p className='product-description-subcomponent'>
 							Absolutely!	We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
 							This means you can always customize and self-host your Khoj on your own machines.
@@ -214,7 +226,7 @@ export function Home() {
 					<div className='production-description-subcomponent'>
 						<h3 className='production-description-subcomponent'>Quickstart</h3>
 						<p className='product-description-subcomponent'>
-							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal.
+							Get started with Khoj locally in a few minutes. You have to run the following snippet from a terminal.
 						</p>
 						<pre className='product-description-subcomponent'>
 							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
@@ -226,6 +238,9 @@ export function Home() {
 						<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
 							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
 						</Button>
+						<p className='product-description-subcomponent'>
+							If you have a small team and want to run Khoj in your own cloud, <a className='inline-link-light' href="https://calendar.app.google/cwLYhVQL4LCvkZzu8">book some time with us</a> and we'll help you get started.
+						</p>
 					</div>
 				</div>
 			</div>

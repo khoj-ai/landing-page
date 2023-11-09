@@ -41,7 +41,9 @@ function App() {
 				<BrowserRouter>
 					<Layout>
 						<Layout style={{ padding: 0, background: "#fff" }}>
-							<NavBar />
+							<div className="navbar-container">
+								<NavBar />
+							</div>
 							<Content>
 								<Routes>
 									<Route path="/" element={<Home />} />

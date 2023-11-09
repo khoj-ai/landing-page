@@ -18,6 +18,23 @@ body {
   pointer-events: none;
 }
 
+a.primary-cta {
+  color: var(--main-background);
+  background-color: var(--calm-water-accent);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: large;
+  font-family: var(--reader);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+div.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar stays on top of other elements */
+}
+
 h2.title {
   text-align: left;
   font-size: var(--title-size);
