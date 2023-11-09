@@ -114,9 +114,9 @@ export function Home() {
 				<div id="mission" className='camping-block'>
 					<div className="product-description first-description">
 						<div className='production-description-subcomponent camping-description-subcomponent'>
-							<h2 className='production-description-subcomponent'>What data does Khoj understand?</h2>
+							<h2 className='production-description-subcomponent'>What does Khoj understand?</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj supports indexing a variety of data sources, with more in the works. Using our Desktop application, you can index files directly from your computer.
+								Khoj can understand your PDFs, markdown, plaintext, GitHub, Notion, with more in the works. Using our Desktop application, you can index files directly from your computer.
 							</p>
 						</div>
 						<div className='camping-description-subcomponent'>
@@ -136,7 +136,7 @@ export function Home() {
 							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails. By applying AI to these data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data with a semantic comprehension of what the words mean.
+							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data.
 						</p>
 					</div>
 				</div>
@@ -156,7 +156,7 @@ export function Home() {
 					<div className='production-description-subcomponent'>
 						<h3 className='production-description-subcomponent'>Quickstart</h3>
 						<p className='product-description-subcomponent'>
-							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal. If you're not comfortable with a terminal, we recommend you try the <a className='inline-link-light' href="https://docs.khoj.dev/#/desktop_installation">desktop installations</a>.
+							Get started with the Khoj desktop setup in a few minutes. You have to run the following snippet from a terminal.
 						</p>
 						<pre className='product-description-subcomponent'>
 							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
@@ -216,17 +216,16 @@ export function Home() {
 			</div>
 			<div id="plugins" className='product-description'>
 				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Plugins</h2>
+					<h2 className='production-description-subcomponent'>Clients</h2>
 					<p className='product-description-subcomponent'>
 						Our code makes it easy to build external data and UI integrations.
-						We currently maintain two major first-party plugins, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
+						We currently maintain two major first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
 						All of our products are available to use via the browser or the API as well.
 					</p>
 				</div>
 				<div className='production-description-subcomponent'>
 					<div className='supported-icons'>
-						<EmacsIcon />
-						<ObsidianIcon />
+						<img className='clients-diagram' src='/clients.svg' alt='Data Sources Diagram' title="Khoj can parse markdown, org, plaintext, pdf files. It can also connect to GitHub and Notion." />
 					</div>
 				</div>
 			</div>
@@ -234,7 +233,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<p className='product-description-subcomponent-light'>
 						We know how hard it can be to search and engage with information across all the different platforms you use.
-						We plan to fix this by making information from your chosen data sources accessible to you in a private and secure way.
+						We plan to fix this by making information from your chosen data sources accessible to you in a transparent and secure way.
 						If you have more features you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. 
 					</p>
 					<p className='product-description-subcomponent-light'>
