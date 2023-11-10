@@ -145,7 +145,7 @@ export function Home() {
 				<div className='production-description-subcomponent'>
 					<h2 className='production-description-subcomponent'>Engage anytime, anywhere</h2>
 					<p className='product-description-subcomponent'>
-						We have a native desktop app, and we maintain two first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
+						Use our native desktop app on any OS. Or use our first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>, to stay within your existing workflow.
 					</p>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -189,14 +189,13 @@ export function Home() {
 						<p className='product-description-subcomponent'>
 							We are completely open-source.
 							This means you can always customize and self-host your Khoj on your own machine.
-							We've made Khoj understandable, accessible and hackable.
+							We've made Khoj understandable, accessible and modular.
 						</p>
 						<p className='product-description-subcomponent'>
-							Khoj supports swapping offline and online models when run locally, so you can choose to use foundation models or keep your data on-premises.
+							You can switch between offline and online models when run locally. You can choose to use foundation models or keep your data on-premises.
 						</p>
 					</div>
 					<div className='production-description-subcomponent'>
-						<h3 className='production-description-subcomponent'>Quickstart</h3>
 						<p className='product-description-subcomponent'>
 							Get started with Khoj locally in a few minutes with the following commands:
 						</p>
@@ -207,12 +206,13 @@ export function Home() {
 								<span className='self-host-code'>$ khoj</span>
 							</code>
 						</pre>
-						<Button size="large" type="primary" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
-						</Button>
 						<p className='product-description-subcomponent'>
-							If you have a small team and want to run Khoj in your own cloud, <a className='inline-link-light' href="https://calendar.app.google/vdCyDrMQuaA857Gs6">book some time with us</a> and we'll help you get started.
+							<a className='inline-link-light' href={DEV_DOCS + "setup"}>Go to the full documentation for self-hosting</a>.
+							If you have a small team and want to run Khoj in your own cloud, book some time with us and we'll help you get started.
 						</p>
+						<Button size="large" type="text" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
+							<Link className="navLinks" to="https://calendar.app.google/vdCyDrMQuaA857Gs6">Meet with Us</Link>
+						</Button>
 					</div>
 				</div>
 			</div>
@@ -220,7 +220,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Get involved</h2>
 					<p className='product-description-subcomponent-light'>
-						We are making information from your chosen data sources accessible to you in a transparent and secure way, so you can reason and create more effectively.
+						Personal AI should be accessible, transparent, and secure, so you can reason and create more effectively.
 						If you have more features you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. 
 					</p>
 					<p className='product-description-subcomponent-light'>
