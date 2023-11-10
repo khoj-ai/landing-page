@@ -32,7 +32,7 @@ export function Home() {
 			},
 			{
 				"you": "Remind me about that surfing experience. I want to write about it.",
-				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilirated and at peace. In your writing, you can describe the feeling as a sense of flow.",
+				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilarated and at peace. In your writing, you can describe the feeling as a sense of flow.",
 			}
 		],
 		[
@@ -42,23 +42,23 @@ export function Home() {
 			},
 			{
 				"you": "Awesome. Can you also summarize the notes I took during the meeting?",
-				"khoj": "Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, so he was able to provide some useful insights.",
+				"khoj": "Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, and he's interested in a partnership with Emca.",
 			}
 		],
 		[
 			{
-				"you": "We had an incident at work this week due to a DNS misconfiguration. Can you pull up the takeaways from the postmortem?",
-				"khoj": "Definitely. The incident was caused by a misconfigured DNS record. The takeaways were to improve the team's DNS monitoring.",
+				"you": "What are some good bedtime stories for Lamar?",
+				"khoj": "Lamar likes stories about animals and nature. In particular, you mentioned that he really likes the story of the tortoise and the hare. He might like the story of the three little pigs if you're looking for something new.",
 			},
 			{
-				"you": "Thanks. Do you have any recommendations to add to the next steps?",
-				"khoj": "Yes, we should also add a DNS validation step to our deployment pipeline.",
+				"you": "Fantastic. Maybe we can modify the story of the three little pigs to be about three little dogs, since he's fond of puppies.",
+				"khoj": "Let me help you with that. I'll draft a new version of the story and send it to you.",
 			}
 		],
 		[
 			{
 				"you": "I have a quiz coming up on the Krebs cycle. Which notes should I review?",
-				"khoj": "You should start with your notes on the citric acid cycle. You also have some notes on the electron transport chain. It would be important to note the specific substrates involved in each step, including acetyl-CoA and associated products (ATP, NADH, FADH2). I can send you a summary of these notes.",
+				"khoj": "You should start with your notes on the citric acid cycle and the electron transport chain. It would be important to note the specific substrates involved in each step, including acetyl-CoA and associated products. I can send you a summary of these notes.",
 			},
 			{
 				"you": "Hmm, I think I'm good on the summary. Can you send me a list of sample questions?",
@@ -80,9 +80,9 @@ export function Home() {
 							<img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
 						</Link>
 					</div>
-					<h2 className='title major'>Meet Your Knowledge-Base Copilot</h2>
+					<h2 className='title major'>Merge AI with your brain</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is an open-source AI copilot for you knowledge base. Easily retrieve and understand key information from your documents, so you can spend less time searching and more time doing.
+						Khoj is the open-source, AI copilot for your knowledge base. Easily build on top of your personal notes and documents.
 					</div>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -114,9 +114,12 @@ export function Home() {
 				<div id="mission" className='camping-block'>
 					<div className="product-description first-description">
 						<div className='production-description-subcomponent camping-description-subcomponent'>
-							<h2 className='production-description-subcomponent'>Connect Khoj to your data</h2>
+							<h2 className='production-description-subcomponent'>Connect your knowledge</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj can understand your PDFs, markdown, plaintext, GitHub, Notion, with more in the works. Using our Desktop application, you can index files directly from your computer.
+								Khoj can understand your PDFs, markdown, plaintext, GitHub, and Notion, with more in the works.
+							</p>
+							<p className='product-description-subcomponent-light'>
+								Index files directly from your computer using our <a href="/downloads" className='inline-link-light'>Desktop Application</a>.
 							</p>
 						</div>
 						<div className='camping-description-subcomponent'>
@@ -133,21 +136,19 @@ export function Home() {
 					<div className='production-description-subcomponent-light'>
 						<h2 className='production-description-subcomponent'>Simplify your reasoning</h2>
 						<p className='product-description-subcomponent-light'>
-							Khoj is an application that allows you to leverage AI to make better sense of your notes and documents. For most of us, our core knowledge is dispersed across errant notes, texts, emails. By applying AI to these data sources, Khoj makes it easier for you to retrieve relevant information when you need it.
+							Khoj allows you to leverage AI to make better sense of your notes and documents.
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Many of us spend hours a day looking up, collating and organizing our information. Khoj helps save you time by naturally parsing across your randomly organized data.
+							Many of us spend hours a day looking up, collating and organizing our information. Khoj saves you time by naturally parsing across your randomly organized data.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div id="plugins" className='product-description'>
 				<div className='production-description-subcomponent'>
-					<h2 className='production-description-subcomponent'>Use it where you're comfortable</h2>
+					<h2 className='production-description-subcomponent'>Engage anytime, anywhere</h2>
 					<p className='product-description-subcomponent'>
-						Our code makes it easy to build external data and UI integrations.
-						We currently have a native desktop client, and maintain two first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
-						All of our products are available to use via the browser or the API as well.
+						We have a native desktop app, and we maintain two first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>.
 					</p>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -168,65 +169,38 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div id="chat" className='product-discussion'>
-				<div className='production-description-subcomponent-light'>
-					<h2 className='product-discussion'>Check Us Out</h2>
-					<div className="product-description-text top-section-links">
-						<div className='product-description-link'>
-							<Button
-								type="primary"
-								size='large'
-								className='cta-button'
-								style={{borderRadius: '4px' }}
-								ghost
-								icon={<Icon component={GithubIcon} />}
-								href="https://github.com/khoj-ai/khoj">
-									See the code
-							</Button>
-						</div>
-						<div className='product-description-link'>
-							<Button
-								type="primary"
-								size='large'
-								className='cta-button'
-								style={{borderRadius: '4px', color: 'green' }}
-								ghost
-								icon={<WhatsAppOutlined />}
-								href="./whatsapp">
-									Chat with Khoj
-							</Button>
-						</div>
-						<div className='product-description-link'>
-							<Button
-								type="primary"
-								size='large'
-								className='cta-button'
-								style={{borderRadius: '4px' }}
-								ghost
-								icon={<Icon component={DiscordIcon} />}
-								href={DISCORD_LINK}>
-									Join us on Discord
-							</Button>
-						</div>
+			<div>
+				<div className="product-description">
+					<div className='production-description-subcomponent-light'>
+						<img id="demo-video" src="/mountain_sunrise.svg" alt="chat-demo" />
+					</div>
+					<div className='production-description-subcomponent-light'>
+						<h2 className='production-description-subcomponent'>Stay in Flow</h2>
+						<p className='product-description-subcomponent-light'>
+							No more Zettlekasten, no more GTD. You don't have to spend time organizing your notes.
+						</p>
+						<p className='product-description-subcomponent-light'>
+							Khoj understands your data as-is.
+						</p>
 					</div>
 				</div>
 			</div>
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent'>
-						<h2 className='production-description-subcomponent'>Can Khoj be self-hosted?</h2>
+						<h2 className='production-description-subcomponent'>Run Privately</h2>
 						<p className='product-description-subcomponent'>
-							Absolutely!	We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
-							This means you can always customize and self-host your Khoj on your own machines.
+							We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
+							This means you can always customize and self-host your Khoj on your own machine.
 						</p>
 						<p className='product-description-subcomponent'>
-							This is designed to be a thinking tool that can extend your digital brain. Khoj supports swapping of offline and online models, so you can choose to use the cloud or keep your data on your machine.
+							Khoj supports swapping offline and online models when run locally, so you can choose to use foundation models or keep your data on-premises.
 						</p>
 					</div>
 					<div className='production-description-subcomponent'>
 						<h3 className='production-description-subcomponent'>Quickstart</h3>
 						<p className='product-description-subcomponent'>
-							Get started with Khoj locally in a few minutes. You have to run the following snippet from a terminal.
+							Get started with Khoj locally in a few minutes with the following commands:
 						</p>
 						<pre className='product-description-subcomponent'>
 							<button id='copy-self-host-button' onClick={copyToClipboardAction}>Copy</button>
@@ -248,8 +222,7 @@ export function Home() {
 				<div className='production-description-subcomponent-light'>
 					<h2 className='production-description-subcomponent'>Get involved</h2>
 					<p className='product-description-subcomponent-light'>
-						We know how hard it can be to search and engage with information across all the different platforms you use.
-						We plan to fix this by making information from your chosen data sources accessible to you in a transparent and secure way.
+						We are making information from your chosen data sources accessible to you in a transparent and secure way, so you can reason and create more effectively.
 						If you have more features you'd like to see supported, please let us know on <a className='inline-link-light' href={DISCORD_LINK}>Discord</a> or <a className='inline-link-light' href="https://github.com/khoj-ai/khoj/issues">Github</a>. 
 					</p>
 					<p className='product-description-subcomponent-light'>

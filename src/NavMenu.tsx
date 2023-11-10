@@ -6,27 +6,59 @@ import { Menu } from 'antd';
 import {
     BookOutlined,
     WhatsAppOutlined,
-    RocketTwoTone,
+    DesktopOutlined,
+    FireTwoTone,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
 
-import { DiscordIcon } from './components/Icons';
-import { DISCORD_LINK } from './common/constants';
+import { DiscordIcon, GithubIcon } from './components/Icons';
+import { DISCORD_LINK, GITHUB_KHOJ } from './common/constants';
 
 export default function NavMenu() {
 
-    const [scrolled, setScrolled] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const isMobile = screenWidth < 768;
+
+    const primaryCTA = {
+        label: (
+            <a className='primary-cta' href="https://app.khoj.dev">
+                Get Started
+            </a>
+        ),
+        key: 'trykhoj',
+        icon: <FireTwoTone twoToneColor="#da4d25" />,
+    };
 
     const items: MenuProps['items'] = [
         {
             label: (
-                <a className='primary-cta' href="https://app.khoj.dev">
-                    Try Khoj
+                <a href={DISCORD_LINK} target="_blank">
+                    <Icon component={DiscordIcon} />
                 </a>
             ),
-            key: 'trykhoj',
-            icon: <RocketTwoTone twoToneColor="#569b7f" />,
+            key: 'discord',
+        },
+        {
+            label: (
+                <a href={GITHUB_KHOJ} target="_blank">
+                    <Icon component={GithubIcon} />
+                </a>
+            ),
+            key: 'github',
         },
         {
             label: (
@@ -48,44 +80,29 @@ export default function NavMenu() {
         },
         {
             label: (
-                <a href={DISCORD_LINK}>Discord</a>
+                <a href="/downloads">
+                    Desktop
+                </a>
             ),
-            key: 'discord',
-            icon: <Icon component={DiscordIcon} />,
+            key: 'downloads',
+            icon: <DesktopOutlined />,
         },
     ];
 
+    const finalMenu = isMobile ? [primaryCTA, ...items] : [...items, primaryCTA];
+
 
 	const [current, setCurrent] = useState('');
-
-    const handleScroll = () => {
-        const offset = window.scrollY;
-        if (offset > 200 ) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-    }
-    
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-    })
-    
 
 	const onClick: MenuProps['onClick'] = (e) => {
 		setCurrent(e.key);
 	};
 
-    let fontSizeSetting = 'small';
-
-    if (scrolled) {
-        fontSizeSetting = 'medium';
-    }
-  
 
 	return (
         <div>
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{ fontSize: fontSizeSetting }} />
+            {/* <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{position: 'absolute', top: 0, right: 0}} /> */}
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={finalMenu} style={{justifyContent:"flex-end"}} />
         </div>
   )	;
 }

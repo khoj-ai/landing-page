@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import { ToolOutlined } from '@ant-design/icons';
 
 export default function About() {
     return (
@@ -12,6 +13,12 @@ export default function About() {
             </div>
             <div className='content-sections'>
                 <div className='article'>
+                    <div className="content">
+                        <ToolOutlined />
+                        <p className='content'>
+                            This information is slightly out of date. We're working on updating it.
+                        </p>
+                    </div>
                     <h2 className="article-title">What we're making</h2>
                         <div className="content">
                             <p className='content'>
@@ -47,7 +54,7 @@ export default function About() {
                         <h2 className='article-title'>Why we're making it</h2>
                         <div className='content'>
                             <p className='content'>
-                                <b>We're on a mission to democratize access to these tools</b>, so that the productivity gains from these advances are available to the most diverse range of people possible without giving up your privacy.
+                                <b>We're on a mission to democratize access to AI tools</b>, so that the productivity gains from compute advances are available to the most diverse range of people possible without giving up your privacy.
                                 Given what is at stake, there is no reason to settle for anything less.
                             </p>
                             <p className='content'>

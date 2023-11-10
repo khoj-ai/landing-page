@@ -1,0 +1,32 @@
+@import url(colors.css);
+@import url(fonts.css);
+
+div.download-links {
+    width: 50vw;
+    margin-right: 25vw;
+    margin-left: 25vw;
+}
+
+p.downloads-content {
+    font-family: var(--reader);
+    font-weight: lighter;
+}
+
+div.downloads-content.link {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 24px;
+    margin: 0;
+}
+
+a.downloads-content.link {
+    background-color: var(--main-background);
+    color: var(--mild-sun);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+a.downloads-content.link:hover {
+    background-color: var(--dark-water);
+    color: var(--light);
+}

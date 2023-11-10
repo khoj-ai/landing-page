@@ -1,6 +1,6 @@
 @import 'colors.css';
 @import 'fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal&family=EB+Garamond&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Wix+Madefor+Text&family=Epilogue&family=Figtree&family=Tajawal&family=EB+Garamond&family=Questrial&display=swap');
 
 .App {
   text-align: center;
@@ -19,13 +19,12 @@ body {
 }
 
 a.primary-cta {
-  color: var(--main-background);
-  background-color: var(--calm-water-accent);
+  color: var(--light) !important;
+  background-color: var(--pure-black);
   border-radius: 4px;
   padding: 8px 16px;
   font-size: large;
-  font-family: var(--reader);
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
 }
 
