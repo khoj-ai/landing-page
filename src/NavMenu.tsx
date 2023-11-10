@@ -46,22 +46,6 @@ export default function NavMenu() {
     const items: MenuProps['items'] = [
         {
             label: (
-                <a href={DISCORD_LINK} target="_blank">
-                    <Icon component={DiscordIcon} />
-                </a>
-            ),
-            key: 'discord',
-        },
-        {
-            label: (
-                <a href={GITHUB_KHOJ} target="_blank">
-                    <Icon component={GithubIcon} />
-                </a>
-            ),
-            key: 'github',
-        },
-        {
-            label: (
                 <a href="https://docs.khoj.dev/#/setup" target="_blank">
                    Docs
                 </a>
@@ -87,6 +71,22 @@ export default function NavMenu() {
             key: 'downloads',
             icon: <DesktopOutlined />,
         },
+        {
+            label: (
+                <a href={DISCORD_LINK} target="_blank">
+                    <Icon component={DiscordIcon} />
+                </a>
+            ),
+            key: 'discord',
+        },
+        {
+            label: (
+                <a href={GITHUB_KHOJ} target="_blank">
+                    <Icon component={GithubIcon} />
+                </a>
+            ),
+            key: 'github',
+        },
     ];
 
     const finalMenu = isMobile ? [primaryCTA, ...items] : [...items, primaryCTA];
@@ -101,8 +101,7 @@ export default function NavMenu() {
 
 	return (
         <div>
-            {/* <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{position: 'absolute', top: 0, right: 0}} /> */}
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={finalMenu} style={{justifyContent:"flex-end"}} />
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={finalMenu} style={ {justifyContent:"flex-end", maxWidth: "98vw" }} />
         </div>
   )	;
 }
