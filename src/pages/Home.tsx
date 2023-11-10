@@ -1,9 +1,6 @@
 import '../styles/Home.css';
 import { Button } from 'antd';
-import { WhatsAppOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
-import { GithubIcon, DiscordIcon } from '../components/Icons';
-import Icon from '@ant-design/icons';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
@@ -119,7 +116,7 @@ export function Home() {
 								Khoj can understand your PDFs, markdown, plaintext, GitHub, and Notion, with more in the works.
 							</p>
 							<p className='product-description-subcomponent-light'>
-								Index files directly from your computer using our <a href="/downloads" className='inline-link-light'>Desktop Application</a>.
+								Connect files directly from your computer using our <a href="/downloads" className='inline-link-light'>Desktop Application</a>. They'll automatically stay in sync.
 							</p>
 						</div>
 						<div className='camping-description-subcomponent'>
@@ -165,22 +162,22 @@ export function Home() {
 				</div>
 				<div className='production-description-subcomponent'>
 					<div className='supported-icons'>
-						<img className='clients-diagram' src='/clients.svg' alt='Data Sources Diagram' title="Khoj can be accessed from Obsidian, Emacs, the browser, or our native Desktop client. WhatsApp coming soon." />
+						<img className='clients-diagram' src='https://khoj-web-bucket.s3.amazonaws.com/clients_diagram.svg' alt='Data Sources Diagram' title="Khoj can be accessed from Obsidian, Emacs, the browser, or our native Desktop client. WhatsApp coming soon." />
 					</div>
 				</div>
 			</div>
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light'>
-						<img id="demo-video" src="/mountain_sunrise.svg" alt="chat-demo" />
+						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/mountain_sunrise.svg" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light'>
-						<h2 className='production-description-subcomponent'>Stay in Flow</h2>
+						<h2 className='production-description-subcomponent'>Stay in flow</h2>
 						<p className='product-description-subcomponent-light'>
-							No more Zettlekasten, no more GTD. You don't have to spend time organizing your notes.
+							No GTD or Zettlekasten required. Read and write with peace of mind. 
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Khoj understands your data as-is.
+							Khoj understands your data as-is, messy footnotes and all.
 						</p>
 					</div>
 				</div>
@@ -188,10 +185,11 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent'>
-						<h2 className='production-description-subcomponent'>Run Privately</h2>
+						<h2 className='production-description-subcomponent'>Run privately</h2>
 						<p className='product-description-subcomponent'>
-							We are completely open-source. Khoj started with the founding principle that a personal assistant be understandable, accessible and hackable.
+							We are completely open-source.
 							This means you can always customize and self-host your Khoj on your own machine.
+							We've made Khoj understandable, accessible and hackable.
 						</p>
 						<p className='product-description-subcomponent'>
 							Khoj supports swapping offline and online models when run locally, so you can choose to use foundation models or keep your data on-premises.
@@ -213,7 +211,7 @@ export function Home() {
 							<Link className="navLinks" to={DEV_DOCS + "setup"}>Full Setup</Link>
 						</Button>
 						<p className='product-description-subcomponent'>
-							If you have a small team and want to run Khoj in your own cloud, <a className='inline-link-light' href="https://calendar.app.google/cwLYhVQL4LCvkZzu8">book some time with us</a> and we'll help you get started.
+							If you have a small team and want to run Khoj in your own cloud, <a className='inline-link-light' href="https://calendar.app.google/vdCyDrMQuaA857Gs6">book some time with us</a> and we'll help you get started.
 						</p>
 					</div>
 				</div>

@@ -25,6 +25,7 @@ ul.content {
 h2.article-title {
     text-align: left;
     margin: 2rem;
+    font-family: var(--impact);
 }
 
 @media screen and (max-width: 760px) {

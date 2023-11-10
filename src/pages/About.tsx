@@ -111,10 +111,12 @@ export default function About() {
                                         </div>
                                     </div>
                                     <div className='founders-item'>
-                                        <div className='founders-item-image-container'>
-                                            <img className='founders-item-image' src='/yellow_traveler_4.png' alt='An voyager discovers new lands in the mountains' />
-                                            <p className='founders-item-name'>You?</p>
-                                        </div>
+                                        <a className='content' href="https://github.com/khoj-ai/khoj/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">
+                                            <div className='founders-item-image-container'>
+                                                <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/yellow_traveler.png' alt='An voyager discovers new lands in the mountains' />
+                                                <p className='founders-item-name'>You?</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

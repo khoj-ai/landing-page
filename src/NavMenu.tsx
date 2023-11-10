@@ -81,7 +81,7 @@ export default function NavMenu() {
         {
             label: (
                 <a href="/downloads">
-                    Desktop
+                    Download
                 </a>
             ),
             key: 'downloads',
