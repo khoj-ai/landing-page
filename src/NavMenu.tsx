@@ -101,7 +101,7 @@ export default function NavMenu() {
 
 	return (
         <div>
-            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={finalMenu} style={ {justifyContent:"flex-end", maxWidth: "98vw" }} />
+            <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={finalMenu} style={ {justifyContent:"flex-end", maxWidth: "100vw" }} />
         </div>
   )	;
 }
