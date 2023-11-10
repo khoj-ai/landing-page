@@ -1,6 +1,6 @@
 @import 'colors.css';
 @import 'fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Wix+Madefor+Text&family=Epilogue&family=Figtree&family=Tajawal&family=EB+Garamond&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Epilogue&family=Tajawal&display=swap');
 
 .App {
   text-align: center;
