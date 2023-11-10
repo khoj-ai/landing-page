@@ -5,9 +5,33 @@ import { AppleOutlined, DesktopOutlined, WindowsOutlined } from '@ant-design/ico
 
 import { Tabs } from 'antd';
 
-const macText = <div className='downloads-content link'><div><a className='downloads-content link' href='https://download.khoj.dev/builds/23102522hm0nbvv/mac/dmg/x64'>Mac Intel</a></div><div><a className='downloads-content link' href='https://download.khoj.dev/builds/23102522hm0nbvv/mac/dmg/arm64'>Mac Apple Silicon</a></div></div>;
-const windowsText = <div className='downloads-content link'><div><a className='downloads-content link' href='https://download.khoj.dev/builds/23102522hm0nbvv/windows/nsis/x64'>Windows</a></div></div>;
-const linuxText = <div className='downloads-content link'><div><a className='downloads-content link' href='https://download.khoj.dev/builds/23102522hm0nbvv/linux/deb/x64'>Debian</a></div><div><a className='downloads-content link' href='https://download.khoj.dev/builds/23102522hm0nbvv/linux/appImage/x64'>AppImage</a></div></div>;
+const baseDownloadURL = "https://download.khoj.dev/builds/231110ctspm5ik7";
+
+const macText = (
+    <div className='downloads-content link'>
+        <div>
+            <a className='downloads-content link' href={`${baseDownloadURL}/mac/dmg/x64`}>Mac Intel</a>
+        </div>
+        <div>
+            <a className='downloads-content link' href={`${baseDownloadURL}/mac/dmg/arm64`}>Mac Apple Silicon</a>
+        </div>
+    </div>);
+
+const windowsText = (
+    <div className='downloads-content link'>
+        <div>
+            <a className='downloads-content link' href={`${baseDownloadURL}/windows/nsis/x64`}>Windows</a>
+        </div>
+    </div>);
+
+const linuxText = (
+    <div className='downloads-content link'>
+        <div>
+            <a className='downloads-content link' href={`${baseDownloadURL}/linux/deb/x64`}>Debian</a>
+        </div>
+        <div><a className='downloads-content link' href={`${baseDownloadURL}/linux/appImage/x64`}>AppImage</a>
+        </div>
+    </div>);
 
 const downloadLinks = [
     {
