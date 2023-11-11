@@ -89,7 +89,7 @@ export function Home() {
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
 								href="https://app.khoj.dev">
-									Try it Out
+									Try the Beta
 								</Button>
 						</div>
 					</div>
