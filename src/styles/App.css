@@ -1,6 +1,6 @@
 @import 'colors.css';
 @import 'fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Epilogue&family=Tajawal&display=swap');
 
 .App {
   text-align: center;
@@ -18,13 +18,33 @@ body {
   pointer-events: none;
 }
 
+a.primary-cta {
+  color: var(--light) !important;
+  background-color: var(--pure-black);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar stays on top of other elements */
+}
+
 h2.title {
-  text-align: center;
+  text-align: left;
   font-size: var(--title-size);
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--main-background);
+}
+
+h2.major {
+  font-size: var(--major-size);
 }
 
 @media (prefers-reduced-motion: no-preference) {

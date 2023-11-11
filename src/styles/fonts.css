@@ -1,6 +1,10 @@
 :root {
     --title-size: 34px;
+    --major-size: 42px;
     --subtitle-size: 24px;
-    --impact: 'DM Serif Display', serif;
-    --reader: 'EB Garamond', serif;
+    /* --impact: 'DM Serif Display', serif; */
+    --reader: 'Tajawal', sans-serif;
+    /* --reader: 'Figtree', sans-serif; */
+    /* --reader: 'Wix Madefor Text', sans-serif; */
+    --impact: 'Epilogue', sans-serif;
 }

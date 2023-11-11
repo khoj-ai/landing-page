@@ -28,10 +28,77 @@ div#showcase {
 
 div.product-description {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     font-family: var(--reader);
     font-size: medium;
+    margin-top: 20px;
+}
+
+h2.product-discussion {
+    text-align: center;
+    font-family: var(--impact);
+    margin: 0;
+}
+
+div.product-discussion {
+    font-size: medium;
+    font-family: var(--reader);
+}
+
+div.icon-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    font-family: var(--reader);
+    font-size: medium;
+    grid-gap: 10px;
+    margin: 10%;
+}
+
+div.product-description.first-description {
+    margin-top: 0;
+}
+
+img.example-icon {
+    padding: 8px;
+    border: 1px solid var(--main-background);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--mild-sun);
+}
+
+img.clients-diagram,
+img.datasource-diagram {
+    width: 300px;
+    height: auto;
+    background-color: var(--mild-sun);
+    padding: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+img.clients-diagram:hover,
+img.datasource-diagram:hover {
+    transform: scale(1.1); /* Make it 10% bigger */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+div.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+    margin: 20px 10%;
+}
+
+div.primary-cta {
+    text-align: left;
+}
+
+div.primary-cta-link {
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
 }
 
 p.github-logo {
@@ -59,12 +126,24 @@ a.github-logo {
 }
 
 div.product-description-link {
-    text-align: left;
+    text-align: center;
     margin: 1.5rem;
     display: inline;
 }
+
 div.top-section-links {
     margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.hero-container-subtitle {
+    margin: 0;
+    padding: 10px 0;
+    font-size: x-large;
+    text-align: left;
+    font-weight: normal;
+    font-family: var(--reader);
 }
 
 p.camping-text {
@@ -79,7 +158,6 @@ div.product-description-bubbles {
     border-radius: 8px;
     box-shadow: 0 0 8px rgb(0, 0, 0.5);
     width: 100%;
-    max-width: 600px;
     object-fit: cover;
     justify-self: center;
     margin: 8px;
@@ -90,7 +168,7 @@ div.product-description-bubbles {
 #demo-video {
     border-radius: 0px;
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     object-fit: cover;
     justify-self: center;
     margin: 8px;
@@ -132,9 +210,9 @@ span.founders-item-bio {
 
 div.production-description-subcomponent {
     background-color: var(--mild-sun);
-    padding: 2% 25%;
+    padding: 4% 15%;
     padding-bottom: 2.5%;
-    font-size: large;
+    font-size: x-large;
     text-align: left;
 }
 div.camping-description-subcomponent {
@@ -143,9 +221,9 @@ div.camping-description-subcomponent {
 
 div.production-description-subcomponent-light {
     background-color: var(--light);
-    padding: 2% 25%;
+    padding: 4% 15%;
     padding-bottom: 4.5%;
-    font-size: large;
+    font-size: x-large;
     text-align: left;
 }
 
@@ -153,6 +231,11 @@ h2.production-description-subcomponent {
     text-align: left;
     font-family: var(--impact);
     margin: 0;
+    font-size: xx-large;
+}
+
+p.product-description-subcomponent-light {
+    font-size: x-large;
 }
 
 p.founders-item-name {
@@ -162,25 +245,34 @@ p.founders-item-name {
 
 div.supported-icons {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-items: center;
-    margin-top: 7%;
-    margin-bottom: -5%;
 }
 
 div.typing-components {
     height: 50px;
     color: #000;
-    text-align: center;
+    text-align: left;
     white-space: pre-line;
     font-size: x-large;
     font-family: var(--reader);
     margin-top: 8px;
     margin-bottom: 20px;
+    border: 1px solid var(--main-background);
+    border-radius: 4px;
+    height: 80px;
+    padding: 4px;
 }
 
 a.ant-btn.cta-button {
     width: auto;
+}
+
+div.production-description-subcomponent-light,
+div.production-description-subcomponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 code.product-description-subcomponent {
@@ -235,6 +327,7 @@ img#yc-logo {
 @media screen and (max-width: 760px) {
     h2.title {
         margin: 0 4px;
+        text-align: left;
     }
     div.product-description {
         display: grid;
@@ -272,7 +365,7 @@ img#yc-logo {
     }
     #demo-video {
         width: 95%;
-        max-width: 600px;
+        max-width: 300px;
         object-fit: cover;
         justify-self: center;
     }
@@ -317,5 +410,16 @@ img#yc-logo {
 
     a.ant-btn.cta-button {
         width: 80%;
+    }
+
+    div.hero-container {
+        grid-template-columns: 1fr;
+        margin: 10px 5%;
+    }
+
+    div.top-section-links {
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

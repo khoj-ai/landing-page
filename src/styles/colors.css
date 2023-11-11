@@ -1,10 +1,12 @@
 :root {
     --main-background: #282c34;
     --dark-water: #354764;
+    --pure-black: #000;
     --mild-sun: #f9f5de;
     --light: #fff;
     --calm-water-accent: #6fa7ab;
     --error-color: #ff0000;
     --soft-green: #b4e9b4;
     --soft-dark-green: #569b7f;
+    --rose: #da4d25;
 }

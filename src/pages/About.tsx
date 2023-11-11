@@ -1,12 +1,24 @@
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import { ToolOutlined } from '@ant-design/icons';
 
-console.log("test" + DEV_DOCS);
 export default function About() {
     return (
         <section className="core-page">
+            <div className="navLogo">
+                <Link to="/">
+                    <img className='khoj-logo' src="/khoj-logo-sideways-500.png" alt="Khoj" />
+                </Link>
+            </div>
             <div className='content-sections'>
                 <div className='article'>
+                    <div className="content">
+                        <ToolOutlined />
+                        <p className='content'>
+                            This information is slightly out of date. We're working on updating it.
+                        </p>
+                    </div>
                     <h2 className="article-title">What we're making</h2>
                         <div className="content">
                             <p className='content'>
@@ -42,7 +54,7 @@ export default function About() {
                         <h2 className='article-title'>Why we're making it</h2>
                         <div className='content'>
                             <p className='content'>
-                                <b>We're on a mission to democratize access to these tools</b>, so that the productivity gains from these advances are available to the most diverse range of people possible without giving up your privacy.
+                                <b>We're on a mission to democratize access to AI tools</b>, so that the productivity gains from compute advances are available to the most diverse range of people possible without giving up your privacy.
                                 Given what is at stake, there is no reason to settle for anything less.
                             </p>
                             <p className='content'>
@@ -81,6 +93,33 @@ export default function About() {
                                     <p className='content'>This is best if you need to reach out to the team directly.</p>
                                 </li>
                             </ul>
+                        </div>
+                        <div id="team" className="product-description">
+                            <div className='production-description-subcomponent-light'>
+                                <h2 className='production-description-subcomponent'>Team</h2>
+                                <div className='founders-text'>
+                                    <div className='founders-item'>
+                                        <div className='founders-item-image-container'>
+                                            <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/deb_founder_bw.jpg' alt='Debanjum Singh' />
+                                            <p className='founders-item-name'>Debanjum Singh Solanky</p>
+                                        </div>
+                                    </div>
+                                    <div className='founders-item'>
+                                        <div className='founders-item-image-container'>
+                                            <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/saba_founder_bw.jpg' alt='Saba Imran' />
+                                            <p className='founders-item-name'>Saba Imran</p>
+                                        </div>
+                                    </div>
+                                    <div className='founders-item'>
+                                        <a className='content' href="https://github.com/khoj-ai/khoj/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">
+                                            <div className='founders-item-image-container'>
+                                                <img className='founders-item-image' src='https://khoj-web-bucket.s3.amazonaws.com/yellow_traveler.png' alt='An voyager discovers new lands in the mountains' />
+                                                <p className='founders-item-name'>You?</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
