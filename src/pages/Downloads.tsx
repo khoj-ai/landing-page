@@ -5,7 +5,7 @@ import { AppleOutlined, DesktopOutlined, WindowsOutlined } from '@ant-design/ico
 
 import { Tabs } from 'antd';
 
-const baseDownloadURL = "https://download.khoj.dev/builds/231110ctspm5ik7";
+const baseDownloadURL = "https://download.khoj.dev/builds/231116uo5zvnw3s";
 
 const macText = (
     <div className='downloads-content link'>
