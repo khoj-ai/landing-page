@@ -211,7 +211,7 @@ export function Home() {
 							If you have a small team and want to run Khoj in your own cloud, book some time with us and we'll help you get started.
 						</p>
 						<Button size="large" type="text" shape="default" style={{borderRadius: '4px', border: '1px solid #000'} }>
-							<Link className="navLinks" to="https://calendar.app.google/vdCyDrMQuaA857Gs6">Meet with Us</Link>
+							<Link className="navLinks" to="https://calendar.app.google/vdCyDrMQuaA857Gs6">Deploy for Your Team</Link>
 						</Button>
 					</div>
 				</div>
