@@ -23,7 +23,7 @@ const Pricing = () => {
                             <ul className='card-content'>
                                 <li className='card-content'>Text-based AI chat</li>
                                 <li className='card-content'>Up to 10 MB of data storage</li>
-                                <li className='card-content'>5 queries per day</li>
+                                <li className='card-content'>10 queries per day</li>
                             </ul>
                         </div>
                         <div className='cta'>
