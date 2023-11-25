@@ -6,6 +6,7 @@ import WhatsApp from './pages/WhatsApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Downloads from './pages/Downloads';
+import Pricing from './pages/Pricing';
 
 import { ConfigProvider, Layout } from 'antd';
 
@@ -53,6 +54,7 @@ function App() {
 									<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 									<Route path="/terms-of-service" element={<TermsOfService />} />
 									<Route path="/downloads" element={<Downloads />} />
+									<Route path="/pricing" element={<Pricing />} />
 								</Routes>
 							</Content>
 							<footer className="footer-container">

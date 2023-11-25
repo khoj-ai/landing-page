@@ -7039,11 +7039,6 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-os-browserify@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
-  integrity sha512-gjcpUc3clBf9+210TRaDWbf+rZZZEshZ+DlXMRCeAjp0xhTrnQsKHypIy1J3d5hKdUzj69t708EHtU8P6bUn0A==
-
 p-limit@^2.0.0, p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
@@ -7775,10 +7770,10 @@ postcss@^8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-posthog-js@^1.83.0:
-  version "1.83.0"
-  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.83.0.tgz#e13d114922f863f4bfbf7c7cc4e11dc194139a91"
-  integrity sha512-3dp/yNbRCYsOgvJovFUMCLv9/KxnwmGBy5Ft27Q7/rbW++iJXVR64liX7i0NrXkudjoL9j1GW1LGh84rV7kv8Q==
+posthog-js@^1.93.2:
+  version "1.93.2"
+  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.93.2.tgz#f3ab11983c558ad36966b552bb4ad98526cdcff6"
+  integrity sha512-0e2kqlb4kB1/Q9poLFlMF+SUrW+DCzNBHTJuUKl177euE4LChkJipSjy2vpq98qtJ2K3Hxw7ylHf2C+dZCx4RA==
   dependencies:
     fflate "^0.4.1"
 

@@ -8,6 +8,7 @@ import {
     WhatsAppOutlined,
     DesktopOutlined,
     FireTwoTone,
+    StarOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
@@ -52,6 +53,15 @@ export default function NavMenu() {
                 ),
             key: 'selfhost',
             icon: <BookOutlined />,
+        },
+        {
+            label: (
+                <a href="/pricing">
+                    Pricing
+                </a>
+            ),
+            key: 'pricing',
+            icon: <StarOutlined />,
         },
         {
             label: (
