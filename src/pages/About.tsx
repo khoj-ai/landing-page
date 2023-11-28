@@ -94,9 +94,9 @@ export default function About() {
                                 </li>
                             </ul>
                         </div>
-                        <div id="team" className="product-description">
+                        <div id="team" className="product-description content">
                             <div className='production-description-subcomponent-light'>
-                                <h2 className='production-description-subcomponent'>Team</h2>
+                                <h2 id="team-heading" className='production-description-subcomponent'>Team</h2>
                                 <div className='founders-text'>
                                     <div className='founders-item'>
                                         <div className='founders-item-image-container'>

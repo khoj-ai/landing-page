@@ -208,9 +208,21 @@ span.founders-item-bio {
     display: block;
 }
 
+div.left-section {
+    padding-left: 25%;
+    padding-right: 0;
+}
+div.right-section {
+    padding-left: 0;
+    padding-right: 25%;
+}
+div.center-section {
+    padding-left: 25%;
+    padding-right: 25%;
+}
 div.production-description-subcomponent {
     background-color: var(--mild-sun);
-    padding: 4% 15%;
+    padding-top: 4%;
     padding-bottom: 2.5%;
     font-size: x-large;
     text-align: left;
@@ -221,7 +233,7 @@ div.camping-description-subcomponent {
 
 div.production-description-subcomponent-light {
     background-color: var(--light);
-    padding: 4% 15%;
+    padding-top: 4%;
     padding-bottom: 4.5%;
     font-size: x-large;
     text-align: left;
@@ -359,9 +371,7 @@ img#yc-logo {
     }
 
     div.product-description-bubbles {
-        margin-right: 10%;
-        margin-left: 10%;
-        width: 80%;
+        width: 100%;
     }
     #demo-video {
         width: 95%;
