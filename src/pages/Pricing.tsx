@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Button } from 'antd';
@@ -43,7 +42,8 @@ const Pricing = () => {
                         <div className='card-content notice'>Early-Bird deal!</div>
                         <div className='card-content'>
                             <ul className='card-content'>
-                                <li className='card-content'>Multi-modal (voice, image), internet-enabled AI chat</li>
+                                <li className='card-content'>Real-time internet aware AI</li>
+                                <li className='card-content'>Multi-modal: voice, image (soon!)</li>
                                 <li className='card-content'>Early access to new features</li>
                                 <li className='card-content'>Up to 100 MB of data storage</li>
                                 <li className='card-content'>Unlimited queries per day</li>
