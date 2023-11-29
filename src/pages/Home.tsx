@@ -1,7 +1,7 @@
 import '../styles/Home.css';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
-import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import { DISCORD_LINK, DEV_DOCS, CLOUD_LINK } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
 
@@ -88,7 +88,7 @@ export function Home() {
 								size='large'
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
-								href="https://app.khoj.dev">
+								href={CLOUD_LINK}>
 									Try the Beta
 								</Button>
 						</div>
@@ -154,7 +154,7 @@ export function Home() {
 								size='large'
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
-								href="https://app.khoj.dev">
+								href={CLOUD_LINK}>
 									Get started
 								</Button>
 						</div>

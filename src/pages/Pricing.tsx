@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 
 import '../styles/Pricing.css';
+import { CLOUD_LINK } from '../common/constants';
 
 const Pricing = () => {
   return (
@@ -32,7 +33,7 @@ const Pricing = () => {
 								size='large'
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
-								href="https://app.khoj.dev">
+								href={CLOUD_LINK}>
 									Get Started
 								</Button>
 						</div>
