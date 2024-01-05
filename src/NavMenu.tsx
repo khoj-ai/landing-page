@@ -14,7 +14,7 @@ import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
 
 import { DiscordIcon, GithubIcon } from './components/Icons';
-import { DISCORD_LINK, GITHUB_KHOJ } from './common/constants';
+import { DISCORD_LINK, GITHUB_KHOJ, DEV_DOCS, CLOUD_LINK } from './common/constants';
 
 export default function NavMenu() {
 
@@ -36,7 +36,7 @@ export default function NavMenu() {
 
     const primaryCTA = {
         label: (
-            <a className='primary-cta' href="https://app.khoj.dev">
+            <a className='primary-cta' href={CLOUD_LINK}>
                 Get Started
             </a>
         ),
@@ -47,7 +47,7 @@ export default function NavMenu() {
     const items: MenuProps['items'] = [
         {
             label: (
-                <a href="https://docs.khoj.dev/#/setup" target="_blank">
+                <a href={DEV_DOCS} target="_blank">
                    Docs
                 </a>
                 ),

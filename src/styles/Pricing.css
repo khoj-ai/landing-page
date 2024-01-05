@@ -20,12 +20,13 @@ ul.card-content {
     list-style: disc;
     text-align: left;
     font-family: var(--reader);
+    font-size: large;
 }
 
-h2.article-title {
-    text-align: left;
-    margin: 2rem;
+h1.article-title {
+    margin: 2rem 0;
     font-family: var(--impact);
+    font-size: xx-large;
 }
 
 div.content-sections {

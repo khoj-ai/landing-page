@@ -1,7 +1,7 @@
 import '../styles/Home.css';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
-import { DISCORD_LINK, DEV_DOCS } from '../common/constants';
+import { DISCORD_LINK, DEV_DOCS, CLOUD_LINK } from '../common/constants';
 import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
 
@@ -88,7 +88,7 @@ export function Home() {
 								size='large'
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
-								href="https://app.khoj.dev">
+								href={CLOUD_LINK}>
 									Try the Beta
 								</Button>
 						</div>
@@ -110,7 +110,7 @@ export function Home() {
 			<section id="mission">
 				<div id="mission" className='camping-block'>
 					<div className="product-description first-description">
-						<div className='production-description-subcomponent camping-description-subcomponent'>
+						<div className='production-description-subcomponent camping-description-subcomponent left-section'>
 							<h2 className='production-description-subcomponent'>Connect your knowledge</h2>
 							<p className='product-description-subcomponent-light'>
 								Khoj can understand your PDFs, markdown, plaintext, GitHub, and Notion, with more in the works.
@@ -119,7 +119,7 @@ export function Home() {
 								Connect files directly from your computer using our <a href="/downloads" className='inline-link-light'>Desktop Application</a>. They'll automatically stay in sync.
 							</p>
 						</div>
-						<div className='camping-description-subcomponent'>
+						<div className='camping-description-subcomponent right-section'>
 							<IconDisplay />
 						</div>
 					</div>
@@ -127,10 +127,10 @@ export function Home() {
 			</section>
 			<div>
 				<div className="product-description">
-					<div className='production-description-subcomponent-light'>
+					<div className='production-description-subcomponent-light left-section'>
 						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/doing_good_better_demo.png" alt="chat-demo" />
 					</div>
-					<div className='production-description-subcomponent-light'>
+					<div className='production-description-subcomponent-light right-section'>
 						<h2 className='production-description-subcomponent'>Simplify your reasoning</h2>
 						<p className='product-description-subcomponent-light'>
 							Khoj allows you to leverage AI to make better sense of your notes and documents.
@@ -142,7 +142,7 @@ export function Home() {
 				</div>
 			</div>
 			<div id="plugins" className='product-description'>
-				<div className='production-description-subcomponent'>
+				<div className='production-description-subcomponent left-section'>
 					<h2 className='production-description-subcomponent'>Engage anytime, anywhere</h2>
 					<p className='product-description-subcomponent'>
 						Use our native desktop app on any OS. Or use our first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>, to stay within your existing workflow.
@@ -154,13 +154,13 @@ export function Home() {
 								size='large'
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
-								href="https://app.khoj.dev">
+								href={CLOUD_LINK}>
 									Get started
 								</Button>
 						</div>
 					</div>
 				</div>
-				<div className='production-description-subcomponent'>
+				<div className='production-description-subcomponent right-section'>
 					<div className='supported-icons'>
 						<img className='clients-diagram' src='https://khoj-web-bucket.s3.amazonaws.com/clients_diagram.svg' alt='Data Sources Diagram' title="Khoj can be accessed from Obsidian, Emacs, the browser, or our native Desktop client. WhatsApp coming soon." />
 					</div>
@@ -168,10 +168,10 @@ export function Home() {
 			</div>
 			<div>
 				<div className="product-description">
-					<div className='production-description-subcomponent-light'>
+					<div className='production-description-subcomponent-light left-section'>
 						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/mountain_sunrise.svg" alt="chat-demo" />
 					</div>
-					<div className='production-description-subcomponent-light'>
+					<div className='production-description-subcomponent-light right-section'>
 						<h2 className='production-description-subcomponent'>Stay in flow</h2>
 						<p className='product-description-subcomponent-light'>
 							No GTD or Zettlekasten required. Read and write with peace of mind. 
@@ -184,7 +184,7 @@ export function Home() {
 			</div>
 			<div>
 				<div className="product-description">
-					<div className='production-description-subcomponent'>
+					<div className='production-description-subcomponent left-section'>
 						<h2 className='production-description-subcomponent'>Run privately</h2>
 						<p className='product-description-subcomponent'>
 							We are completely open-source.
@@ -195,7 +195,7 @@ export function Home() {
 							You can switch between offline and online models when run locally. You can choose to use foundation models or keep your data on-premises.
 						</p>
 					</div>
-					<div className='production-description-subcomponent'>
+					<div className='production-description-subcomponent right-section'>
 						<p className='product-description-subcomponent'>
 							Get started with Khoj locally in a few minutes with the following commands:
 						</p>
@@ -217,7 +217,7 @@ export function Home() {
 				</div>
 			</div>
 			<div id="conclude" className='product-discussion'>
-				<div className='production-description-subcomponent-light'>
+				<div className='production-description-subcomponent-light center-section'>
 					<h2 className='production-description-subcomponent'>Get involved</h2>
 					<p className='product-description-subcomponent-light'>
 						Personal AI should be accessible, transparent, and secure, so you can reason and create more effectively.
