@@ -8,7 +8,7 @@ import { DISCORD_LINK } from '../common/constants';
 import { GithubIcon } from '../components/Icons';
 import ChatBubbles from '../components/ChatBubbles';
 
-import { WhatsAppOutlined, CoffeeOutlined, ExperimentOutlined, HomeOutlined } from '@ant-design/icons';
+import { WhatsAppOutlined, BookOutlined, ExperimentOutlined, GlobalOutlined, MergeCellsOutlined } from '@ant-design/icons';
 
 import type { CollapseProps } from 'antd';
 import { Collapse, Tabs } from 'antd';
@@ -16,29 +16,19 @@ import { Collapse, Tabs } from 'antd';
 const items: CollapseProps['items'] = [
     {
         key: '1',
-        label: 'Where is my data stored?',
-        children: <p className='whatsapp-faq'>Your data is securely stored in Amazon's production <a href="https://aws.amazon.com/" className='inline-link-light'>cloud-hosting service, AWS</a>. This is where many big companies, like Twitch and Airbnb, manage their cloud infrastructure.</p>
-    },
-    {
-        key: '3',
-        label: 'What is an LLM?',
-        children: <p className='whatsapp-faq'>LLM stands for <a href='https://en.wikipedia.org/wiki/Large_language_model' className='inline-link-light'>Large</a> <a className='inline-link-light' href="https://en.wikipedia.org/wiki/Language_model">Language Model</a>. It's a type of AI model that can generate text. You can think of it as a very advanced autocomplete.</p>
-    },
-    {
-        key: '4',
-        label: 'Which LLM do you use?',
-        children: <p className='whatsapp-faq'>We currently use <a className='inline-link-light' href="https://openai.com/blog/openai-api/">OpenAI's API</a> to generate responses to your messages. We will most likely swap out the LLM in the backend in the future.</p>
-    },
-    {
-        key: '5',
         label: 'Are you training using my data?',
         children: <p className='whatsapp-faq'>No. We do not use your data to train any models. We only use your data to generate responses to your messages.</p>
     },
     {
         key: '2',
         label: 'How are you talking through WhatsApp?',
-        children: <p className='whatsapp-faq'>Khoj WhatsApp uses a <a className='inline-link-light' href="https://business.facebook.com/">Meta for Business</a> account linked to <a className='inline-link-light' href="https://www.twilio.com/en-us">Twilio</a>. We use <a className='inline-link-light' href="https://www.twilio.com/docs/whatsapp/api">Twilio's WhatsApp infrastructure</a> to send and receive messages.</p>
+        children: <p className='whatsapp-faq'>Khoj WhatsApp uses a <a className='inline-link-light' href="https://business.facebook.com/">Meta for Business</a> account and leverages the <a className='inline-link-light' href="https://developers.facebook.com/docs/whatsapp/cloud-api/">WhatsApp Cloud API</a> to send and receive messages.</p>
     },
+    {
+        key: '3',
+        label: 'How do I connect my Khoj account?',
+        children: <p className='whatsapp-faq'>You can connect your Khoj account by visiting the <a className='inline-link-light' href="https://app.khoj.dev/config">Khoj Config</a> page and adding your number in the WhatsApp section. You will have to enter in a One Time Passcode in order to verify your number ownership.</p>
+    }
 ]
 
 const superconductorsConversation = [
@@ -52,41 +42,22 @@ const superconductorsConversation = [
     },
 ];
 
-const chaiRecipeConversation = [
-    {
-        "you": "Hey Khoj, can you give me a list of ingredients for homemade chai?",
-        "khoj": `Certainly! Here's a simple ingredient list for homemade chai:
-        Ingredients:
-        - 2 cups water
-        - 2 cups milk
-        - 2-3 teaspoons loose black tea leaves (or 2-3 tea bags)
-        - 4-5 whole green cardamom pods, lightly crushed
-        - 1 small piece of fresh ginger, peeled and grated
-        `
-    },
-    {
-        "you": "How can I make chai using those ingredients?",
-        "khoj": `Instructions:
-        1. In a saucepan, add water and bring it to a boil.
-        2. Once the water is boiling, add the tea leaves or tea bags, cardamom pods, and grated ginger (if using).
-        3. Reduce the heat to low and let the mixture simmer for about 5 minutes to allow the flavors to infuse.
-        4. Add milk to the saucepan and bring the mixture to a gentle simmer. Continue simmering for another 2-3 minutes, or until the chai reaches your desired strength and sweetness.
-        6. Remove the saucepan from heat and strain the chai to remove the tea leaves and spices.
-        7. Pour the chai into cups or mugs and serve hot.
 
-        Feel free to adjust the ingredients according to your taste preferences. You can also experiment with adding other spices like nutmeg or cardamom powder for additional flavor. Enjoy your homemade chai! Let me know if there's anything else I can assist you with.
-        `
+const lookupCurrentEventsConversation = [
+    {
+        "you": "/online what is the current state of the war between Russia-Ukraine in 2024?",
+        "khoj": "Based on my analysis of the available information, it appears that the war between Russia and Ukraine continues to be ongoing as of January 17th, 2024. The fighting remains intense on the front lines, though neither side has been able to achieve a strategically significant breakthrough. There have been escalating Russian strikes against Ukrainian infrastructure and population centres, which are causing further damage and displacement for civilians in Ukraine.",
     }
 ]
 
-const adviceForLifeConversation = [
+const learningAboutRomanEmpireConversation = [
     {
-        "you": "My roses aren't growing as fast as I expected this year. Do you have any advice for fixing this?",
-        "khoj": "I'm sorry to hear that your roses aren't growing as fast as you expected. I would recommend checking the soil pH and making sure it's between 6.5 and 7.5. If the pH is too low, you can add lime to raise it. If the pH is too high, you can add sulfur to lower it. You should also make sure that the soil is well-drained and that the roses are getting enough sunlight. If you have any other questions, please let me know."
+        "you": "Who was the last emperor of the Roman Empire?",
+        "khoj": "The last Emperor of the Western Roman Empire was Romulus Augustus, who ruled from 476 AD to 477 AD."
     },
     {
-        "you": "Hm, do you think the issue could be fertilizer?",
-        "khoj": "It's possible that the issue could be fertilizer. Consider fertilizing your roses with a balanced rose fertilizer or one specifically formulated for flowering plants. Follow the recommended application rates and timing to provide the necessary nutrients for healthy growth. Nitrogen-rich fertilizers can promote foliage growth, while phosphorus and potassium can support flower production."
+        "you": "How did Rome fall?",
+        "khoj": "The fall of the Roman Empire is a complex historical event with many contributing factors, and historians often debate the specifics. The traditional date for the fall is 476 AD when the Germanic chieftain Odoacer deposed the last Roman emperor of the West, Romulus Augustulus. However, the decline of the Roman Empire was a gradual process influenced by a combination of internal and external factors. Some of the internal factors include political corruption, economic problems, and military weakness. Some of the external factors include barbarian invasions, pressure from the Huns, and the division of the empire into two halves."
     }
 ]
 
@@ -97,11 +68,11 @@ const chatConversation = [
     },
     {
         "title": "Learn",
-        "component": chaiRecipeConversation
+        "component": learningAboutRomanEmpireConversation
     },
     {
-        "title": "Life",
-        "component": adviceForLifeConversation
+        "title": "Realtime",
+        "component": lookupCurrentEventsConversation
     }
 ]
 
@@ -125,13 +96,10 @@ export default function About() {
                                 While AI assistance is making massive strides in boosting productivity for knowledge workers, there's a long tail of people who don't have access to these tools around the world. Simultaneously, there are nearly <b>3 billion</b> people on WhatsApp. So, what better way to bring personal AI to the world than to bring it to WhatsApp?
                             </p>
                             <p className='content'>
-                                You can think of Khoj on WhatsApp as a personal journal you can talk to. It's a place where you can document your stories and life events, and engage with a discussion about ideas. Khoj learns from your messages and grows to use that as a knowledge base over time.
+                                You can think of Khoj on WhatsApp as a personal assistant in your pocket. You can now connect your Khoj account to WhatsApp to get answers to questions from your knowledge base.
                             </p>
-
                             <p className='content'>
-                                <b>Khoj is open source by design</b>.
-                                Only with transparency and trust can we build a thriving community.
-                                Only with a thriving community can we build an ecosystem that serves the diverse, unique needs of everyone.
+                                Khoj WhatsApp also supports native slash commands. Just type <code>/</code> in your WhatsApp chat to see a list of commands you can use.
                             </p>
                             <div className='content link'>
                                 <Button
@@ -141,16 +109,16 @@ export default function About() {
                                     ghost
                                     icon={<WhatsAppOutlined />}
                                     href="https://wa.me/18488004242">
-                                       Chat with Khoj
+                                       Chat on WhatsApp
                                 </Button>
                                 <Button
                                     type="primary"
                                     size='large'
                                     style={{borderRadius: '4px'}}
                                     ghost
-                                    icon={<Icon component={GithubIcon} />}
-                                    href="https://github.com/khoj-ai/flint">
-                                        See the code
+                                    icon={<MergeCellsOutlined />}
+                                    href="https://app.khoj.dev/config">
+                                        Connect to your Khoj account
                                 </Button>
                             </div>
                         </div>
@@ -168,7 +136,7 @@ export default function About() {
                         <div className='chat-examples content'>
                             <Tabs
                                 defaultActiveKey="2"
-                                items={[ExperimentOutlined, CoffeeOutlined, HomeOutlined].map((Icon, i) => {
+                                items={[ExperimentOutlined, BookOutlined, GlobalOutlined].map((Icon, i) => {
                                 const id = String(i + 1);
 
                                     return {
@@ -183,6 +151,23 @@ export default function About() {
                                     };
                                 })}
                             />
+                        </div>
+                        <h2 className='article-title'>See the Code</h2>
+                        <div className='content'>
+                            <p className='content'>
+                                <b>Khoj is open source by design</b>.
+                                Only with transparency and trust can we build a thriving community.
+                                Only with a thriving community can we build an ecosystem that serves the diverse, unique needs of everyone.
+                            </p>
+                            <Button
+                                type="primary"
+                                size='large'
+                                style={{borderRadius: '4px'}}
+                                ghost
+                                icon={<Icon component={GithubIcon} />}
+                                href="https://github.com/khoj-ai/flint">
+                                    See the sauce
+                            </Button>
                         </div>
                         <h2 className='article-title'>How it works</h2>
                         <div className='content'>
