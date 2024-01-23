@@ -152,7 +152,7 @@ export default function About() {
                                 })}
                             />
                         </div>
-                        <h2 className='article-title'>See the Code</h2>
+                        <h2 className='article-title'>Fully Open-Source</h2>
                         <div className='content'>
                             <p className='content'>
                                 <b>Khoj is open source by design</b>.
@@ -166,7 +166,7 @@ export default function About() {
                                 ghost
                                 icon={<Icon component={GithubIcon} />}
                                 href="https://github.com/khoj-ai/flint">
-                                    See the sauce
+                                    See the code
                             </Button>
                         </div>
                         <h2 className='article-title'>How it works</h2>
