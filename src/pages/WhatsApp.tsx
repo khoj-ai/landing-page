@@ -168,6 +168,14 @@ export default function About() {
                                 href="https://github.com/khoj-ai/flint">
                                     See the code
                             </Button>
+                            <Button
+                                type="primary"
+                                size='large'
+                                style={{borderRadius: '4px', marginLeft: '20px', marginRight: '20px'}}
+                                icon={<BookOutlined />}
+                                href="https://docs.khoj.dev/clients/whatsapp">
+                                    Read the docs
+                            </Button>
                         </div>
                         <h2 className='article-title'>How it works</h2>
                         <div className='content'>
