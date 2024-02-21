@@ -23,7 +23,7 @@ const Pricing = () => {
                             <ul className='card-content'>
                                 <li className='card-content'>Text-based AI chat</li>
                                 <li className='card-content'>Up to 10 MB of data storage</li>
-                                <li className='card-content'>10 queries per day</li>
+                                <li className='card-content'>5 queries per day</li>
                             </ul>
                         </div>
                         <div className='cta'>
@@ -39,11 +39,12 @@ const Pricing = () => {
                     </div>
                     <div className='card-option premium'>
                         <h2 className='card-title'>Futurist (<del>$50</del> $30/mo)</h2>
-                        <div className='card-content notice'>Early-Bird deal!</div>
+                        <div className='card-content notice'>Unsure of the Future? <a href={CLOUD_LINK}>Try it free for 14 days</a><span title="The future is subject to market risk. Past performance is not indicative of future results. Please read all physics-related documents carefully before investing in it.">*</span></div>
                         <div className='card-content'>
                             <ul className='card-content'>
                                 <li className='card-content'>Real-time internet aware AI</li>
-                                <li className='card-content'>Multi-modal: voice, image (soon!)</li>
+                                <li className='card-content'>Multi-modal: voice, image</li>
+                                <li className='card-content'>Chat with your documents over Whatsapp</li>
                                 <li className='card-content'>Early access to new features</li>
                                 <li className='card-content'>Up to 100 MB of data storage</li>
                                 <li className='card-content'>Unlimited queries per day</li>
