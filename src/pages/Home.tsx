@@ -1,4 +1,5 @@
 import '../styles/Home.css';
+import { useState, useEffect } from 'react';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
 import { DISCORD_LINK, DEV_DOCS, CLOUD_LINK } from '../common/constants';
@@ -6,6 +7,16 @@ import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
 
 export function Home() {
+	const [currentConversationIndex, setCurrentConversationIndex] = useState(0);
+
+	useEffect(() => {
+		const intervalId = setInterval(() => {
+			setCurrentConversationIndex((currentConversationIndex + 1) % conversationSamples.length);
+		}, 15000); // Change conversation every 5 seconds
+
+		// Clear interval on component unmount
+		return () => clearInterval(intervalId);
+	}, [currentConversationIndex]);
 
 	function copyToClipboardAction() {
 		const codeSnippetElements = document.getElementsByClassName('self-host-code');
@@ -24,32 +35,32 @@ export function Home() {
 	const conversationSamples = [
 		[
 			{
-				"you": "Hey Khoj, where did I visit in San Diego?",
-				"khoj": <span>According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?</span>,
+				"you": "How is the weather looking outside?",
+				"khoj": <span>Based on my online search, the current weather in Goa is clear with temperature of 24°C. The wind is blowing from the west at 22 km/h. Humidity is moderate, but the UV index is high, so put sunscreen if you get out.</span>
 			},
 			{
-				"you": "Remind me about that surfing experience. I want to write about it.",
-				"khoj": <span>You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilarated and at peace. In your writing, you can describe the feeling as a sense of flow.</span>,
+				"you": "/image a Gond art inspired painting using the current weather here. I want to share it in my good morning message today",
+				"khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/gond-art-goa-weather.webp" width="200px" height="200px" alt="Khoj creates a Gond art inspired painting using the current weather in Goa" />
 			}
 		],
 		[
 			{
-				"you": "Can you pull up the email address for the person I met at the conference last week?",
-				"khoj": <span>Sure, you met with Hamid Khan. His email address is hkhan@acme.com.</span>,
+				"you": "What was the name of the beach where I learnt to sail?",
+				"khoj": <span>Your notes mention you learnt to sail at Nyali Beach in Mombasa, Kenya. You'd go on multi-day fishing trips with your grandfather during your summer vacation. You describe these as formative childhood experiences.</span>,
 			},
 			{
-				"you": "Awesome. Can you also summarize the notes I took during the meeting?",
-				"khoj": <span>Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, and he's interested in a partnership with Emca.</span>,
+				"you": "Can you create an itinerary for a day trip to Mombasa? I want to do a literal walk down memory lane visiting my favorite childhood haunts!",
+				"khoj": <span>Great idea! You can start by visiting your grandma and uncle in Old Town. Check if any of the neighborhood friends, like Samuel and Mariam, are up to grab some Mohogo for lunch at Lighthouse. Maybe go for a short sunset sail with Frank before heading back to the Airport.</span>,
 			}
 		],
 		[
 			{
 				"you": "What are some good bedtime stories for Lamar?",
-				"khoj": <span>Lamar likes stories about animals and nature. In particular, you mentioned that he really likes the story of the tortoise and the hare. He might like the story of the three little pigs if you're looking for something new.</span>,
+				"khoj": <span>You mentioned he really liked the story of the tortoise and the hare. So maybe he'll like the story of the three little pigs.</span>,
 			},
 			{
-				"you": "Fantastic. Maybe we can modify the story of the three little pigs to be about three little dogs, since he's fond of puppies.",
-				"khoj": <span>Let me help you with that. I'll draft a new version of the story and send it to you.</span>,
+				"you": "/image Great idea, can you create a book cover for the story and modify the story to be about three little dogs instead, since he's fond of puppies.",
+				"khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/three-little-dogs.webp" width="200px" height="200px" alt="Khoj creates a book cover for a book about three little dogs" />
 			}
 		],
 		[
@@ -63,10 +74,6 @@ export function Home() {
 			}
 		]
 	]
-
-	function getRandomConvo() {
-		return conversationSamples[Math.floor(Math.random() * conversationSamples.length)];
-	}
 
 	return (
 		<section className='core-page'>
@@ -96,7 +103,7 @@ export function Home() {
 				</div>
 				<div className='hero-container-right'>
 					<div className='product-description-bubbles'>
-						<ChatBubbles conversation={getRandomConvo()} />
+						<ChatBubbles conversation={conversationSamples[currentConversationIndex]} />
 					</div>
 				</div>
 			</div>
