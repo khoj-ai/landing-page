@@ -145,7 +145,7 @@ export function Home() {
 				<div className='production-description-subcomponent left-section'>
 					<h2 className='production-description-subcomponent'>Engage anytime, anywhere</h2>
 					<p className='product-description-subcomponent'>
-						Use our native desktop app on any OS. Or use our first-party clients, <a className='inline-link-light' href="https://www.gnu.org/software/emacs/">Emacs</a> and <a className='inline-link-light' href="https://obsidian.md/">Obsidian</a>, to stay within your existing workflow.
+						Use our <a className='inline-link-light' href="/downloads">native desktop app</a> on any OS. Or use our first-party clients for <a className='inline-link-light' href="https://docs.khoj.dev/clients/emacs">Emacs</a>, <a className='inline-link-light' href="https://docs.khoj.dev/clients/obsidian">Obsidian</a> or <a className='inline-link-light' href="https://khoj.dev/whatsapp">Whatsapp</a> to stay within your existing workflow.
 					</p>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -174,7 +174,7 @@ export function Home() {
 					<div className='production-description-subcomponent-light right-section'>
 						<h2 className='production-description-subcomponent'>Stay in flow</h2>
 						<p className='product-description-subcomponent-light'>
-							No GTD or Zettlekasten required. Read and write with peace of mind. 
+							No tagging, GTD or Zettlekasten required. Just read and write with peace of mind.
 						</p>
 						<p className='product-description-subcomponent-light'>
 							Khoj understands your data as-is, messy footnotes and all.
@@ -192,7 +192,7 @@ export function Home() {
 							We've made Khoj understandable, accessible and modular.
 						</p>
 						<p className='product-description-subcomponent'>
-							You can switch between offline and online models when run locally. You can choose to use foundation models or keep your data on-premises.
+							Switch between offline or online chat models when self-hosting. Run Khoj on an air-gapped machine or on servers you own. Modify Khoj code or config till it best fits your needs.
 						</p>
 					</div>
 					<div className='production-description-subcomponent right-section'>
