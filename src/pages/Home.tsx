@@ -25,41 +25,41 @@ export function Home() {
 		[
 			{
 				"you": "Hey Khoj, where did I visit in San Diego?",
-				"khoj": "According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?",
+				"khoj": <span>According to your notes and documents, you visited Balboa Park, Sunset Cliffs, and went surfing in Torrey Pines. What else can I help you with?</span>,
 			},
 			{
 				"you": "Remind me about that surfing experience. I want to write about it.",
-				"khoj": "You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilarated and at peace. In your writing, you can describe the feeling as a sense of flow.",
+				"khoj": <span>You went surfing early on a Saturday and caught a few green waves. You mention feeling exhilarated and at peace. In your writing, you can describe the feeling as a sense of flow.</span>,
 			}
 		],
 		[
 			{
 				"you": "Can you pull up the email address for the person I met at the conference last week?",
-				"khoj": "Sure, you met with Hamid Khan. His email address is hkhan@acme.com.",
+				"khoj": <span>Sure, you met with Hamid Khan. His email address is hkhan@acme.com.</span>,
 			},
 			{
 				"you": "Awesome. Can you also summarize the notes I took during the meeting?",
-				"khoj": "Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, and he's interested in a partnership with Emca.",
+				"khoj": <span>Sure, you talked about how generative AI can be used in the healthcare industry for providing accelerated patient care. Hamid has a background in biotech and regulation, and he's interested in a partnership with Emca.</span>,
 			}
 		],
 		[
 			{
 				"you": "What are some good bedtime stories for Lamar?",
-				"khoj": "Lamar likes stories about animals and nature. In particular, you mentioned that he really likes the story of the tortoise and the hare. He might like the story of the three little pigs if you're looking for something new.",
+				"khoj": <span>Lamar likes stories about animals and nature. In particular, you mentioned that he really likes the story of the tortoise and the hare. He might like the story of the three little pigs if you're looking for something new.</span>,
 			},
 			{
 				"you": "Fantastic. Maybe we can modify the story of the three little pigs to be about three little dogs, since he's fond of puppies.",
-				"khoj": "Let me help you with that. I'll draft a new version of the story and send it to you.",
+				"khoj": <span>Let me help you with that. I'll draft a new version of the story and send it to you.</span>,
 			}
 		],
 		[
 			{
 				"you": "I have a quiz coming up on the Krebs cycle. Which notes should I review?",
-				"khoj": "You should start with your notes on the citric acid cycle and the electron transport chain. It would be important to note the specific substrates involved in each step, including acetyl-CoA and associated products. I can send you a summary of these notes.",
+				"khoj": <span>You should start with your notes on the citric acid cycle and the electron transport chain. It would be important to note the specific substrates involved in each step, including acetyl-CoA and associated products. I can send you a summary of these notes.</span>,
 			},
 			{
 				"you": "Hmm, I think I'm good on the summary. Can you send me a list of sample questions?",
-				"khoj": "Definitely. You should be able to answer these question: \n- What is the relationship between the Krebs Cycle and glycolysis?\n- How are the intermediates of the Krebs Cycle replenished?\n- What is the role of NADH in feedback inhibition?",
+				"khoj": <span>Definitely. You should be able to answer these question: What is the relationship between the Krebs Cycle and glycolysis? How are the intermediates of the Krebs Cycle replenished? What is the role of NADH in feedback inhibition?</span>,
 			}
 		]
 	]

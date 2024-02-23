@@ -2,7 +2,7 @@ import '../styles/ChatBubbles.css';
 
 interface Conversation {
     you: string;
-    khoj: string;
+    khoj: JSX.Element;
 }
 
 interface ChatBubblesProps {

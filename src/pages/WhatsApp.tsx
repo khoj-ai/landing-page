@@ -31,49 +31,52 @@ const items: CollapseProps['items'] = [
     }
 ]
 
-const superconductorsConversation = [
+const learnOnlineConversation = [
     {
-        "you": "What are superconductors?",
-        "khoj": "Superconductors are materials that can conduct electric current with zero electrical resistance when cooled below a certain critical temperature. In other words, they allow the flow of electric current without any loss of energy due to resistance. This unique property of superconductors has various practical applications, such as in powerful electromagnets, high-speed trains (maglev), MRI machines, particle accelerators, and more. Superconductors have also been a subject of scientific research due to their potential for revolutionizing energy transmission and storage systems.",
+        "you": "When is the next EU parliament elections?",
+        "khoj": <span>The EU parliamentary elections is from 4th to 6th June 2024. It's the tenth election of the EU and the first one since Brexit.</span>,
     },
     {
-        "you": "What gets unlocked once we have room temperature superconductors?",
-        "khoj": "Room temperature superconductors, if achieved, would have a profound impact on various fields and technologies. For instance, room temperature superconductors could revolutionize power transmission by enabling the efficient and lossless transmission of electricity over long distances. This could lead to significant reductions in energy waste and more efficient electrical grids. Superconductors could enhance the performance and efficiency of computing systems, enabling faster and more powerful computers. Additionally, they could contribute to the development of advanced data storage technologies with higher capacities and faster data transfer rates.",
+        "you": "What is Brexit?",
+        "khoj": <span>Brexit refers to the withdrawal of the United Kingdom (UK) from the European Union (EU). The term 'Brexit' is a portmanteau of 'British exit'. The UK officially completed it's exit from the EU on December 31st 2020.</span>,
     },
 ];
 
-
-const lookupCurrentEventsConversation = [
+const rememberAndPlanConversation = [
     {
-        "you": "/online what is the current state of the war between Russia-Ukraine in 2024?",
-        "khoj": "Based on my analysis of the available information, it appears that the war between Russia and Ukraine continues to be ongoing as of January 17th, 2024. The fighting remains intense on the front lines, though neither side has been able to achieve a strategically significant breakthrough. There have been escalating Russian strikes against Ukrainian infrastructure and population centres, which are causing further damage and displacement for civilians in Ukraine.",
-    }
-]
-
-const learningAboutRomanEmpireConversation = [
-    {
-        "you": "Who was the last emperor of the Roman Empire?",
-        "khoj": "The last Emperor of the Western Roman Empire was Romulus Augustus, who ruled from 476 AD to 477 AD."
+        "you": "What was the name of the beach where I learnt to sail?",
+        "khoj": <span>Your notes mention you learnt to sail at Nyali Beach in Mombasa, Kenya. You'd go on multi-day fishing trips with your grandfather during your summer vacation. You describe these as formative experiences of your teenage years.</span>
     },
     {
-        "you": "How did Rome fall?",
-        "khoj": "The fall of the Roman Empire is a complex historical event with many contributing factors, and historians often debate the specifics. The traditional date for the fall is 476 AD when the Germanic chieftain Odoacer deposed the last Roman emperor of the West, Romulus Augustulus. However, the decline of the Roman Empire was a gradual process influenced by a combination of internal and external factors. Some of the internal factors include political corruption, economic problems, and military weakness. Some of the external factors include barbarian invasions, pressure from the Huns, and the division of the empire into two halves."
-    }
+        "you": "Can you create an itinerary for a day trip to Mombasa? I want to do a literal walk down memory lane visiting my favorite childhood haunts!",
+        "khoj": <span>Of course, given your short stay, start by visiting your grandma and uncle in Old Town. Check if any of the neighborhood friends, like Samuel and Mariam, are up to grab some Mohogo for lunch at Lighthouse. Maybe go for a short sunset sail with Captain Frank before heading back to the Airport.</span>
+    },
+]
+
+const blendImagineAndRealConversation = [
+    {
+        "you": "What is the weather here in Goa today?",
+        "khoj": <span>The weather in Goa today is clear with daytime temperatures reaching a high of around 28°C and a low at night of around 21°C. The wind is blowing from the west at 22 km/h. Humidity levels are moderate, the UV index is very high, so sun protection is highly recommended.</span>
+    },
+    {
+        "you": "/dream a Gond art inspired painting using the current weather in Goa. I want to share it in my good morning message today",
+        "khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/gond-art-goa-weather.webp" alt="Khoj creates a Gond art inspired painting using the current weather in Goa" />
+    },
 ]
 
 const chatConversation = [
     {
-        "title": "Research",
-        "component": superconductorsConversation
+        "title": "Create",
+        "component": blendImagineAndRealConversation
+    },
+    {
+        "title": "Remember",
+        "component": rememberAndPlanConversation
     },
     {
         "title": "Learn",
-        "component": learningAboutRomanEmpireConversation
+        "component": learnOnlineConversation
     },
-    {
-        "title": "Realtime",
-        "component": lookupCurrentEventsConversation
-    }
 ]
 
 
@@ -135,7 +138,7 @@ export default function About() {
                         </div>
                         <div className='chat-examples content'>
                             <Tabs
-                                defaultActiveKey="2"
+                                defaultActiveKey="1"
                                 items={[ExperimentOutlined, BookOutlined, GlobalOutlined].map((Icon, i) => {
                                 const id = String(i + 1);
 
