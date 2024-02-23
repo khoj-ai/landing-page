@@ -319,6 +319,9 @@ pre.product-description-subcomponent button:hover {
     color: var(--main-background);
 }
 
+div#run-privately {
+    padding-right: 1%;
+}
 span.self-host-code {
     color: #000;
     font-size: large;
@@ -330,7 +333,6 @@ span.self-host-code {
 img#yc-logo {
     max-width: 150px;
 }
-  
 
 #conclude {
     margin-bottom: -3%;

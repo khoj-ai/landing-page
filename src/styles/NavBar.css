@@ -46,6 +46,7 @@ div.navLogo.hero-container {
 
 img.khoj-logo {
     width: min(60vw, 250px);
+    height: 105px;
 }
 
 li.navLinks {

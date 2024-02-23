@@ -184,7 +184,7 @@ export function Home() {
 			</div>
 			<div>
 				<div className="product-description">
-					<div className='production-description-subcomponent left-section'>
+					<div id="run-privately" className='production-description-subcomponent left-section'>
 						<h2 className='production-description-subcomponent'>Run privately</h2>
 						<p className='product-description-subcomponent'>
 							We are completely open-source.

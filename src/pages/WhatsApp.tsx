@@ -60,7 +60,7 @@ const blendImagineAndRealConversation = [
     },
     {
         "you": "/dream a Gond art inspired painting using the current weather in Goa. I want to share it in my good morning message today",
-        "khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/gond-art-goa-weather.webp" alt="Khoj creates a Gond art inspired painting using the current weather in Goa" />
+        "khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/gond-art-goa-weather.webp" width="400px" height="400px" alt="Khoj creates a Gond art inspired painting using the current weather in Goa" />
     },
 ]
 

@@ -2,7 +2,8 @@
 @import url(fonts.css);
 
 img#whatsapp-qr-code {
-    max-width: 400px;
+    width: 200px;
+    height: 200px;
 }
 
 div.content.link {
@@ -44,7 +45,8 @@ div.chat-examples.content {
     }
 
     img#whatsapp-qr-code {
-        max-width: 100%;
+        width: 100px;
+        height: 100px;
     }
 
     div.chat-examples.content {
