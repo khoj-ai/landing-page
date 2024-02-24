@@ -1,5 +1,4 @@
 import '../styles/Home.css';
-import { useState, useEffect } from 'react';
 import { Button } from 'antd';
 import { Link } from "react-router-dom";
 import { DISCORD_LINK, DEV_DOCS, CLOUD_LINK } from '../common/constants';
@@ -7,16 +6,6 @@ import ChatBubbles from '../components/ChatBubbles';
 import IconDisplay from '../components/IconsDisplay';
 
 export function Home() {
-	const [currentConversationIndex, setCurrentConversationIndex] = useState(0);
-
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setCurrentConversationIndex((currentConversationIndex + 1) % conversationSamples.length);
-		}, 15000); // Change conversation every 5 seconds
-
-		// Clear interval on component unmount
-		return () => clearInterval(intervalId);
-	}, [currentConversationIndex]);
 
 	function copyToClipboardAction() {
 		const codeSnippetElements = document.getElementsByClassName('self-host-code');
@@ -75,6 +64,10 @@ export function Home() {
 		]
 	]
 
+	function getRandomConvo() {
+		return conversationSamples[Math.floor(Math.random() * conversationSamples.length)];
+	}
+
 	return (
 		<section className='core-page'>
 			<div className='hero-container'>
@@ -103,7 +96,7 @@ export function Home() {
 				</div>
 				<div className='hero-container-right'>
 					<div className='product-description-bubbles'>
-						<ChatBubbles conversation={conversationSamples[currentConversationIndex]} />
+						<ChatBubbles conversation={getRandomConvo()} />
 					</div>
 				</div>
 			</div>
