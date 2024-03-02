@@ -62,7 +62,8 @@ function App() {
 								<p className='footer-text'>
 									<a className='inline-link-light' href="/privacy-policy">Privacy Policy</a>&nbsp;|&nbsp;
 									<a className='inline-link-light' href="/about">About</a>&nbsp;|&nbsp;
-									<a className='inline-link-light' href="/terms-of-service">Terms of Service</a>
+									<a className='inline-link-light' href="/terms-of-service">Terms of Service</a>&nbsp;|&nbsp;
+									<a className='inline-link-light' href="https://blog.khoj.dev">Blog</a>
 								</p>
 								<p className='footer-text'>
 									Designed with ❤️ by <a className='inline-link-light' href="https://debankon.com/">Debankon</a>.<br />Developed with 🥵 by Saba and Debanjum.
