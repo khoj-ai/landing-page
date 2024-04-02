@@ -9,6 +9,7 @@ import {
     DesktopOutlined,
     FireTwoTone,
     StarOutlined,
+    BranchesOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import Icon from '@ant-design/icons';
@@ -80,6 +81,15 @@ export default function NavMenu() {
             ),
             key: 'downloads',
             icon: <DesktopOutlined />,
+        },
+        {
+            label: (
+                <a href="https://blog.khoj.dev">
+                    Blog
+                </a>
+            ),
+            key: 'blog',
+            icon: <BranchesOutlined />,
         },
         {
             label: (
