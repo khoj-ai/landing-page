@@ -38,7 +38,27 @@ const Pricing = () => {
 						</div>
                     </div>
                     <div className='card-option premium'>
-                        <h2 className='card-title'>Futurist (<del>$50</del> $30/mo)</h2>
+                        <h2 className='card-title'>Explorer (1 year) - $10/mo</h2>
+                        <div className='card-content'>
+                            <ul className='card-content'>
+                                <li className='card-content'>Special pricing for <b>students and academics</b></li>
+                                <li className='card-content'>All the same benefits as the <b>Futurist</b> plan</li>
+                                <li className='card-content'>All you need is to drop us an email at team@khoj.dev with a .edu email address for a promo code</li>
+                            </ul>
+                        </div>
+                        <div className='cta'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
+								href="mailto:team@khoj.dev">
+									Contact Us
+								</Button>
+						</div>
+                    </div>
+                    <div className='card-option premium'>
+                        <h2 className='card-title'>Futurist $30/mo</h2>
                         <div className='card-content notice'>Unsure of the Future? <a href={CLOUD_LINK}>Try it free for 14 days</a><span title="The future is subject to market risk. Past performance is not indicative of future results. Please read all physics-related documents carefully before investing in it.">*</span></div>
                         <div className='card-content'>
                             <ul className='card-content'>

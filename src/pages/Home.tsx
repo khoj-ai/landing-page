@@ -138,6 +138,10 @@ export function Home() {
 						<p className='product-description-subcomponent-light'>
 							Many of us spend hours a day looking up, collating and organizing our information. Khoj saves you time by naturally parsing across your randomly organized data.
 						</p>
+						<h2 className='production-description-subcomponent'>Are you a student?</h2>
+						<p className='product-description-subcomponent-light'>
+							We have special pricing for students. <a className='inline-link-light' href="/pricing">Check it out</a>.
+						</p>
 					</div>
 				</div>
 			</div>
