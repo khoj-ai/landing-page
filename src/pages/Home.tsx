@@ -39,17 +39,17 @@ export function Home() {
 			},
 			{
 				"you": "Can you create an itinerary for a day trip to Mombasa? I want to do a literal walk down memory lane visiting my favorite childhood haunts!",
-				"khoj": <span>Great idea! You can start by visiting your grandma and uncle in Old Town. Check if any of the neighborhood friends, like Samuel and Mariam, are up to grab some Mohogo for lunch at Lighthouse. Maybe go for a short sunset sail with Frank before heading back to the Airport.</span>,
+				"khoj": <span>Great idea! You can start by visiting your grandma and uncle in Old Town. Check if any of the neighborhood friends, like Samuel and Mariam, are up to grab some Mohogo for lunch at Lighthouse. There's going to be an arts fair there next week. Maybe go for a short sunset sail with Frank before heading back to the Airport.</span>,
 			}
 		],
 		[
 			{
-				"you": "What are some good bedtime stories for Lamar?",
-				"khoj": <span>You mentioned he really liked the story of the tortoise and the hare. So maybe he'll like the story of the three little pigs.</span>,
+				"you": "Summarize the latest news about AI and tech for me",
+				"khoj": <span>Certainly, the latest news from TechCrunch suggests that the AI hype cycle is over. The focus is now on practical applications. I've included resources below.</span>,
 			},
 			{
-				"you": "/image Great idea, can you create a book cover for the story and modify the story to be about three little dogs instead, since he's fond of puppies.",
-				"khoj": <img src="https://khoj-web-bucket.s3.amazonaws.com/three-little-dogs.webp" width="200px" height="200px" alt="Khoj creates a book cover for a book about three little dogs" />
+				"you": "Tell me about what grants are available for AI tutor applications",
+				"khoj": <span>There are several grants available for AI tutor applications. The most popular ones are from the National Science Foundation and the Chan Zuckerberg Initiative. Here are links to some more...</span>,
 			}
 		],
 		[
@@ -79,7 +79,7 @@ export function Home() {
 					</div>
 					<h2 className='title major'>Merge AI with your brain</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is the open-source, AI copilot for your knowledge base. Easily build on top of your personal notes and documents.
+						Khoj is the open-source, AI copilot for search. Easily get answers without having to sift through Google's search results, and pull context from with your own personal notes.
 					</div>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
@@ -89,7 +89,7 @@ export function Home() {
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
 								href={CLOUD_LINK}>
-									Try the Beta
+									Let's Go
 								</Button>
 						</div>
 					</div>
@@ -113,7 +113,7 @@ export function Home() {
 						<div className='production-description-subcomponent camping-description-subcomponent left-section'>
 							<h2 className='production-description-subcomponent'>Connect your knowledge</h2>
 							<p className='product-description-subcomponent-light'>
-								Khoj can understand your PDFs, markdown, plaintext, GitHub, and Notion, with more in the works.
+								Optionally, Khoj can understand your PDFs, markdown, plaintext, GitHub, and Notion, with more in the works.
 							</p>
 							<p className='product-description-subcomponent-light'>
 								Connect files directly from your computer using our <a href="/downloads" className='inline-link-light'>Desktop Application</a>. They'll automatically stay in sync.
@@ -128,15 +128,56 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light left-section'>
+						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/ba59cfa9-42c3-48c5-be50-d4ae245dab7f.png" alt="chat-demo" />
+					</div>
+					<div className='production-description-subcomponent-light right-section'>
+						<h2 className='production-description-subcomponent'>Replace your search engine</h2>
+						<p className='product-description-subcomponent-light'>
+							Khoj performs internet searches on your behalf, so you can stay focused on your work.
+						</p>
+						<p className='product-description-subcomponent-light'>
+							It has access to the freshest information online, so you don't have to switch tabs or devices, or sift through links, to get the information you need.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="plugins" className='product-description'>
+				<div className='production-description-subcomponent left-section'>
+					<h2 className='production-description-subcomponent'>Work hands-free</h2>
+					<p className='product-description-subcomponent'>
+						We support text-to-speech, meaning you can talk directly into your mic and Khoj will understand your voice (in your native tongue!).
+					</p>
+					<div className='primary-cta'>
+						<div className='primary-cta-link'>
+							<Button
+								type="primary"
+								size='large'
+								className='cta-button'
+								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
+								href={CLOUD_LINK}>
+									Get started
+								</Button>
+						</div>
+					</div>
+				</div>
+				<div className='production-description-subcomponent right-section'>
+					<div className='supported-icons'>
+						<img src='/person_speaking.svg' alt='Person speaking into microphone' title="A person stands behind a microphone. Khoj can understand your voice, in your native tongue." />
+					</div>
+				</div>
+			</div>
+			<div>
+				<div className="product-description">
+					<div className='production-description-subcomponent-light left-section'>
 						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/doing_good_better_demo.png" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light right-section'>
-						<h2 className='production-description-subcomponent'>Simplify your reasoning</h2>
+						<h2 className='production-description-subcomponent'>Jump straight into context</h2>
 						<p className='product-description-subcomponent-light'>
 							Khoj allows you to leverage AI to make better sense of your notes and documents.
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Many of us spend hours a day looking up, collating and organizing our information. Khoj saves you time by naturally parsing across your randomly organized data.
+							Many of us spend hours a day looking up, collating and organizing our information. Khoj saves you time by naturally parsing your own data and merging it with online info.
 						</p>
 						<h2 className='production-description-subcomponent'>Are you a student?</h2>
 						<p className='product-description-subcomponent-light'>
@@ -145,7 +186,7 @@ export function Home() {
 					</div>
 				</div>
 			</div>
-			<div id="plugins" className='product-description'>
+			<div className='product-description'>
 				<div className='production-description-subcomponent left-section'>
 					<h2 className='production-description-subcomponent'>Engage anytime, anywhere</h2>
 					<p className='product-description-subcomponent'>
@@ -173,15 +214,15 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light left-section'>
-						<img id="demo-video" src="https://khoj-web-bucket.s3.amazonaws.com/mountain_sunrise.svg" alt="chat-demo" />
+						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/679af36b-c9cd-4133-841d-8e08823f8303.png" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light right-section'>
-						<h2 className='production-description-subcomponent'>Stay in flow</h2>
+						<h2 className='production-description-subcomponent'>Get a village's worth of help</h2>
 						<p className='product-description-subcomponent-light'>
-							No tagging, GTD or Zettlekasten required. Just read and write with peace of mind.
+							Khoj gives you access to custom AI agents that can help with more specific tasks. Think, personal doctor, therapist, professor.
 						</p>
 						<p className='product-description-subcomponent-light'>
-							Khoj understands your data as-is, messy footnotes and all.
+							You can see all of them in the <a className='inline-link-light' href="https://app.khoj.dev/agents">Agents page</a>.
 						</p>
 					</div>
 				</div>
