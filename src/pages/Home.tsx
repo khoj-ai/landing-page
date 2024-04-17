@@ -79,7 +79,7 @@ export function Home() {
 					</div>
 					<h2 className='title major'>Merge AI with your brain</h2>
 					<div className='hero-container-subtitle'>
-						Khoj is the open-source, AI copilot for search. Easily get answers without having to sift through Google's search results. Pull context from within your own personal notes.
+						Khoj is the open-source, AI copilot for search. Easily get answers without having to sift through online results or your own notes.
 					</div>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
