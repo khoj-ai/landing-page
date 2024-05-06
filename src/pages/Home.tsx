@@ -128,7 +128,7 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light left-section'>
-						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/ba59cfa9-42c3-48c5-be50-d4ae245dab7f.png" alt="chat-demo" />
+						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/ba59cfa9-42c3-48c5-be50-d4ae245dab7f.webp" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light right-section'>
 						<h2 className='production-description-subcomponent'>Replace your search engine</h2>
@@ -214,7 +214,7 @@ export function Home() {
 			<div>
 				<div className="product-description">
 					<div className='production-description-subcomponent-light left-section'>
-						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/679af36b-c9cd-4133-841d-8e08823f8303.png" alt="chat-demo" />
+						<img id="demo-video" src="https://khoj-generated-images.s3.amazonaws.com/98aef1b2-5493-41ba-a252-2ab7ab122901/679af36b-c9cd-4133-841d-8e08823f8303.webp" alt="chat-demo" />
 					</div>
 					<div className='production-description-subcomponent-light right-section'>
 						<h2 className='production-description-subcomponent'>Get a village's worth of help</h2>
