@@ -145,7 +145,7 @@ export function Home() {
 				<div className='production-description-subcomponent left-section'>
 					<h2 className='production-description-subcomponent'>Work hands-free</h2>
 					<p className='product-description-subcomponent'>
-						We support text-to-speech, meaning you can talk directly into your mic and Khoj will understand your voice (in your native tongue!).
+						We support speech-to-text, meaning you can talk directly into your mic and Khoj will understand your voice (in your native tongue!).
 					</p>
 					<div className='primary-cta'>
 						<div className='primary-cta-link'>
