@@ -47,11 +47,20 @@ export default function PrivacyPolicy() {
 
         <p className="privacy-policy">Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
 
-        <p className="privacy-policy">Children's Privacy</p>
+        <h2 className="privacy-policy">Children's Privacy</h2>
 
         <p className="privacy-policy">Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we will immediately respond to take requisite action. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
 
+        <h2 className='privacy-policy'>Data Retention and Storage</h2>
+
+        <p className='privacy-policy'>To enhance security measures and prevent fraud and abuse, the Service will store the email addresses of our users indefinitely. This practice is crucial for identifying and mitigating potential threats and ensuring the integrity of our service. The stored email addresses will be used exclusively for security-related purposes and service updates, and not for marketing or any unsolicited communication.</p>
+
+        <p className='privacy-policy'>We understand the importance of minimizing data retention to protect user privacy. Users have the right to manage their data, including the deletion of non-essential information. To delete your non-essential data, you can utilize the tools provided within our service or contact our development team directly at team@khoj.dev. Our team is dedicated to assisting you with your data management requests promptly and efficiently.</p>
+
         <h2 className="privacy-policy">Changes to This Privacy Policy</h2>
+
+        <h3 className='privacy-policy'>Wed Jun 5, 2024</h3>
+        <p className='privacy-policy'>Added section 'Data Retention and Storage'</p>
     </div>
     );
 }

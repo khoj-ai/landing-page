@@ -4,7 +4,7 @@ export default function TermsOfService() {
     return (
     <div className="privacy-policy">
         <h1>Khoj Inc. Terms of Service</h1>
-        <p className="privacy-policy"><strong>Last Updated: October 16, 2023</strong></p>
+        <p className="privacy-policy"><strong>Last Updated: June 5, 2024</strong></p>
         <p className="privacy-policy">If you signed a separate Cover Page to access the Product with the same account, and that agreement has not ended, the terms below do not apply to you. Instead, your separate Cover Page applies to your use of the Product. </p>
         <p className="privacy-policy">This Agreement is between Khoj Inc. and the company or person accessing or using the Product. This Agreement consists of: (1) the Order Form and (2) the Key Terms, both of which are on the Cover Page below, and (3) the Common Paper <a href="https://commonpaper.com/standards/cloud-service-agreement/1.0/" target="blank">Cloud Service Agreement Standard Terms Version 1.0</a> (“Standard Terms"). Any modifications to the Standard Terms made in the Cover Page will control over conflicts with the Standard Terms. Capitalized words have the meanings or descriptions given in the Cover Page or the Standard Terms. </p>
         <p className="privacy-policy">If you are accessing or using the Product on behalf of your company, you represent that you are authorized to accept this Agreement on behalf of your company. By signing up, accessing, or using the Product, Customer indicates its acceptance of this Agreement and agrees to be bound by the terms and conditions of this Agreement. </p>
@@ -79,8 +79,17 @@ export default function TermsOfService() {
                 </ul>
             </li>
             <li>
+                Data Storage and Retention
+                <p className='privacy-policy'>To enhance security measures and prevent fraud and abuse, the Cloud Service will store your email address indefinitely. This practice is crucial for identifying and mitigating potential threats and ensuring the integrity of our service. The stored email addresses will be used exclusively for security-related purposes and service updates, and not for marketing or any unsolicited communication.</p>
+
+                <p className='privacy-policy'>You have the right to manage your data, including the deletion of non-essential information. To delete your non-essential data, you can utilize the tools provided within our service or contact our development team directly at team@khoj.dev</p>
+            </li>
+            <li>
                 Updates and Revisions
                 <p className="privacy-policy">We may update and revise this policy from time to time to adapt to changing circumstances. Users are responsible for staying informed about these changes.</p>
+                <h2 className="privacy-policy">Changes to This Privacy Policy</h2>
+                <h3 className='privacy-policy'>Wed Jun 5, 2024</h3>
+                <p className='privacy-policy'>Added section 'Data Retention and Storage'</p>
             </li>
         </ol>
 
