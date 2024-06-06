@@ -89,7 +89,7 @@ export function Home() {
 								className='cta-button'
 								style={{borderRadius: '4px', fontSize: 'x-large', height: '50px' }}
 								href={CLOUD_LINK}>
-									Let's Go
+									Get started
 								</Button>
 						</div>
 					</div>
