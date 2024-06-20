@@ -274,6 +274,9 @@ export function Home() {
 					<a href="https://www.ycombinator.com/companies/khoj">
 						<img id='yc-logo' src="https://khoj-web-bucket.s3.amazonaws.com/backedbyyc.svg" alt="Backed by YCominbator" />
 					</a>
+					<a href="https://elevenlabs.io/text-to-speech">
+						<img src="https://storage.googleapis.com/eleven-public-cdn/images/elevenlabs-grants-logo.png" alt="Text to Speech" className='partner-logo' />
+					</a>
 				</div>
 			</div>
 

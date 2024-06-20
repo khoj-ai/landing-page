@@ -192,6 +192,10 @@ img.founders-item-image {
     outline: 1px solid var(--main-background);
 }
 
+img.partner-logo {
+    width: 200px;
+}
+
 div.founders-item-image-container {
     outline: 1px solid var(--main-background);
     outline-offset: 8px;
