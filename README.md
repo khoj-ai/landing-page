@@ -3,7 +3,7 @@
 
 This repository holds the code for its landing page.
 
-## Deveopment
+## Development
 
 ### Setup
 1. Clone the repository `git clone git@github.com:khojai/landing-page.git`
