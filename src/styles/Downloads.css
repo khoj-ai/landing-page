@@ -10,6 +10,7 @@ div.download-links {
 p.downloads-content {
     font-family: var(--reader);
     font-weight: lighter;
+    font-size: 2vh;
 }
 
 div.downloads-content.link {
@@ -17,6 +18,7 @@ div.downloads-content.link {
     grid-auto-flow: row;
     gap: 24px;
     margin: 0;
+    font-size: 1.5vh;
 }
 
 a.downloads-content.link {
@@ -24,6 +26,7 @@ a.downloads-content.link {
     color: var(--mild-sun);
     padding: 8px;
     border-radius: 8px;
+    letter-spacing: 1px;
 }
 
 a.downloads-content.link:hover {
